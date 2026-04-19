@@ -14,7 +14,7 @@ const translations = {
       "MarkdownToPDF is built for writers, engineers, and documentation teams who want local, repeatable exports with batch queues, profiles, and clean print-ready output.",
     heroPrimary: "Explore the interface",
     heroSecondary: "Read privacy policy",
-    heroBadge1: "Right-click .md and .markdown files in Finder",
+    heroBadge1: "Right-click .md and .markdown files in authorized Finder folders",
     heroBadge2: "Queue batch jobs and retry failures",
     heroBadge3: "Tune page size, margins, theme, fonts, and naming rules",
     heroBadge4: "Keep everything local inside the app sandbox",
@@ -33,7 +33,7 @@ const translations = {
     heroImageAlt: "MarkdownToPDF queue dashboard",
     signal1Title: "Right from Finder",
     signal1Body:
-      "Select one file or many, open the context menu, and send your Markdown straight into the conversion queue.",
+      "In folders you explicitly authorize, select one file or many, open the context menu, and send your Markdown straight into the conversion queue.",
     signal2Title: "Built for repeat work",
     signal2Body:
       "Profiles, naming rules, overwrite policies, and post-conversion actions make repeated exports predictable.",
@@ -48,9 +48,9 @@ const translations = {
     workflowLead:
       "The product architecture keeps the Finder extension light and lets the main app handle rendering, settings, history, and diagnostics.",
     workflowStep1Index: "Step 1",
-    workflowStep1Title: "Select Markdown where you already work",
+    workflowStep1Title: "Select Markdown in an authorized Finder folder",
     workflowStep1Body:
-      "The Finder extension targets `.md` and `.markdown` files, so the flow starts from a familiar right-click menu instead of a separate import screen.",
+      "The Finder extension only appears in folders you explicitly authorize, and it targets `.md` and `.markdown` files so the flow starts from a familiar right-click menu.",
     workflowStep2Index: "Step 2",
     workflowStep2Title: "Let the queue keep long jobs organized",
     workflowStep2Body:
@@ -172,7 +172,7 @@ const translations = {
       "MarkdownToPDF 面向写作者、工程师和文档团队，强调本地处理、可重复导出、批量队列、配置模板，以及更适合打印与分享的输出效果。",
     heroPrimary: "查看应用界面",
     heroSecondary: "阅读隐私政策",
-    heroBadge1: "在 Finder 中右键 `.md` 与 `.markdown` 文件即可开始",
+    heroBadge1: "在你主动授权的 Finder 目录中，可右键 `.md` 与 `.markdown` 文件开始转换",
     heroBadge2: "支持批量排队、失败重试与结果追踪",
     heroBadge3: "可配置纸张、边距、主题、字体与命名规则",
     heroBadge4: "所有处理都尽量保留在本地沙盒内完成",
@@ -191,7 +191,7 @@ const translations = {
     heroImageAlt: "MarkdownToPDF 队列仪表盘界面",
     signal1Title: "从 Finder 直接开始",
     signal1Body:
-      "无论是单文件还是多文件，只需打开右键菜单，就能把 Markdown 送进转换队列。",
+      "在你明确授权的目录中，无论是单文件还是多文件，只需打开右键菜单，就能把 Markdown 送进转换队列。",
     signal2Title: "适合重复性导出",
     signal2Body:
       "配置模板、命名规则、覆盖策略和导出后动作，让重复导出保持稳定一致。",
@@ -206,9 +206,9 @@ const translations = {
     workflowLead:
       "产品架构刻意让 Finder 扩展保持轻量，把渲染、设置、历史与诊断能力交给主应用。",
     workflowStep1Index: "步骤 1",
-    workflowStep1Title: "在你原本工作的地方选择 Markdown",
+    workflowStep1Title: "在已授权的 Finder 目录中选择 Markdown",
     workflowStep1Body:
-      "Finder 扩展面向 `.md` 与 `.markdown` 文件，因此流程从熟悉的右键菜单开始，而不是额外的导入页面。",
+      "Finder 扩展只会出现在你主动授权的目录中，并面向 `.md` 与 `.markdown` 文件，因此流程从熟悉的右键菜单开始。",
     workflowStep2Index: "步骤 2",
     workflowStep2Title: "用队列管理更长的转换任务",
     workflowStep2Body:
