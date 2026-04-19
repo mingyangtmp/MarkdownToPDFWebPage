@@ -729,6 +729,21 @@ a:focus-visible {
   line-height: 1.6;
 }
 
+.footer-contact {
+  margin-top: 0.6rem !important;
+}
+
+.footer-contact a {
+  color: var(--accent-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus-visible {
+  text-decoration: underline;
+}
+
 @keyframes rise-in {
   from {
     opacity: 0;

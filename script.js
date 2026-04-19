@@ -138,6 +138,7 @@ const translations = {
       "If the app architecture changes in a future release, this policy should be updated together with the release notes and website so the documented behavior stays accurate.",
     footerBody:
       "Built from the current MarkdownToPDF beta codebase, release notes, support matrix, and interface screenshots.",
+    footerContactLabel: "Contact:",
   },
   zh: {
     pageTitle: "MarkdownToPDF for macOS",
@@ -278,6 +279,7 @@ const translations = {
       "如果未来版本的应用架构发生变化，这份隐私政策也应与发布说明和官网一起更新，以保证文档描述与实际行为保持一致。",
     footerBody:
       "本页面基于当前 MarkdownToPDF Beta 代码库、发布说明、支持矩阵与界面截图制作。",
+    footerContactLabel: "联系邮箱：",
   },
 };
 
