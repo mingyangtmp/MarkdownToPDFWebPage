@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarkdownToPDF for macOS</title>
+    <meta
+      name="description"
+      content="MarkdownToPDF is a Finder-powered macOS app for turning Markdown files into polished PDFs with profiles, history, batch tools, and privacy-first local processing."
+    />
+    <meta
+      name="theme-color"
+      content="#eef4fa"
+    />
+    <link rel="icon" type="image/png" href="pictures/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
+    <div class="page-backdrop" aria-hidden="true">
+      <div class="backdrop-orb orb-a"></div>
+      <div class="backdrop-orb orb-b"></div>
+      <div class="backdrop-orb orb-c"></div>
+      <div class="backdrop-grid"></div>
+    </div>
+
+    <div class="site-shell" id="top">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="MarkdownToPDF">
+          <img src="pictures/app-icon.png" alt="" />
+          <span>MarkdownToPDF</span>
+        </a>
+
+        <nav class="header-nav" aria-label="Primary">
+          <a href="#features" data-i18n="navFeatures">Features</a>
+          <a href="#workflow" data-i18n="navWorkflow">Workflow</a>
+          <a href="#screens" data-i18n="navScreens">Screens</a>
+          <a href="#privacy" data-i18n="navPrivacy">Privacy</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switch" role="group" aria-label="Language switcher">
+            <button class="lang-button is-active" type="button" data-lang="en">EN</button>
+            <button class="lang-button" type="button" data-lang="zh">中文</button>
+          </div>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="hero section">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="heroEyebrow">Finder extension + native macOS app</p>
+            <h1 data-i18n="heroTitle">Turn Markdown into polished PDFs without leaving Finder.</h1>
+            <p class="hero-lead" data-i18n="heroLead">
+              MarkdownToPDF is built for writers, engineers, and documentation teams who want local,
+              repeatable exports with batch queues, profiles, and clean print-ready output.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#screens" data-i18n="heroPrimary">
+                Explore the interface
+              </a>
+              <a class="button button-secondary" href="#privacy" data-i18n="heroSecondary">
+                Read privacy policy
+              </a>
+            </div>
+
+            <ul class="hero-badges">
+              <li data-i18n="heroBadge1">Right-click .md and .markdown files in Finder</li>
+              <li data-i18n="heroBadge2">Queue batch jobs and retry failures</li>
+              <li data-i18n="heroBadge3">Tune page size, margins, theme, fonts, and naming rules</li>
+              <li data-i18n="heroBadge4">Keep everything local inside the app sandbox</li>
+            </ul>
+
+            <div class="meta-grid">
+              <article class="meta-card">
+                <span class="meta-label" data-i18n="metaPlatformLabel">Platform</span>
+                <strong class="meta-value" data-i18n="metaPlatformValue">macOS 14+</strong>
+              </article>
+              <article class="meta-card">
+                <span class="meta-label" data-i18n="metaLanguageLabel">UI Languages</span>
+                <strong class="meta-value" data-i18n="metaLanguageValue">8 built-in options</strong>
+              </article>
+              <article class="meta-card">
+                <span class="meta-label" data-i18n="metaPrivacyLabel">Privacy</span>
+                <strong class="meta-value" data-i18n="metaPrivacyValue">No account, no cloud upload</strong>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="floating-card floating-card-top">
+              <span class="floating-label" data-i18n="heroNoteTopLabel">Queue-first workflow</span>
+              <p data-i18n="heroNoteTopBody">
+                Finder requests are handed to the main app, so longer conversions stay stable and
+                easier to manage.
+              </p>
+            </div>
+
+            <div class="device-frame">
+              <img
+                src="pictures/dashboard.png"
+                alt="MarkdownToPDF queue dashboard"
+                data-i18n-alt="heroImageAlt"
+              />
+            </div>
+
+            <div class="floating-card floating-card-bottom">
+              <span class="floating-label" data-i18n="heroNoteBottomLabel">Privacy-first beta</span>
+              <p data-i18n="heroNoteBottomBody">
+                The current codebase uses sandboxed file access and local storage instead of cloud
+                rendering or sign-in flows.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="signal-grid">
+          <article class="signal-card">
+            <span class="signal-index">01</span>
+            <h2 data-i18n="signal1Title">Right from Finder</h2>
+            <p data-i18n="signal1Body">
+              Select one file or many, open the context menu, and send your Markdown straight into
+              the conversion queue.
+            </p>
+          </article>
+          <article class="signal-card">
+            <span class="signal-index">02</span>
+            <h2 data-i18n="signal2Title">Built for repeat work</h2>
+            <p data-i18n="signal2Body">
+              Profiles, naming rules, overwrite policies, and post-conversion actions make repeated
+              exports predictable.
+            </p>
+          </article>
+          <article class="signal-card">
+            <span class="signal-index">03</span>
+            <h2 data-i18n="signal3Title">Readable history</h2>
+            <p data-i18n="signal3Body">
+              Successful exports, failed jobs, retry flows, and output paths stay visible instead of
+              disappearing into a menu.
+            </p>
+          </article>
+          <article class="signal-card">
+            <span class="signal-index">04</span>
+            <h2 data-i18n="signal4Title">Localized app UI</h2>
+            <p data-i18n="signal4Body">
+              The desktop app already ships with English, Simplified Chinese, Traditional Chinese,
+              Japanese, Korean, German, French, and Italian.
+            </p>
+          </article>
+        </section>
+
+        <section class="section story-section" id="workflow">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="workflowEyebrow">Workflow</p>
+            <h2 data-i18n="workflowTitle">A calmer way to export Markdown over and over again.</h2>
+            <p class="section-lead" data-i18n="workflowLead">
+              The product architecture keeps the Finder extension light and lets the main app handle
+              rendering, settings, history, and diagnostics.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-card">
+              <span class="timeline-step" data-i18n="workflowStep1Index">Step 1</span>
+              <h3 data-i18n="workflowStep1Title">Select Markdown where you already work</h3>
+              <p data-i18n="workflowStep1Body">
+                The Finder extension targets `.md` and `.markdown` files, so the flow starts from a
+                familiar right-click menu instead of a separate import screen.
+              </p>
+            </article>
+            <article class="timeline-card">
+              <span class="timeline-step" data-i18n="workflowStep2Index">Step 2</span>
+              <h3 data-i18n="workflowStep2Title">Let the queue keep long jobs organized</h3>
+              <p data-i18n="workflowStep2Body">
+                Requests move through a shared queue, giving the main app room to batch, retry, and
+                preserve history without slowing Finder down.
+              </p>
+            </article>
+            <article class="timeline-card">
+              <span class="timeline-step" data-i18n="workflowStep3Index">Step 3</span>
+              <h3 data-i18n="workflowStep3Title">Control the PDF output in one place</h3>
+              <p data-i18n="workflowStep3Body">
+                Adjust page size, margins, fonts, themes, file naming, overwrite behavior, and what
+                happens after export from the main app.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section features-section" id="features">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow" data-i18n="featuresEyebrow">Control</p>
+              <h2 data-i18n="featuresTitle">Tune the PDF, not the Markdown source.</h2>
+            </div>
+            <p class="section-lead" data-i18n="featuresLead">
+              The current beta focuses on local rendering quality, practical defaults, and enough
+              controls to keep exported PDFs consistent across repeated runs.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3 data-i18n="feature1Title">Profile-driven rendering</h3>
+              <p data-i18n="feature1Body">
+                Pick page size, margins, theme, header/footer, table of contents, body font, code
+                font, size, and line height from reusable profiles.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="feature2Title">Output rules that stay predictable</h3>
+              <p data-i18n="feature2Body">
+                Choose same-name exports, append dates, or custom patterns, then decide whether to
+                replace files, fail fast, or create copies.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="feature3Title">Batch-aware post actions</h3>
+              <p data-i18n="feature3Body">
+                After conversion, the app can do nothing, reveal the PDF in Finder, or open the new
+                file immediately.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="feature4Title">Markdown coverage aimed at real documents</h3>
+              <p data-i18n="feature4Body">
+                The beta supports headings, lists, block quotes, fenced code, tables, links, images,
+                relative assets, and typography controls.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="feature5Title">Transparent beta limits</h3>
+              <p data-i18n="feature5Body">
+                Task lists, footnotes, math, emoji shortcodes, and syntax highlighting are not in the
+                current beta yet, and complex nested layouts can still shift slightly.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3 data-i18n="feature6Title">Local-only by design</h3>
+              <p data-i18n="feature6Body">
+                The app is sandboxed, uses user-selected file access, and stores queue state,
+                profiles, settings, and history on device.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section screens-section" id="screens">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow" data-i18n="screensEyebrow">Screens</p>
+              <h2 data-i18n="screensTitle">A clean desktop surface for queue, history, and settings.</h2>
+            </div>
+            <p class="section-lead" data-i18n="screensLead">
+              These images come from the current MarkdownToPDF desktop build and show the major
+              workspaces described in the code and release notes.
+            </p>
+          </div>
+
+          <div class="screens-layout">
+            <figure class="screen-stage">
+              <div class="screen-image-wrap">
+                <img id="active-screen-image" src="pictures/dashboard.png" alt="Queue Dashboard screen" />
+              </div>
+              <figcaption class="screen-caption">
+                <h3 id="active-screen-title">Queue Dashboard</h3>
+                <p id="active-screen-description">
+                  Monitor pending requests, import Markdown files by drag and drop, and start
+                  conversions with a single click.
+                </p>
+              </figcaption>
+            </figure>
+
+            <div class="screen-selector" role="tablist" aria-label="Application screens">
+              <button class="screen-thumb is-active" type="button" role="tab" data-screen="dashboard">
+                <img src="pictures/dashboard.png" alt="" />
+                <span data-i18n="screenDashboardLabel">Queue Dashboard</span>
+              </button>
+              <button class="screen-thumb" type="button" role="tab" data-screen="history">
+                <img src="pictures/history.png" alt="" />
+                <span data-i18n="screenHistoryLabel">Conversion History</span>
+              </button>
+              <button class="screen-thumb" type="button" role="tab" data-screen="output">
+                <img src="pictures/settings-1.png" alt="" />
+                <span data-i18n="screenOutputLabel">Output Defaults</span>
+              </button>
+              <button class="screen-thumb" type="button" role="tab" data-screen="render">
+                <img src="pictures/settings-2.png" alt="" />
+                <span data-i18n="screenRenderLabel">Render Defaults</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section support-section">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow" data-i18n="supportEyebrow">Beta Snapshot</p>
+              <h2 data-i18n="supportTitle">What the current beta supports today.</h2>
+            </div>
+            <p class="section-lead" data-i18n="supportLead">
+              This page is based on the current source code, release notes, support matrix, and known
+              issues in the MarkdownToPDF repository.
+            </p>
+          </div>
+
+          <div class="support-grid">
+            <article class="support-card">
+              <h3 data-i18n="supportGoodTitle">Working well in the beta</h3>
+              <ul class="support-list">
+                <li data-i18n="supportGood1">Headings, paragraphs, horizontal rules, and block quotes</li>
+                <li data-i18n="supportGood2">Ordered and unordered lists, inline code, and fenced code blocks</li>
+                <li data-i18n="supportGood3">Tables, alignment, links, images, and relative asset paths</li>
+                <li data-i18n="supportGood4">Themes, page sizes, margins, naming rules, and post-export actions</li>
+              </ul>
+            </article>
+            <article class="support-card support-card-caution">
+              <h3 data-i18n="supportLimitTitle">Known limits in the beta</h3>
+              <ul class="support-list">
+                <li data-i18n="supportLimit1">No task lists, footnotes, math rendering, or emoji shortcodes yet</li>
+                <li data-i18n="supportLimit2">No syntax highlighting theme for code blocks yet</li>
+                <li data-i18n="supportLimit3">Deeply nested mixed layouts can show slight alignment drift</li>
+                <li data-i18n="supportLimit4">Very large images can miss the export window if they load too slowly</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section privacy-section" id="privacy">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow" data-i18n="privacyEyebrow">Privacy Policy</p>
+              <h2 data-i18n="privacyTitle">MarkdownToPDF is designed to work on your Mac, not in the cloud.</h2>
+            </div>
+            <p class="section-lead" data-i18n="privacyLead">
+              The policy below reflects the current beta architecture, entitlement files, and
+              repository documentation as of April 19, 2026.
+            </p>
+          </div>
+
+          <div class="privacy-summary-grid">
+            <article class="privacy-summary-card">
+              <h3 data-i18n="privacyCard1Title">What the app accesses</h3>
+              <p data-i18n="privacyCard1Body">
+                Only the Markdown files and folders you explicitly choose, plus local app settings,
+                profiles, history records, and queue metadata.
+              </p>
+            </article>
+            <article class="privacy-summary-card">
+              <h3 data-i18n="privacyCard2Title">What the app does not require</h3>
+              <p data-i18n="privacyCard2Body">
+                No account creation, no subscription login, no analytics SDK, and no document upload
+                service in the current beta.
+              </p>
+            </article>
+            <article class="privacy-summary-card">
+              <h3 data-i18n="privacyCard3Title">How data stays local</h3>
+              <p data-i18n="privacyCard3Body">
+                The app is sandboxed and uses user-selected file permissions plus an App Group
+                container for Finder-to-app job handoff.
+              </p>
+            </article>
+          </div>
+
+          <div class="privacy-policy-card">
+            <div class="policy-meta">
+              <span data-i18n="privacyEffectiveLabel">Effective date</span>
+              <strong data-i18n="privacyEffectiveValue">April 19, 2026</strong>
+            </div>
+
+            <div class="policy-columns">
+              <article class="policy-block">
+                <h3 data-i18n="policy1Title">1. Information the app processes</h3>
+                <p data-i18n="policy1Body">
+                  MarkdownToPDF processes the source documents you select, the output locations you
+                  choose, and locally stored settings such as render profiles, naming defaults,
+                  conversion history, and pending queue records.
+                </p>
+              </article>
+              <article class="policy-block">
+                <h3 data-i18n="policy2Title">2. Why that information is used</h3>
+                <p data-i18n="policy2Body">
+                  That information is used only to render PDFs, manage queued conversions, reopen or
+                  reveal generated files, remember your preferences, and show conversion results or
+                  failures inside the app.
+                </p>
+              </article>
+              <article class="policy-block">
+                <h3 data-i18n="policy3Title">3. Network, tracking, and third parties</h3>
+                <p data-i18n="policy3Body">
+                  Based on the current beta repository and sandbox entitlements, the app does not
+                  include cloud rendering, analytics tracking, advertising SDKs, or account systems,
+                  and it does not upload document content to remote servers as part of normal use.
+                </p>
+              </article>
+              <article class="policy-block">
+                <h3 data-i18n="policy4Title">4. Storage and retention</h3>
+                <p data-i18n="policy4Body">
+                  Preferences, profiles, queue state, and history are stored locally on your device.
+                  Generated PDFs remain in the folder you choose. You can remove the app, clear
+                  records, or revoke folder access through system and app settings.
+                </p>
+              </article>
+              <article class="policy-block">
+                <h3 data-i18n="policy5Title">5. Your controls</h3>
+                <p data-i18n="policy5Body">
+                  You control which files and folders the app can access, whether the Finder
+                  extension is enabled, which output location is used, and whether history entries
+                  remain stored locally.
+                </p>
+              </article>
+              <article class="policy-block">
+                <h3 data-i18n="policy6Title">6. Policy updates</h3>
+                <p data-i18n="policy6Body">
+                  If the app architecture changes in a future release, this policy should be updated
+                  together with the release notes and website so the documented behavior stays
+                  accurate.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p data-i18n="footerBody">
+          Built from the current MarkdownToPDF beta codebase, release notes, support matrix, and
+          interface screenshots.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
