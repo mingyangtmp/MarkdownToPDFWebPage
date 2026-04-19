@@ -2,7 +2,7 @@ const translations = {
   en: {
     pageTitle: "MarkdownToPDF for macOS",
     pageDescription:
-      "MarkdownToPDF is a Finder-powered macOS app for turning Markdown files into polished PDFs with profiles, history, batch tools, and privacy-first local processing.",
+      "MarkdownToPDF is a Finder-powered macOS app for turning Markdown files into polished PDFs with profiles, syntax highlighting, math rendering, history, and privacy-first local processing.",
     skipLink: "Skip to content",
     navFeatures: "Features",
     navWorkflow: "Workflow",
@@ -27,9 +27,9 @@ const translations = {
     heroNoteTopLabel: "Queue-first workflow",
     heroNoteTopBody:
       "Finder requests are handed to the main app, so longer conversions stay stable and easier to manage.",
-    heroNoteBottomLabel: "Privacy-first beta",
+    heroNoteBottomLabel: "Privacy-first local workflow",
     heroNoteBottomBody:
-      "The current codebase uses sandboxed file access and local storage instead of cloud rendering or sign-in flows.",
+      "The app uses sandboxed file access and local storage instead of cloud rendering or sign-in flows.",
     heroImageAlt: "MarkdownToPDF queue dashboard",
     signal1Title: "Right from Finder",
     signal1Body:
@@ -62,7 +62,7 @@ const translations = {
     featuresEyebrow: "Control",
     featuresTitle: "Tune the PDF, not the Markdown source.",
     featuresLead:
-      "The current beta focuses on local rendering quality, practical defaults, and enough controls to keep exported PDFs consistent across repeated runs.",
+      "The current release focuses on local rendering quality, practical defaults, and enough controls to keep exported PDFs consistent across repeated runs.",
     feature1Title: "Profile-driven rendering",
     feature1Body:
       "Pick page size, margins, theme, header/footer, table of contents, body font, code font, size, and line height from reusable profiles.",
@@ -74,13 +74,30 @@ const translations = {
       "After conversion, the app can do nothing, reveal the PDF in Finder, or open the new file immediately.",
     feature4Title: "Markdown coverage aimed at real documents",
     feature4Body:
-      "The beta supports headings, lists, block quotes, fenced code, tables, links, images, relative assets, and typography controls.",
-    feature5Title: "Transparent beta limits",
+      "The app supports headings, lists, block quotes, fenced code, syntax highlighting, tables, links, images, Mermaid diagrams, math formulas, and typography controls.",
+    feature5Title: "Known compatibility boundaries",
     feature5Body:
-      "Task lists, footnotes, math, emoji shortcodes, and syntax highlighting are not in the current beta yet, and complex nested layouts can still shift slightly.",
+      "Task lists, footnotes, and emoji shortcodes are still incomplete, and some custom TeX macros, rare AMS cases, or deeply nested mixed layouts can still hit edge cases.",
     feature6Title: "Local-only by design",
     feature6Body:
       "The app is sandboxed, uses user-selected file access, and stores queue state, profiles, settings, and history on device.",
+    renderEyebrow: "Rendered Output",
+    renderTitle: "Math, diagrams, and syntax-aware code blocks survive the trip to PDF.",
+    renderLead:
+      "The current renderer applies theme-aware color palettes, highlights common languages, and typesets TeX formulas offline before export.",
+    renderMathTitle: "Offline math rendering",
+    renderMathBody:
+      "Inline and display formulas are typeset before export with bundled MathJax SVG, so the PDF keeps readable equations instead of raw TeX delimiters.",
+    renderMathAlt: "Math rendering sample exported by MarkdownToPDF",
+    renderCodeTitle: "Syntax highlighting for common languages",
+    renderCodeBody:
+      "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL, and C-like languages get built-in token highlighting. Unknown languages fall back to clean plain code blocks.",
+    renderPaletteTitle: "Theme-driven color configuration",
+    renderPaletteBody:
+      "System, light, sepia, and dark themes affect document colors, code block chrome, and syntax token colors, so exports can match different reading contexts.",
+    renderStructureTitle: "Mermaid and document structure",
+    renderStructureBody:
+      "Mermaid fenced blocks render as diagrams, and headings can become PDF outline and bookmark entries for easier navigation in long documents.",
     screensEyebrow: "Screens",
     screensTitle: "A clean desktop surface for queue, history, and settings.",
     screensLead:
@@ -89,30 +106,30 @@ const translations = {
     screenHistoryLabel: "Conversion History",
     screenOutputLabel: "Output Defaults",
     screenRenderLabel: "Render Defaults",
-    supportEyebrow: "Beta Snapshot",
-    supportTitle: "What the current beta supports today.",
+    supportEyebrow: "Support Matrix",
+    supportTitle: "What the app supports in the current release.",
     supportLead:
       "This page is based on the current source code, release notes, support matrix, and known issues in the MarkdownToPDF repository.",
-    supportGoodTitle: "Working well in the beta",
+    supportGoodTitle: "Available today",
     supportGood1: "Headings, paragraphs, horizontal rules, and block quotes",
-    supportGood2: "Ordered and unordered lists, inline code, and fenced code blocks",
-    supportGood3: "Tables, alignment, links, images, and relative asset paths",
-    supportGood4: "Themes, page sizes, margins, naming rules, and post-export actions",
-    supportLimitTitle: "Known limits in the beta",
-    supportLimit1: "No task lists, footnotes, math rendering, or emoji shortcodes yet",
-    supportLimit2: "No syntax highlighting theme for code blocks yet",
-    supportLimit3: "Deeply nested mixed layouts can show slight alignment drift",
-    supportLimit4: "Very large images can miss the export window if they load too slowly",
+    supportGood2: "Ordered and unordered lists, inline code, fenced code blocks, and syntax highlighting",
+    supportGood3: "Tables, alignment, links, images, relative asset paths, Mermaid, and offline math rendering",
+    supportGood4: "Themes, page sizes, margins, outline bookmarks, naming rules, and post-export actions",
+    supportLimitTitle: "Known compatibility boundaries",
+    supportLimit1: "Task lists, footnotes, and emoji shortcodes are not fully implemented yet",
+    supportLimit2: "Custom TeX macros, external extensions, and rare AMS scenarios can still need fallback",
+    supportLimit3: "The table of contents setting is saved, but it does not generate a visible TOC page yet",
+    supportLimit4: "Header and footer settings currently render the document footer only, and very large images can still miss the render window",
     privacyEyebrow: "Privacy Policy",
     privacyTitle: "MarkdownToPDF is designed to work on your Mac, not in the cloud.",
     privacyLead:
-      "The policy below reflects the current beta architecture, entitlement files, and repository documentation as of April 19, 2026.",
+      "The policy below reflects the current app architecture, entitlement files, and repository documentation as of April 19, 2026.",
     privacyCard1Title: "What the app accesses",
     privacyCard1Body:
       "Only the Markdown files and folders you explicitly choose, plus local app settings, profiles, history records, and queue metadata.",
     privacyCard2Title: "What the app does not require",
     privacyCard2Body:
-      "No account creation, no subscription login, no analytics SDK, and no document upload service in the current beta.",
+      "No account creation, no subscription login, no analytics SDK, and no document upload service in the current app.",
     privacyCard3Title: "How data stays local",
     privacyCard3Body:
       "The app is sandboxed and uses user-selected file permissions plus an App Group container for Finder-to-app job handoff.",
@@ -126,7 +143,7 @@ const translations = {
       "That information is used only to render PDFs, manage queued conversions, reopen or reveal generated files, remember your preferences, and show conversion results or failures inside the app.",
     policy3Title: "3. Network, tracking, and third parties",
     policy3Body:
-      "Based on the current beta repository and sandbox entitlements, the app does not include cloud rendering, analytics tracking, advertising SDKs, or account systems, and it does not upload document content to remote servers as part of normal use.",
+      "Based on the current repository and sandbox entitlements, the app does not include cloud rendering, analytics tracking, advertising SDKs, or account systems, and it does not upload document content to remote servers as part of normal use.",
     policy4Title: "4. Storage and retention",
     policy4Body:
       "Preferences, profiles, queue state, and history are stored locally on your device. Generated PDFs remain in the folder you choose. You can remove the app, clear records, or revoke folder access through system and app settings.",
@@ -137,13 +154,13 @@ const translations = {
     policy6Body:
       "If the app architecture changes in a future release, this policy should be updated together with the release notes and website so the documented behavior stays accurate.",
     footerBody:
-      "Built from the current MarkdownToPDF beta codebase, release notes, support matrix, and interface screenshots.",
+      "Built from the current MarkdownToPDF codebase, release notes, support matrix, and interface screenshots.",
     footerContactLabel: "Contact:",
   },
   zh: {
     pageTitle: "MarkdownToPDF for macOS",
     pageDescription:
-      "MarkdownToPDF 是一款面向 macOS 的 Finder 扩展应用，可将 Markdown 文件本地转换为精致 PDF，并提供配置模板、历史记录、批量队列与隐私优先的处理方式。",
+      "MarkdownToPDF 是一款面向 macOS 的 Finder 扩展应用，可将 Markdown 文件本地转换为精致 PDF，并提供配置模板、语法高亮、数学公式渲染、历史记录、批量队列与隐私优先的处理方式。",
     skipLink: "跳转到正文",
     navFeatures: "功能",
     navWorkflow: "流程",
@@ -168,9 +185,9 @@ const translations = {
     heroNoteTopLabel: "以队列为核心",
     heroNoteTopBody:
       "Finder 只负责触发请求，真正的长任务交给主应用处理，稳定性和可管理性都更好。",
-    heroNoteBottomLabel: "隐私优先的 Beta",
+    heroNoteBottomLabel: "隐私优先的本地工作流",
     heroNoteBottomBody:
-      "当前代码库采用沙盒文件权限与本地存储，而不是云端渲染或登录流程。",
+      "应用采用沙盒文件权限与本地存储，而不是云端渲染或登录流程。",
     heroImageAlt: "MarkdownToPDF 队列仪表盘界面",
     signal1Title: "从 Finder 直接开始",
     signal1Body:
@@ -203,7 +220,7 @@ const translations = {
     featuresEyebrow: "输出控制",
     featuresTitle: "把精力放在 PDF 成品，而不是反复折腾 Markdown 源文件。",
     featuresLead:
-      "当前 Beta 聚焦本地渲染质量、实用默认值，以及足够细的控制能力，让多次导出也能保持一致。",
+      "当前正式版本聚焦本地渲染质量、实用默认值，以及足够细的控制能力，让多次导出也能保持一致。",
     feature1Title: "以配置模板驱动渲染",
     feature1Body:
       "可复用的模板支持纸张尺寸、边距、主题、页眉页脚、目录、正文与代码字体、字号和行高。",
@@ -215,13 +232,30 @@ const translations = {
       "转换完成后，你可以选择不执行任何动作、在 Finder 中显示 PDF，或直接打开新文件。",
     feature4Title: "Markdown 支持面向真实文档场景",
     feature4Body:
-      "当前 Beta 已支持标题、列表、引用、围栏代码块、表格、链接、图片、相对资源与排版控制。",
+      "应用已支持标题、列表、引用、围栏代码块、代码语法高亮、表格、链接、图片、Mermaid、数学公式与排版控制。",
     feature5Title: "限制写得足够明确",
     feature5Body:
-      "任务列表、脚注、数学公式、emoji shortcode 与语法高亮尚未进入当前 Beta，复杂嵌套排版也可能有轻微偏移。",
+      "任务列表、脚注与 emoji shortcode 仍未完整实现；部分自定义 TeX 宏、少见 AMS 场景和深层混合嵌套排版仍可能遇到边界情况。",
     feature6Title: "从设计上坚持本地处理",
     feature6Body:
       "应用运行在沙盒中，依赖用户授权的文件访问权限，并把队列状态、模板、设置与历史记录存储在本机。",
+    renderEyebrow: "渲染能力",
+    renderTitle: "数学公式、图表和带语义的代码块，都能稳定进入最终 PDF。",
+    renderLead:
+      "当前渲染器会在导出前应用主题配色、为常见语言添加语法高亮，并使用离线 MathJax 对 TeX 公式进行排版。",
+    renderMathTitle: "离线数学公式渲染",
+    renderMathBody:
+      "行内与块级公式会在导出前通过内置 MathJax SVG 完成排版，因此最终 PDF 里显示的是清晰公式，而不是原始 TeX 定界符。",
+    renderMathAlt: "MarkdownToPDF 导出的数学公式示例",
+    renderCodeTitle: "常见语言内置语法高亮",
+    renderCodeBody:
+      "Swift、Bash、Python、JavaScript、TypeScript、JSON、YAML、SQL 与 C-Like 语言都支持内置分词高亮；未知语言会回退为普通代码块。",
+    renderPaletteTitle: "主题驱动的颜色配置",
+    renderPaletteBody:
+      "System、Light、Sepia 与 Dark 主题会共同影响文档配色、代码块外观以及语法 token 颜色，让导出的 PDF 更适合不同阅读场景。",
+    renderStructureTitle: "Mermaid 与文档结构",
+    renderStructureBody:
+      "Mermaid fenced block 会渲染为图表，标题还可以进入 PDF 的 outline / 书签，方便长文档导航。",
     screensEyebrow: "界面截图",
     screensTitle: "为队列、历史和设置而设计的一套干净桌面界面。",
     screensLead:
@@ -230,30 +264,30 @@ const translations = {
     screenHistoryLabel: "转换历史",
     screenOutputLabel: "输出默认值",
     screenRenderLabel: "渲染默认值",
-    supportEyebrow: "Beta 概览",
-    supportTitle: "当前 Beta 已经支持什么。",
+    supportEyebrow: "支持矩阵",
+    supportTitle: "当前正式版本已经支持什么。",
     supportLead:
       "此页面内容来自 MarkdownToPDF 仓库中的源码、发布说明、支持矩阵与已知问题文档。",
-    supportGoodTitle: "当前 Beta 表现较稳定",
+    supportGoodTitle: "当前已可用能力",
     supportGood1: "标题、段落、分隔线与引用块",
-    supportGood2: "有序/无序列表、行内代码与围栏代码块",
-    supportGood3: "表格、对齐、链接、图片与相对资源路径",
-    supportGood4: "主题、纸张尺寸、边距、命名规则与导出后动作",
-    supportLimitTitle: "当前 Beta 的已知限制",
-    supportLimit1: "暂不支持任务列表、脚注、数学公式与 emoji shortcode",
-    supportLimit2: "代码块暂未提供语法高亮主题",
-    supportLimit3: "深层复杂嵌套布局可能存在轻微对齐漂移",
-    supportLimit4: "超大图片如果加载过慢，可能错过导出等待窗口",
+    supportGood2: "有序/无序列表、行内代码、围栏代码块与语法高亮",
+    supportGood3: "表格、对齐、链接、图片、相对资源路径、Mermaid 与离线数学公式渲染",
+    supportGood4: "主题、纸张尺寸、边距、PDF 书签、命名规则与导出后动作",
+    supportLimitTitle: "当前已知兼容性边界",
+    supportLimit1: "任务列表、脚注与 emoji shortcode 仍未完整实现",
+    supportLimit2: "自定义 TeX 宏、外部扩展与少见 AMS 场景仍可能需要回退处理",
+    supportLimit3: "目录页设置目前会保存，但还不会生成可见的 TOC 页面",
+    supportLimit4: "页眉页脚设置目前只会输出页脚；超大图片在加载过慢时仍可能错过渲染窗口",
     privacyEyebrow: "隐私政策",
     privacyTitle: "MarkdownToPDF 的设计目标，是在你的 Mac 上完成处理，而不是把文档送到云端。",
     privacyLead:
-      "以下内容基于 2026 年 4 月 19 日时的当前 Beta 架构、entitlement 文件与仓库文档。",
+      "以下内容基于 2026 年 4 月 19 日时的当前应用架构、entitlement 文件与仓库文档。",
     privacyCard1Title: "应用会访问什么",
     privacyCard1Body:
       "仅访问你明确选择的 Markdown 文件和目录，以及本地保存的应用设置、模板、历史记录和队列元数据。",
     privacyCard2Title: "应用不需要什么",
     privacyCard2Body:
-      "当前 Beta 不需要创建账号、不需要订阅登录、没有分析 SDK，也没有文档上传服务。",
+      "当前应用不需要创建账号、不需要订阅登录、没有分析 SDK，也没有文档上传服务。",
     privacyCard3Title: "数据如何保留在本地",
     privacyCard3Body:
       "应用运行在沙盒中，使用用户授权的文件权限，并通过 App Group 容器在 Finder 扩展与主应用之间传递任务。",
@@ -267,7 +301,7 @@ const translations = {
       "这些信息仅用于生成 PDF、管理转换队列、重新打开或在 Finder 中显示导出文件、记住你的偏好设置，以及在应用内部展示成功或失败结果。",
     policy3Title: "3. 网络、追踪与第三方",
     policy3Body:
-      "根据当前 Beta 的仓库代码与沙盒权限配置，应用不包含云端渲染、分析追踪、广告 SDK 或账号系统；在正常使用中，也不会把文档内容上传到远程服务器。",
+      "根据当前仓库代码与沙盒权限配置，应用不包含云端渲染、分析追踪、广告 SDK 或账号系统；在正常使用中，也不会把文档内容上传到远程服务器。",
     policy4Title: "4. 存储与保留",
     policy4Body:
       "偏好设置、模板、队列状态与历史记录都存储在你的本地设备上。生成的 PDF 会保留在你选择的目录中。你可以删除应用、清理记录，或通过系统和应用设置撤销目录访问权限。",
@@ -278,7 +312,7 @@ const translations = {
     policy6Body:
       "如果未来版本的应用架构发生变化，这份隐私政策也应与发布说明和官网一起更新，以保证文档描述与实际行为保持一致。",
     footerBody:
-      "本页面基于当前 MarkdownToPDF Beta 代码库、发布说明、支持矩阵与界面截图制作。",
+      "本页面基于当前 MarkdownToPDF 代码库、发布说明、支持矩阵与界面截图制作。",
     footerContactLabel: "联系邮箱：",
   },
 };

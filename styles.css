@@ -592,6 +592,44 @@ a:focus-visible {
   margin-top: 2rem;
 }
 
+.render-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.render-figure {
+  margin: 0;
+  padding: 1rem;
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-md);
+}
+
+.render-figure img {
+  width: 100%;
+  border-radius: calc(var(--radius-xl) - 0.5rem);
+  box-shadow: 0 12px 22px rgba(22, 52, 82, 0.1);
+}
+
+.render-figure figcaption {
+  padding: 1rem 0.35rem 0.15rem;
+}
+
+.render-figure figcaption p {
+  margin: 0.9rem 0 0;
+  color: var(--text-soft);
+  line-height: 1.72;
+}
+
+.render-copy {
+  display: grid;
+  gap: 1rem;
+}
+
 .screen-stage {
   padding: 1rem;
   border-radius: var(--radius-xl);
@@ -765,7 +803,8 @@ a:focus-visible {
 
   .hero,
   .split-heading,
-  .screens-layout {
+  .screens-layout,
+  .render-showcase {
     grid-template-columns: 1fr;
   }
 

@@ -6,7 +6,7 @@
     <title>MarkdownToPDF for macOS</title>
     <meta
       name="description"
-      content="MarkdownToPDF is a Finder-powered macOS app for turning Markdown files into polished PDFs with profiles, history, batch tools, and privacy-first local processing."
+      content="MarkdownToPDF is a Finder-powered macOS app for turning Markdown files into polished PDFs with profiles, syntax highlighting, math rendering, history, and privacy-first local processing."
     />
     <meta
       name="theme-color"
@@ -107,7 +107,7 @@
             </div>
 
             <div class="floating-card floating-card-bottom">
-              <span class="floating-label" data-i18n="heroNoteBottomLabel">Privacy-first beta</span>
+              <span class="floating-label" data-i18n="heroNoteBottomLabel">Privacy-first local workflow</span>
               <p data-i18n="heroNoteBottomBody">
                 The current codebase uses sandboxed file access and local storage instead of cloud
                 rendering or sign-in flows.
@@ -196,7 +196,7 @@
               <h2 data-i18n="featuresTitle">Tune the PDF, not the Markdown source.</h2>
             </div>
             <p class="section-lead" data-i18n="featuresLead">
-              The current beta focuses on local rendering quality, practical defaults, and enough
+              The current release focuses on local rendering quality, practical defaults, and enough
               controls to keep exported PDFs consistent across repeated runs.
             </p>
           </div>
@@ -226,15 +226,15 @@
             <article class="feature-card">
               <h3 data-i18n="feature4Title">Markdown coverage aimed at real documents</h3>
               <p data-i18n="feature4Body">
-                The beta supports headings, lists, block quotes, fenced code, tables, links, images,
-                relative assets, and typography controls.
+                The app supports headings, lists, block quotes, fenced code, syntax highlighting,
+                tables, links, images, Mermaid diagrams, math formulas, and typography controls.
               </p>
             </article>
             <article class="feature-card">
-              <h3 data-i18n="feature5Title">Transparent beta limits</h3>
+              <h3 data-i18n="feature5Title">Known compatibility boundaries</h3>
               <p data-i18n="feature5Body">
-                Task lists, footnotes, math, emoji shortcodes, and syntax highlighting are not in the
-                current beta yet, and complex nested layouts can still shift slightly.
+                Task lists, footnotes, and emoji shortcodes are still incomplete, and some custom TeX
+                macros, rare AMS cases, or deeply nested mixed layouts can still hit edge cases.
               </p>
             </article>
             <article class="feature-card">
@@ -294,11 +294,66 @@
           </div>
         </section>
 
+        <section class="section render-section">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow" data-i18n="renderEyebrow">Rendered Output</p>
+              <h2 data-i18n="renderTitle">Math, diagrams, and syntax-aware code blocks survive the trip to PDF.</h2>
+            </div>
+            <p class="section-lead" data-i18n="renderLead">
+              The current renderer applies theme-aware color palettes, highlights common languages,
+              and typesets TeX formulas offline before export.
+            </p>
+          </div>
+
+          <div class="render-showcase">
+            <figure class="render-figure">
+              <img
+                src="pictures/math.png"
+                alt="Math rendering sample exported by MarkdownToPDF"
+                data-i18n-alt="renderMathAlt"
+              />
+              <figcaption>
+                <h3 data-i18n="renderMathTitle">Offline math rendering</h3>
+                <p data-i18n="renderMathBody">
+                  Inline and display formulas are typeset before export with bundled MathJax SVG, so
+                  the PDF keeps readable equations instead of raw TeX delimiters.
+                </p>
+              </figcaption>
+            </figure>
+
+            <div class="render-copy">
+              <article class="feature-card">
+                <h3 data-i18n="renderCodeTitle">Syntax highlighting for common languages</h3>
+                <p data-i18n="renderCodeBody">
+                  Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL, and C-like languages
+                  get built-in token highlighting. Unknown languages fall back to clean plain code
+                  blocks.
+                </p>
+              </article>
+              <article class="feature-card">
+                <h3 data-i18n="renderPaletteTitle">Theme-driven color configuration</h3>
+                <p data-i18n="renderPaletteBody">
+                  System, light, sepia, and dark themes affect document colors, code block chrome,
+                  and syntax token colors, so exports can match different reading contexts.
+                </p>
+              </article>
+              <article class="feature-card">
+                <h3 data-i18n="renderStructureTitle">Mermaid and document structure</h3>
+                <p data-i18n="renderStructureBody">
+                  Mermaid fenced blocks render as diagrams, and headings can become PDF outline and
+                  bookmark entries for easier navigation in long documents.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
         <section class="section support-section">
           <div class="section-heading split-heading">
             <div>
-              <p class="eyebrow" data-i18n="supportEyebrow">Beta Snapshot</p>
-              <h2 data-i18n="supportTitle">What the current beta supports today.</h2>
+              <p class="eyebrow" data-i18n="supportEyebrow">Support Matrix</p>
+              <h2 data-i18n="supportTitle">What the app supports in the current release.</h2>
             </div>
             <p class="section-lead" data-i18n="supportLead">
               This page is based on the current source code, release notes, support matrix, and known
@@ -308,21 +363,21 @@
 
           <div class="support-grid">
             <article class="support-card">
-              <h3 data-i18n="supportGoodTitle">Working well in the beta</h3>
+              <h3 data-i18n="supportGoodTitle">Available today</h3>
               <ul class="support-list">
                 <li data-i18n="supportGood1">Headings, paragraphs, horizontal rules, and block quotes</li>
-                <li data-i18n="supportGood2">Ordered and unordered lists, inline code, and fenced code blocks</li>
-                <li data-i18n="supportGood3">Tables, alignment, links, images, and relative asset paths</li>
-                <li data-i18n="supportGood4">Themes, page sizes, margins, naming rules, and post-export actions</li>
+                <li data-i18n="supportGood2">Ordered and unordered lists, inline code, fenced code blocks, and syntax highlighting</li>
+                <li data-i18n="supportGood3">Tables, alignment, links, images, relative asset paths, Mermaid, and offline math rendering</li>
+                <li data-i18n="supportGood4">Themes, page sizes, margins, outline bookmarks, naming rules, and post-export actions</li>
               </ul>
             </article>
             <article class="support-card support-card-caution">
-              <h3 data-i18n="supportLimitTitle">Known limits in the beta</h3>
+              <h3 data-i18n="supportLimitTitle">Known compatibility boundaries</h3>
               <ul class="support-list">
-                <li data-i18n="supportLimit1">No task lists, footnotes, math rendering, or emoji shortcodes yet</li>
-                <li data-i18n="supportLimit2">No syntax highlighting theme for code blocks yet</li>
-                <li data-i18n="supportLimit3">Deeply nested mixed layouts can show slight alignment drift</li>
-                <li data-i18n="supportLimit4">Very large images can miss the export window if they load too slowly</li>
+                <li data-i18n="supportLimit1">Task lists, footnotes, and emoji shortcodes are not fully implemented yet</li>
+                <li data-i18n="supportLimit2">Custom TeX macros, external extensions, and rare AMS scenarios can still need fallback</li>
+                <li data-i18n="supportLimit3">The table of contents setting is saved, but it does not generate a visible TOC page yet</li>
+                <li data-i18n="supportLimit4">Header and footer settings currently render the document footer only, and very large images can still miss the render window</li>
               </ul>
             </article>
           </div>
@@ -335,7 +390,7 @@
               <h2 data-i18n="privacyTitle">MarkdownToPDF is designed to work on your Mac, not in the cloud.</h2>
             </div>
             <p class="section-lead" data-i18n="privacyLead">
-              The policy below reflects the current beta architecture, entitlement files, and
+              The policy below reflects the current app architecture, entitlement files, and
               repository documentation as of April 19, 2026.
             </p>
           </div>
@@ -352,7 +407,7 @@
               <h3 data-i18n="privacyCard2Title">What the app does not require</h3>
               <p data-i18n="privacyCard2Body">
                 No account creation, no subscription login, no analytics SDK, and no document upload
-                service in the current beta.
+                service in the current app.
               </p>
             </article>
             <article class="privacy-summary-card">
@@ -390,7 +445,7 @@
               <article class="policy-block">
                 <h3 data-i18n="policy3Title">3. Network, tracking, and third parties</h3>
                 <p data-i18n="policy3Body">
-                  Based on the current beta repository and sandbox entitlements, the app does not
+                  Based on the current repository and sandbox entitlements, the app does not
                   include cloud rendering, analytics tracking, advertising SDKs, or account systems,
                   and it does not upload document content to remote servers as part of normal use.
                 </p>
@@ -426,7 +481,7 @@
 
       <footer class="site-footer">
         <p data-i18n="footerBody">
-          Built from the current MarkdownToPDF beta codebase, release notes, support matrix, and
+          Built from the current MarkdownToPDF codebase, release notes, support matrix, and
           interface screenshots.
         </p>
         <p class="footer-contact">
