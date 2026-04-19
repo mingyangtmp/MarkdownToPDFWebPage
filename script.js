@@ -74,10 +74,10 @@ const translations = {
       "After conversion, the app can do nothing, reveal the PDF in Finder, or open the new file immediately.",
     feature4Title: "Markdown coverage aimed at real documents",
     feature4Body:
-      "The app supports headings, lists, block quotes, fenced code, syntax highlighting, tables, links, images, Mermaid diagrams, math formulas, and typography controls.",
-    feature5Title: "Known compatibility boundaries",
+      "The app supports headings, ordered lists, unordered lists, task lists, block quotes, fenced code, syntax highlighting, tables, links, images, Mermaid diagrams, math formulas, and typography controls.",
+    feature5Title: "Document navigation that carries into PDF",
     feature5Body:
-      "Task lists, footnotes, and emoji shortcodes are still incomplete, and some custom TeX macros, rare AMS cases, or deeply nested mixed layouts can still hit edge cases.",
+      "Render settings can include table-of-contents navigation, and headings can carry over into PDF outline and bookmark entries for longer documents.",
     feature6Title: "Local-only by design",
     feature6Body:
       "The app is sandboxed, uses user-selected file access, and stores queue state, profiles, settings, and history on device.",
@@ -97,7 +97,7 @@ const translations = {
       "System, light, sepia, and dark themes affect document colors, code block chrome, and syntax token colors, so exports can match different reading contexts.",
     renderStructureTitle: "Mermaid and document structure",
     renderStructureBody:
-      "Mermaid fenced blocks render as diagrams, and headings can become PDF outline and bookmark entries for easier navigation in long documents.",
+      "Mermaid fenced blocks render as diagrams, while table-of-contents navigation and heading-based PDF outline/bookmark entries make long exports easier to browse.",
     screensEyebrow: "Screens",
     screensTitle: "A clean desktop surface for queue, history, and settings.",
     screensLead:
@@ -112,14 +112,9 @@ const translations = {
       "This page is based on the current source code, release notes, support matrix, and known issues in the MarkdownToPDF repository.",
     supportGoodTitle: "Available today",
     supportGood1: "Headings, paragraphs, horizontal rules, and block quotes",
-    supportGood2: "Ordered and unordered lists, inline code, fenced code blocks, and syntax highlighting",
+    supportGood2: "Ordered lists, unordered lists, task lists, inline code, fenced code blocks, and syntax highlighting",
     supportGood3: "Tables, alignment, links, images, relative asset paths, Mermaid, and offline math rendering",
-    supportGood4: "Themes, page sizes, margins, outline bookmarks, naming rules, and post-export actions",
-    supportLimitTitle: "Known compatibility boundaries",
-    supportLimit1: "Task lists, footnotes, and emoji shortcodes are not fully implemented yet",
-    supportLimit2: "Custom TeX macros, external extensions, and rare AMS scenarios can still need fallback",
-    supportLimit3: "The table of contents setting is saved, but it does not generate a visible TOC page yet",
-    supportLimit4: "Header and footer settings currently render the document footer only, and very large images can still miss the render window",
+    supportGood4: "Themes, page sizes, margins, table-of-contents navigation, PDF outline bookmarks, naming rules, and post-export actions",
     privacyEyebrow: "Privacy Policy",
     privacyTitle: "MarkdownToPDF is designed to work on your Mac, not in the cloud.",
     privacyLead:
@@ -232,10 +227,10 @@ const translations = {
       "转换完成后，你可以选择不执行任何动作、在 Finder 中显示 PDF，或直接打开新文件。",
     feature4Title: "Markdown 支持面向真实文档场景",
     feature4Body:
-      "应用已支持标题、列表、引用、围栏代码块、代码语法高亮、表格、链接、图片、Mermaid、数学公式与排版控制。",
-    feature5Title: "限制写得足够明确",
+      "应用已支持标题、有序列表、无序列表、任务列表、引用、围栏代码块、代码语法高亮、表格、链接、图片、Mermaid、数学公式与排版控制。",
+    feature5Title: "可延续到 PDF 的文档导航",
     feature5Body:
-      "任务列表、脚注与 emoji shortcode 仍未完整实现；部分自定义 TeX 宏、少见 AMS 场景和深层混合嵌套排版仍可能遇到边界情况。",
+      "渲染设置可以包含目录导航，而标题结构也可以进入 PDF 的 outline / 书签，方便浏览较长文档。",
     feature6Title: "从设计上坚持本地处理",
     feature6Body:
       "应用运行在沙盒中，依赖用户授权的文件访问权限，并把队列状态、模板、设置与历史记录存储在本机。",
@@ -255,7 +250,7 @@ const translations = {
       "System、Light、Sepia 与 Dark 主题会共同影响文档配色、代码块外观以及语法 token 颜色，让导出的 PDF 更适合不同阅读场景。",
     renderStructureTitle: "Mermaid 与文档结构",
     renderStructureBody:
-      "Mermaid fenced block 会渲染为图表，标题还可以进入 PDF 的 outline / 书签，方便长文档导航。",
+      "Mermaid fenced block 会渲染为图表，而目录导航与基于标题的 PDF outline / 书签也让长文档更易浏览。",
     screensEyebrow: "界面截图",
     screensTitle: "为队列、历史和设置而设计的一套干净桌面界面。",
     screensLead:
@@ -270,14 +265,9 @@ const translations = {
       "此页面内容来自 MarkdownToPDF 仓库中的源码、发布说明、支持矩阵与已知问题文档。",
     supportGoodTitle: "当前已可用能力",
     supportGood1: "标题、段落、分隔线与引用块",
-    supportGood2: "有序/无序列表、行内代码、围栏代码块与语法高亮",
+    supportGood2: "有序列表、无序列表、任务列表、行内代码、围栏代码块与语法高亮",
     supportGood3: "表格、对齐、链接、图片、相对资源路径、Mermaid 与离线数学公式渲染",
-    supportGood4: "主题、纸张尺寸、边距、PDF 书签、命名规则与导出后动作",
-    supportLimitTitle: "当前已知兼容性边界",
-    supportLimit1: "任务列表、脚注与 emoji shortcode 仍未完整实现",
-    supportLimit2: "自定义 TeX 宏、外部扩展与少见 AMS 场景仍可能需要回退处理",
-    supportLimit3: "目录页设置目前会保存，但还不会生成可见的 TOC 页面",
-    supportLimit4: "页眉页脚设置目前只会输出页脚；超大图片在加载过慢时仍可能错过渲染窗口",
+    supportGood4: "主题、纸张尺寸、边距、目录导航、PDF 书签、命名规则与导出后动作",
     privacyEyebrow: "隐私政策",
     privacyTitle: "MarkdownToPDF 的设计目标，是在你的 Mac 上完成处理，而不是把文档送到云端。",
     privacyLead:
