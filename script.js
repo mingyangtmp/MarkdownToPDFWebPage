@@ -93,6 +93,10 @@ const translations = {
     renderCodeImageBody:
       "Exported code blocks keep syntax colors, language labels, and the polished window chrome used by the app's renderer.",
     renderCodeAlt: "Syntax-highlighted code block exported by MarkdownToPDF",
+    renderTableTitle: "Table layout and alignment",
+    renderTableBody:
+      "Exported tables preserve borders, column alignment, and readable spacing so tabular content still feels structured after conversion.",
+    renderTableAlt: "Table rendering sample exported by MarkdownToPDF",
     renderCodeTitle: "Syntax highlighting for common languages",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL, and C-like languages get built-in token highlighting. Unknown languages fall back to clean plain code blocks.",
@@ -250,6 +254,10 @@ const translations = {
     renderCodeImageBody:
       "导出的代码块会保留语法颜色、语言标签，以及渲染器提供的窗口式代码框外观。",
     renderCodeAlt: "MarkdownToPDF 导出的语法高亮代码块示例",
+    renderTableTitle: "表格布局与对齐",
+    renderTableBody:
+      "导出的表格会保留边框、列对齐与清晰间距，让表格内容在转换后依然保持良好结构。",
+    renderTableAlt: "MarkdownToPDF 导出的表格渲染示例",
     renderCodeTitle: "常见语言内置语法高亮",
     renderCodeBody:
       "Swift、Bash、Python、JavaScript、TypeScript、JSON、YAML、SQL 与 C-Like 语言都支持内置分词高亮；未知语言会回退为普通代码块。",
