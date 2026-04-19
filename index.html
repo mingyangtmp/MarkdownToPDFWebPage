@@ -32,7 +32,7 @@
           <span>MarkdownToPDF</span>
         </a>
 
-        <nav class="header-nav" aria-label="Primary">
+        <nav class="header-nav" aria-label="Primary navigation" data-i18n-aria-label="navPrimaryAria">
           <a href="#features" data-i18n="navFeatures">Features</a>
           <a href="#workflow" data-i18n="navWorkflow">Workflow</a>
           <a href="#screens" data-i18n="navScreens">Screens</a>
@@ -40,9 +40,15 @@
         </nav>
 
         <div class="header-actions">
-          <div class="lang-switch" role="group" aria-label="Language switcher">
+          <div class="lang-switch" role="group" aria-label="Language switcher" data-i18n-aria-label="langSwitcherLabel">
             <button class="lang-button is-active" type="button" data-lang="en">EN</button>
-            <button class="lang-button" type="button" data-lang="zh">中文</button>
+            <button class="lang-button" type="button" data-lang="zh-Hans" aria-label="简体中文">简中</button>
+            <button class="lang-button" type="button" data-lang="zh-Hant" aria-label="繁體中文">繁中</button>
+            <button class="lang-button" type="button" data-lang="ja" aria-label="日本語">日本語</button>
+            <button class="lang-button" type="button" data-lang="ko" aria-label="한국어">한국어</button>
+            <button class="lang-button" type="button" data-lang="de" aria-label="Deutsch">DE</button>
+            <button class="lang-button" type="button" data-lang="fr" aria-label="Français">FR</button>
+            <button class="lang-button" type="button" data-lang="it" aria-label="Italiano">IT</button>
           </div>
         </div>
       </header>
@@ -274,7 +280,12 @@
               </figcaption>
             </figure>
 
-            <div class="screen-selector" role="tablist" aria-label="Application screens">
+            <div
+              class="screen-selector"
+              role="tablist"
+              aria-label="Application screens"
+              data-i18n-aria-label="screenSelectorAria"
+            >
               <button class="screen-thumb is-active" type="button" role="tab" data-screen="dashboard">
                 <img src="pictures/dashboard.png" alt="" />
                 <span data-i18n="screenDashboardLabel">Queue Dashboard</span>

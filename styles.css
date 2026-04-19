@@ -205,13 +205,19 @@ a:focus-visible {
 .header-actions {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 0.8rem;
+  max-width: 100%;
 }
 
 .lang-switch {
   display: inline-flex;
-  padding: 0.25rem;
-  border-radius: 999px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.3rem;
+  padding: 0.35rem;
+  max-width: min(100%, 30rem);
+  border-radius: 1.4rem;
   background: rgba(20, 56, 94, 0.08);
 }
 
@@ -220,7 +226,12 @@ a:focus-visible {
   border-radius: 999px;
   background: transparent;
   color: var(--text-soft);
-  padding: 0.5rem 0.8rem;
+  min-height: 2.2rem;
+  padding: 0.42rem 0.72rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
   cursor: pointer;
   transition:
     background 0.2s ease,
@@ -858,6 +869,11 @@ a:focus-visible {
     grid-template-columns: 1fr;
     justify-items: center;
     border-radius: 2rem;
+  }
+
+  .header-actions,
+  .lang-switch {
+    justify-content: center;
   }
 
   .hero,
