@@ -594,8 +594,9 @@ a:focus-visible {
 
 .render-showcase {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1.18fr) minmax(20rem, 0.82fr);
+  gap: 1.2rem;
+  align-items: start;
   margin-top: 2rem;
 }
 
@@ -604,14 +605,31 @@ a:focus-visible {
   gap: 1rem;
 }
 
+.render-subgrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .render-figure {
   margin: 0;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
   border-radius: var(--radius-xl);
   background: var(--surface);
   border: 1px solid var(--surface-border);
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow-md);
+}
+
+.render-figure-featured {
+  padding: 1.2rem;
+}
+
+.render-figure-compact {
+  height: 100%;
 }
 
 .render-figure img {
@@ -620,8 +638,12 @@ a:focus-visible {
   box-shadow: 0 12px 22px rgba(22, 52, 82, 0.1);
 }
 
+.render-figure-featured img {
+  border-radius: calc(var(--radius-xl) - 0.35rem);
+}
+
 .render-figure figcaption {
-  padding: 1rem 0.35rem 0.15rem;
+  padding: 0 0.35rem 0.15rem;
 }
 
 .render-figure figcaption p {
@@ -633,6 +655,38 @@ a:focus-visible {
 .render-copy {
   display: grid;
   gap: 1rem;
+  align-content: start;
+  position: sticky;
+  top: 6.4rem;
+}
+
+.render-copy .feature-card {
+  padding: 1.5rem;
+  border-radius: var(--radius-xl);
+}
+
+.render-copy .feature-card:first-child {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.82)),
+    linear-gradient(135deg, rgba(31, 95, 152, 0.08), rgba(116, 172, 227, 0.08));
+}
+
+.render-copy .feature-card h3 {
+  font-size: 1.18rem;
+}
+
+.render-copy .feature-card p {
+  margin-top: 0.8rem;
+}
+
+.render-copy .feature-card::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0.26rem;
+  margin-bottom: 0.95rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(31, 95, 152, 0.95), rgba(116, 172, 227, 0.55));
 }
 
 .screen-stage {
@@ -811,6 +865,15 @@ a:focus-visible {
   .screens-layout,
   .render-showcase {
     grid-template-columns: 1fr;
+  }
+
+  .render-subgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .render-copy {
+    position: static;
+    top: auto;
   }
 
   .hero-visual {
