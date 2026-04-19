@@ -89,6 +89,10 @@ const translations = {
     renderMathBody:
       "Inline and display formulas are typeset before export with bundled MathJax SVG, so the PDF keeps readable equations instead of raw TeX delimiters.",
     renderMathAlt: "Math rendering sample exported by MarkdownToPDF",
+    renderCodeImageTitle: "Code block styling",
+    renderCodeImageBody:
+      "Exported code blocks keep syntax colors, language labels, and the polished window chrome used by the app's renderer.",
+    renderCodeAlt: "Syntax-highlighted code block exported by MarkdownToPDF",
     renderCodeTitle: "Syntax highlighting for common languages",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL, and C-like languages get built-in token highlighting. Unknown languages fall back to clean plain code blocks.",
@@ -242,6 +246,10 @@ const translations = {
     renderMathBody:
       "行内与块级公式会在导出前通过内置 MathJax SVG 完成排版，因此最终 PDF 里显示的是清晰公式，而不是原始 TeX 定界符。",
     renderMathAlt: "MarkdownToPDF 导出的数学公式示例",
+    renderCodeImageTitle: "代码块视觉样式",
+    renderCodeImageBody:
+      "导出的代码块会保留语法颜色、语言标签，以及渲染器提供的窗口式代码框外观。",
+    renderCodeAlt: "MarkdownToPDF 导出的语法高亮代码块示例",
     renderCodeTitle: "常见语言内置语法高亮",
     renderCodeBody:
       "Swift、Bash、Python、JavaScript、TypeScript、JSON、YAML、SQL 与 C-Like 语言都支持内置分词高亮；未知语言会回退为普通代码块。",

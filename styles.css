@@ -599,6 +599,11 @@ a:focus-visible {
   margin-top: 2rem;
 }
 
+.render-gallery {
+  display: grid;
+  gap: 1rem;
+}
+
 .render-figure {
   margin: 0;
   padding: 1rem;
