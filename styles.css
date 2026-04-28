@@ -332,6 +332,12 @@ a:focus-visible {
   box-shadow: 0 18px 30px rgba(31, 95, 152, 0.26);
 }
 
+.button-store {
+  background: linear-gradient(135deg, #11161d, #263140 72%, #46556a);
+  color: #fff;
+  box-shadow: 0 18px 30px rgba(17, 22, 29, 0.26);
+}
+
 .button-secondary {
   background: rgba(255, 255, 255, 0.72);
   color: var(--text);

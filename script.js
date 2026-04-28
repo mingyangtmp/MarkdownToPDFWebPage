@@ -15,6 +15,7 @@ const translations = {
     heroTitle: "Turn Markdown into polished PDFs without leaving Finder.",
     heroLead:
       "MarkdownToPDF is built for writers, engineers, and documentation teams who want local, repeatable exports with batch queues, profiles, and clean print-ready output.",
+    heroDownload: "Download on the Mac App Store",
     heroPrimary: "Explore the interface",
     heroSecondary: "Read privacy policy",
     heroBadge1: "Right-click .md and .markdown files in authorized Finder folders",
@@ -195,6 +196,7 @@ const translations = {
     heroTitle: "不离开 Finder，把 Markdown 直接导出成精致 PDF。",
     heroLead:
       "MarkdownToPDF 面向写作者、工程师和文档团队，强调本地处理、可重复导出、批量队列、配置模板，以及更适合打印与分享的输出效果。",
+    heroDownload: "在 Mac App Store 下载",
     heroPrimary: "查看应用界面",
     heroSecondary: "阅读隐私政策",
     heroBadge1: "在你主动授权的 Finder 目录中，可右键 `.md` 与 `.markdown` 文件开始转换",
@@ -375,6 +377,7 @@ const translations = {
     heroTitle: "不離開 Finder，直接把 Markdown 匯出成精緻 PDF。",
     heroLead:
       "MarkdownToPDF 面向寫作者、工程師與文件團隊，強調本機處理、可重複匯出、批次佇列、設定檔，以及更適合列印與分享的輸出品質。",
+    heroDownload: "在 Mac App Store 下載",
     heroPrimary: "查看應用介面",
     heroSecondary: "閱讀隱私政策",
     heroBadge1: "在你主動授權的 Finder 資料夾中，可右鍵 `.md` 與 `.markdown` 檔案開始轉換",
@@ -555,6 +558,7 @@ const translations = {
     heroTitle: "Finder を離れずに、Markdown を洗練された PDF に変換。",
     heroLead:
       "MarkdownToPDF は、ローカルで繰り返し使える書き出し、バッチキュー、プロファイル管理、印刷向けのきれいな出力を求めるライター、エンジニア、ドキュメントチーム向けに設計されています。",
+    heroDownload: "Mac App Store でダウンロード",
     heroPrimary: "アプリ画面を見る",
     heroSecondary: "プライバシーポリシーを読む",
     heroBadge1: "許可した Finder フォルダ内で `.md` と `.markdown` を右クリックして変換開始",
@@ -735,6 +739,7 @@ const translations = {
     heroTitle: "Finder를 벗어나지 않고 Markdown을 완성도 높은 PDF로 변환.",
     heroLead:
       "MarkdownToPDF는 로컬에서 반복 가능한 내보내기, 배치 큐, 프로필, 깔끔한 출력 품질이 필요한 작성자, 엔지니어, 문서 팀을 위해 만들어졌습니다.",
+    heroDownload: "Mac App Store에서 다운로드",
     heroPrimary: "앱 화면 보기",
     heroSecondary: "개인정보 처리방침 읽기",
     heroBadge1: "권한을 허용한 Finder 폴더에서 `.md`와 `.markdown` 파일을 우클릭해 변환 시작",
@@ -915,6 +920,7 @@ const translations = {
     heroTitle: "Markdown direkt aus dem Finder in saubere PDFs umwandeln.",
     heroLead:
       "MarkdownToPDF ist für Autor:innen, Entwickler:innen und Dokumentationsteams gedacht, die lokale, wiederholbare Exporte mit Batch-Warteschlangen, Profilen und druckfertiger Ausgabe möchten.",
+    heroDownload: "Im Mac App Store laden",
     heroPrimary: "Oberfläche ansehen",
     heroSecondary: "Datenschutzrichtlinie lesen",
     heroBadge1: "`.md`- und `.markdown`-Dateien in freigegebenen Finder-Ordnern per Rechtsklick umwandeln",
@@ -1095,6 +1101,7 @@ const translations = {
     heroTitle: "Transformer Markdown en PDF soignés sans quitter Finder.",
     heroLead:
       "MarkdownToPDF s'adresse aux rédacteurs, ingénieurs et équipes de documentation qui veulent des exports locaux, répétables, avec files d'attente, profils et rendu propre prêt à l'impression.",
+    heroDownload: "Télécharger sur le Mac App Store",
     heroPrimary: "Voir l'interface",
     heroSecondary: "Lire la politique de confidentialité",
     heroBadge1: "Clic droit sur les fichiers `.md` et `.markdown` dans les dossiers Finder autorisés",
@@ -1275,6 +1282,7 @@ const translations = {
     heroTitle: "Trasforma Markdown in PDF curati senza uscire da Finder.",
     heroLead:
       "MarkdownToPDF è pensata per scrittori, ingegneri e team di documentazione che vogliono esportazioni locali e ripetibili, con code batch, profili e output puliti pronti per la stampa.",
+    heroDownload: "Scarica dal Mac App Store",
     heroPrimary: "Esplora l'interfaccia",
     heroSecondary: "Leggi l'informativa sulla privacy",
     heroBadge1: "Clic destro su file `.md` e `.markdown` nelle cartelle Finder autorizzate",
