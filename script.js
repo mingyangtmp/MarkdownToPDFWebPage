@@ -125,6 +125,10 @@ const translations = {
     renderTableBody:
       "Exported tables preserve borders, column alignment, and readable spacing so tabular content still feels structured after conversion.",
     renderTableAlt: "Table rendering sample exported by MarkdownToPDF",
+    renderFlowchartTitle: "Flowchart rendering",
+    renderFlowchartBody:
+      "Mermaid flowcharts preserve nodes, arrows, labels, and spacing so exported PDFs keep the same readable structure as the source diagram.",
+    renderFlowchartAlt: "Flowchart rendering sample exported by MarkdownToPDF",
     renderCodeTitle: "Syntax highlighting for common languages",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL, and C-like languages get built-in token highlighting. Unknown languages fall back to clean plain code blocks.",
@@ -133,7 +137,7 @@ const translations = {
       "System, light, sepia, and dark themes affect document colors, code block chrome, and syntax token colors, so exports can match different reading contexts.",
     renderStructureTitle: "Mermaid and document structure",
     renderStructureBody:
-      "Mermaid fenced blocks render as diagrams, while table-of-contents navigation and heading-based PDF outline and bookmark entries make long exports easier to browse.",
+      "Mermaid flowcharts and other diagram blocks render cleanly, while table-of-contents navigation and heading-based PDF outline and bookmark entries make long exports easier to browse.",
     supportEyebrow: "Support Matrix",
     supportTitle: "What the app supports in the current release.",
     supportLead:
@@ -306,6 +310,10 @@ const translations = {
     renderTableBody:
       "导出的表格会保留边框、列对齐与清晰间距，让表格内容在转换后依然保持良好结构。",
     renderTableAlt: "MarkdownToPDF 导出的表格渲染示例",
+    renderFlowchartTitle: "流程图渲染",
+    renderFlowchartBody:
+      "Mermaid 流程图会保留节点、连线、标签与间距，让导出的 PDF 仍然保持源图表的清晰结构。",
+    renderFlowchartAlt: "MarkdownToPDF 导出的流程图渲染示例",
     renderCodeTitle: "常见语言内置语法高亮",
     renderCodeBody:
       "Swift、Bash、Python、JavaScript、TypeScript、JSON、YAML、SQL 与 C-Like 语言都支持内置分词高亮；未知语言会回退为普通代码块。",
@@ -314,7 +322,7 @@ const translations = {
       "System、Light、Sepia 与 Dark 主题会共同影响文档配色、代码块外观以及语法 token 颜色，让导出的 PDF 更适合不同阅读场景。",
     renderStructureTitle: "Mermaid 与文档结构",
     renderStructureBody:
-      "Mermaid 围栏代码块会渲染为图表，而目录导航与基于标题的 PDF 书签也让长文档更易浏览。",
+      "Mermaid 流程图与其他图表块会稳定渲染，而目录导航与基于标题的 PDF 书签也让长文档更易浏览。",
     supportEyebrow: "支持矩阵",
     supportTitle: "当前正式版本已经支持什么。",
     supportLead:
@@ -487,6 +495,10 @@ const translations = {
     renderTableBody:
       "匯出的表格會保留框線、欄位對齊與清楚間距，讓表格內容在轉換後依然維持良好結構。",
     renderTableAlt: "MarkdownToPDF 匯出的表格渲染示例",
+    renderFlowchartTitle: "流程圖渲染",
+    renderFlowchartBody:
+      "Mermaid 流程圖會保留節點、連線、標籤與間距，讓匯出的 PDF 仍然維持來源圖表的清楚結構。",
+    renderFlowchartAlt: "MarkdownToPDF 匯出的流程圖渲染示例",
     renderCodeTitle: "常見語言內建語法高亮",
     renderCodeBody:
       "Swift、Bash、Python、JavaScript、TypeScript、JSON、YAML、SQL 與 C-Like 語言都支援內建高亮；未知語言會回退為乾淨的純文字程式碼區塊。",
@@ -495,7 +507,7 @@ const translations = {
       "System、Light、Sepia 與 Dark 主題會共同影響文件配色、程式碼區塊外觀與語法 token 顏色，讓匯出的 PDF 更符合不同閱讀情境。",
     renderStructureTitle: "Mermaid 與文件結構",
     renderStructureBody:
-      "Mermaid 圍欄程式碼區塊會渲染成圖表，而目錄導覽與基於標題的 PDF 書籤也讓長文件更容易瀏覽。",
+      "Mermaid 流程圖與其他圖表區塊都會穩定渲染，而目錄導覽與基於標題的 PDF 書籤也讓長文件更容易瀏覽。",
     supportEyebrow: "支援矩陣",
     supportTitle: "目前正式版本已支援的內容。",
     supportLead:
@@ -668,6 +680,10 @@ const translations = {
     renderTableBody:
       "書き出した表は罫線、列の整列、読みやすい余白を保つため、変換後も表形式の情報が整理されたままです。",
     renderTableAlt: "MarkdownToPDF で書き出した表のサンプル",
+    renderFlowchartTitle: "フローチャートのレンダリング",
+    renderFlowchartBody:
+      "Mermaid フローチャートはノード、矢印、ラベル、余白を保つため、書き出した PDF でも元の図の読みやすい構造を維持できます。",
+    renderFlowchartAlt: "MarkdownToPDF で書き出したフローチャートのサンプル",
     renderCodeTitle: "主要言語向けの構文ハイライト",
     renderCodeBody:
       "Swift、Bash、Python、JavaScript、TypeScript、JSON、YAML、SQL、C 系言語には標準でトークンハイライトが適用されます。未知の言語はプレーンなコードブロックとして表示されます。",
@@ -676,7 +692,7 @@ const translations = {
       "System、Light、Sepia、Dark の各テーマは、文書色、コードブロックの外観、構文トークン色に影響し、用途に応じた読み心地に合わせられます。",
     renderStructureTitle: "Mermaid と文書構造",
     renderStructureBody:
-      "Mermaid のフェンスコードは図として描画され、目次ナビゲーションや見出しベースの PDF アウトラインとブックマークによって長文も追いやすくなります。",
+      "Mermaid のフローチャートやその他の図ブロックはきれいに描画され、目次ナビゲーションや見出しベースの PDF アウトラインとブックマークによって長文も追いやすくなります。",
     supportEyebrow: "サポート範囲",
     supportTitle: "現在の正式版で利用できる機能。",
     supportLead:
@@ -849,6 +865,10 @@ const translations = {
     renderTableBody:
       "내보낸 표는 테두리, 열 정렬, 읽기 쉬운 간격을 유지해 표 형식의 정보가 변환 후에도 구조적으로 보입니다.",
     renderTableAlt: "MarkdownToPDF가 내보낸 표 렌더링 예시",
+    renderFlowchartTitle: "플로우차트 렌더링",
+    renderFlowchartBody:
+      "Mermaid 플로우차트는 노드, 화살표, 레이블, 간격을 유지하므로 내보낸 PDF에서도 원본 다이어그램의 읽기 쉬운 구조가 그대로 남습니다.",
+    renderFlowchartAlt: "MarkdownToPDF가 내보낸 플로우차트 렌더링 예시",
     renderCodeTitle: "주요 언어를 위한 문법 강조",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL, C 계열 언어는 기본 토큰 강조를 제공합니다. 알 수 없는 언어는 깔끔한 일반 코드 블록으로 표시됩니다.",
@@ -857,7 +877,7 @@ const translations = {
       "System, Light, Sepia, Dark 테마는 문서 색상, 코드 블록 외형, 문법 토큰 색에 영향을 주어 다양한 읽기 맥락에 맞는 PDF를 만들 수 있게 합니다.",
     renderStructureTitle: "Mermaid와 문서 구조",
     renderStructureBody:
-      "Mermaid fenced block은 다이어그램으로 렌더링되며, 목차 탐색과 제목 기반 PDF outline 및 북마크로 긴 문서를 더 쉽게 훑어볼 수 있습니다.",
+      "Mermaid 플로우차트와 다른 다이어그램 블록은 깔끔하게 렌더링되며, 목차 탐색과 제목 기반 PDF outline 및 북마크로 긴 문서를 더 쉽게 훑어볼 수 있습니다.",
     supportEyebrow: "지원 범위",
     supportTitle: "현재 정식 버전에서 지원하는 내용.",
     supportLead:
@@ -1030,6 +1050,10 @@ const translations = {
     renderTableBody:
       "Exportierte Tabellen behalten Rahmen, Spaltenausrichtung und gut lesbare Abstände, sodass tabellarische Inhalte auch nach der Konvertierung strukturiert bleiben.",
     renderTableAlt: "Beispiel für Tabellen-Rendering aus MarkdownToPDF",
+    renderFlowchartTitle: "Flowchart-Rendering",
+    renderFlowchartBody:
+      "Mermaid-Flowcharts behalten Knoten, Pfeile, Beschriftungen und Abstände bei, sodass exportierte PDFs die gleiche gut lesbare Struktur wie das Ausgangsdiagramm bewahren.",
+    renderFlowchartAlt: "Beispiel für Flowchart-Rendering aus MarkdownToPDF",
     renderCodeTitle: "Syntax-Highlighting für gängige Sprachen",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL und C-ähnliche Sprachen erhalten integriertes Token-Highlighting. Unbekannte Sprachen fallen auf saubere Plain-Code-Blöcke zurück.",
@@ -1038,7 +1062,7 @@ const translations = {
       "System-, Light-, Sepia- und Dark-Themes beeinflussen Dokumentfarben, Codeblock-Chrome und Syntaxfarben, damit Exporte zu unterschiedlichen Lesesituationen passen.",
     renderStructureTitle: "Mermaid und Dokumentstruktur",
     renderStructureBody:
-      "Mermaid-Blöcke werden als Diagramme gerendert, während Inhaltsverzeichnis-Navigation sowie PDF-Outline- und Lesezeicheneinträge auf Basis von Überschriften lange Exporte leichter durchsuchbar machen.",
+      "Mermaid-Flowcharts und andere Diagrammblöcke werden sauber gerendert, während Inhaltsverzeichnis-Navigation sowie PDF-Outline- und Lesezeicheneinträge auf Basis von Überschriften lange Exporte leichter durchsuchbar machen.",
     supportEyebrow: "Support-Matrix",
     supportTitle: "Was die App in der aktuellen Version unterstützt.",
     supportLead:
@@ -1211,6 +1235,10 @@ const translations = {
     renderTableBody:
       "Les tableaux exportés conservent bordures, alignement des colonnes et espacements lisibles, pour que le contenu reste structuré après conversion.",
     renderTableAlt: "Exemple de rendu de tableau exporté par MarkdownToPDF",
+    renderFlowchartTitle: "Rendu des organigrammes",
+    renderFlowchartBody:
+      "Les organigrammes Mermaid conservent nœuds, flèches, libellés et espacements, pour que le PDF exporté garde la même structure lisible que le diagramme source.",
+    renderFlowchartAlt: "Exemple de rendu d'organigramme exporté par MarkdownToPDF",
     renderCodeTitle: "Coloration syntaxique pour les langages courants",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL et les langages de type C bénéficient d'une coloration intégrée. Les langages inconnus retombent sur des blocs de code simples.",
@@ -1219,7 +1247,7 @@ const translations = {
       "Les thèmes System, Light, Sepia et Dark influencent les couleurs du document, l'habillage des blocs de code et les couleurs des tokens pour adapter l'export à différents contextes de lecture.",
     renderStructureTitle: "Mermaid et structure documentaire",
     renderStructureBody:
-      "Les blocs Mermaid sont rendus comme diagrammes, tandis que la navigation par table des matières et les signets PDF basés sur les titres rendent les longs exports plus faciles à parcourir.",
+      "Les organigrammes Mermaid et les autres blocs de diagrammes sont rendus proprement, tandis que la navigation par table des matières et les signets PDF basés sur les titres rendent les longs exports plus faciles à parcourir.",
     supportEyebrow: "Matrice de prise en charge",
     supportTitle: "Ce que l'application prend en charge dans la version actuelle.",
     supportLead:
@@ -1392,6 +1420,10 @@ const translations = {
     renderTableBody:
       "Le tabelle esportate conservano bordi, allineamento delle colonne e spaziature leggibili, così i contenuti tabellari restano strutturati dopo la conversione.",
     renderTableAlt: "Esempio di rendering tabella esportato da MarkdownToPDF",
+    renderFlowchartTitle: "Rendering dei flowchart",
+    renderFlowchartBody:
+      "I flowchart Mermaid mantengono nodi, frecce, etichette e spaziature, così i PDF esportati conservano la stessa struttura leggibile del diagramma sorgente.",
+    renderFlowchartAlt: "Esempio di rendering flowchart esportato da MarkdownToPDF",
     renderCodeTitle: "Evidenziazione della sintassi per i linguaggi più comuni",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL e i linguaggi simili al C ricevono evidenziazione integrata. I linguaggi sconosciuti tornano a blocchi di codice puliti e semplici.",
@@ -1400,7 +1432,7 @@ const translations = {
       "I temi System, Light, Sepia e Dark influenzano colori del documento, aspetto dei blocchi di codice e colori dei token, così gli export possono adattarsi a diversi contesti di lettura.",
     renderStructureTitle: "Mermaid e struttura del documento",
     renderStructureBody:
-      "I blocchi Mermaid vengono resi come diagrammi, mentre navigazione del sommario e segnalibri PDF basati sui titoli rendono più facile sfogliare export lunghi.",
+      "I flowchart Mermaid e gli altri blocchi diagramma vengono resi in modo pulito, mentre navigazione del sommario e segnalibri PDF basati sui titoli rendono più facile sfogliare export lunghi.",
     supportEyebrow: "Matrice di supporto",
     supportTitle: "Cosa supporta l'app nella versione attuale.",
     supportLead:

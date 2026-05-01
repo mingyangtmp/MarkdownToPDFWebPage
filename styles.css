@@ -649,6 +649,10 @@ a:focus-visible {
   height: 100%;
 }
 
+.render-figure-wide {
+  grid-column: 1 / -1;
+}
+
 .render-figure img {
   width: 100%;
   border-radius: calc(var(--radius-xl) - 0.5rem);
