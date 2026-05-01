@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarkdownToPDF Export Profiles Promo</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #132235;
+        --muted: #5d7084;
+        --blue: #24628f;
+        --teal: #168374;
+        --orange: #db9761;
+        --surface: rgba(255, 255, 255, 0.78);
+        --shadow: 0 42px 110px rgba(28, 54, 82, 0.18);
+      }
+
+      * { box-sizing: border-box; }
+
+      html,
+      body {
+        margin: 0;
+        width: 2880px;
+        height: 1800px;
+        overflow: hidden;
+        font-family: "Avenir Next", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f5f9fc;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+      }
+
+      .artboard {
+        position: relative;
+        width: 2880px;
+        height: 1800px;
+        overflow: hidden;
+        color: var(--ink);
+        background:
+          linear-gradient(120deg, rgba(255, 246, 232, 0.92) 0%, rgba(255, 246, 232, 0.72) 36%, transparent 36.2%),
+          linear-gradient(180deg, #f9fdff 0%, #eaf5fb 56%, #deedf7 100%);
+      }
+
+      .artboard::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(36, 98, 143, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(36, 98, 143, 0.06) 1px, transparent 1px);
+        background-size: 92px 92px;
+        mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.56), transparent 76%);
+      }
+
+      .cool-shape,
+      .warm-shape {
+        position: absolute;
+        border-radius: 90px;
+      }
+
+      .cool-shape {
+        right: -190px;
+        top: -126px;
+        width: 1280px;
+        height: 520px;
+        transform: rotate(-13deg);
+        background: linear-gradient(135deg, rgba(36, 98, 143, 0.22), rgba(22, 131, 116, 0.1));
+      }
+
+      .warm-shape {
+        left: -250px;
+        bottom: -132px;
+        width: 1180px;
+        height: 420px;
+        transform: rotate(10deg);
+        background: linear-gradient(135deg, rgba(219, 151, 97, 0.28), rgba(82, 162, 205, 0.1));
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 880px 1fr;
+        gap: 88px;
+        height: 100%;
+        padding: 150px 150px 118px;
+      }
+
+      .copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 0;
+        padding: 8px 0 28px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .brand img {
+        width: 100px;
+        height: 100px;
+        border-radius: 24px;
+        box-shadow: 0 24px 50px rgba(25, 82, 122, 0.2);
+      }
+
+      .brand span {
+        font-size: 46px;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      .headline {
+        margin-top: 112px;
+      }
+
+      .eyebrow {
+        display: inline-grid;
+        grid-auto-flow: column;
+        align-items: center;
+        gap: 20px;
+        margin: 0 0 32px;
+        color: var(--blue);
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 74px;
+        height: 6px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--blue), var(--teal));
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 850px;
+        font-size: 103px;
+        line-height: 1.05;
+        letter-spacing: 0;
+        font-weight: 600;
+      }
+
+      .lead {
+        margin: 40px 0 0;
+        max-width: 790px;
+        color: var(--muted);
+        font-size: 40px;
+        line-height: 1.48;
+        font-weight: 450;
+      }
+
+      .profile-panel {
+        width: 790px;
+        margin-top: 70px;
+        padding: 34px 38px;
+        border: 1px solid rgba(255, 255, 255, 0.78);
+        border-radius: 34px;
+        background: rgba(255, 255, 255, 0.74);
+        box-shadow: 0 28px 68px rgba(30, 62, 92, 0.12);
+        backdrop-filter: blur(22px);
+      }
+
+      .panel-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 26px;
+      }
+
+      .panel-top span {
+        color: var(--muted);
+        font-size: 26px;
+        font-weight: 560;
+      }
+
+      .panel-top strong {
+        color: var(--teal);
+        font-size: 42px;
+        font-weight: 650;
+      }
+
+      .profile-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .profile-chip {
+        min-height: 70px;
+        padding: 16px 18px;
+        border: 1px solid rgba(36, 98, 143, 0.1);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.68);
+      }
+
+      .profile-chip span,
+      .profile-chip strong {
+        display: block;
+      }
+
+      .profile-chip span {
+        color: var(--muted);
+        font-size: 18px;
+        font-weight: 650;
+        text-transform: uppercase;
+        letter-spacing: 0;
+      }
+
+      .profile-chip strong {
+        margin-top: 4px;
+        color: #263548;
+        font-size: 24px;
+        font-weight: 610;
+      }
+
+      .footer-note {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 30px;
+        font-weight: 560;
+      }
+
+      .footer-note::before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #39c96c;
+        box-shadow: 0 0 0 10px rgba(57, 201, 108, 0.16);
+      }
+
+      .visual {
+        position: relative;
+        min-width: 0;
+      }
+
+      .screenshot-card,
+      .render-preview,
+      .callout-card {
+        position: absolute;
+        border: 1px solid rgba(255, 255, 255, 0.78);
+        background: var(--surface);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(24px);
+      }
+
+      .screenshot-card {
+        padding: 24px;
+        border-radius: 54px;
+      }
+
+      .screenshot-card img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 36px;
+      }
+
+      .settings-top {
+        right: -10px;
+        top: 116px;
+        width: 1280px;
+        transform: rotate(2.2deg);
+      }
+
+      .settings-render {
+        left: 0;
+        top: 720px;
+        width: 1320px;
+        transform: rotate(-3deg);
+      }
+
+      .render-preview {
+        padding: 34px;
+        border-radius: 50px;
+      }
+
+      .preview-sheet {
+        display: grid;
+        grid-template-columns: 1fr 360px;
+        gap: 34px;
+        padding: 42px;
+        min-height: 610px;
+        border: 1px solid rgba(38, 73, 104, 0.1);
+        border-radius: 36px;
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      .preview-title strong,
+      .preview-title span {
+        display: block;
+      }
+
+      .preview-title strong {
+        font-size: 36px;
+        line-height: 1.18;
+        font-weight: 650;
+      }
+
+      .preview-title span {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 23px;
+        font-weight: 520;
+      }
+
+      .control-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 34px;
+      }
+
+      .control-box {
+        min-height: 112px;
+        padding: 20px 22px;
+        border: 1px solid rgba(36, 98, 143, 0.1);
+        border-radius: 24px;
+        background: rgba(247, 250, 252, 0.9);
+      }
+
+      .control-box span,
+      .control-box strong {
+        display: block;
+      }
+
+      .control-box span {
+        color: var(--muted);
+        font-size: 18px;
+        font-weight: 650;
+        text-transform: uppercase;
+        letter-spacing: 0;
+      }
+
+      .control-box strong {
+        margin-top: 12px;
+        color: #263548;
+        font-size: 25px;
+        font-weight: 620;
+      }
+
+      .slider-row {
+        margin-top: 34px;
+      }
+
+      .slider-label {
+        display: flex;
+        justify-content: space-between;
+        color: var(--muted);
+        font-size: 21px;
+        font-weight: 650;
+      }
+
+      .slider-track {
+        position: relative;
+        height: 14px;
+        margin-top: 14px;
+        border-radius: 999px;
+        background: rgba(36, 98, 143, 0.12);
+      }
+
+      .slider-track span {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 54%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--blue), var(--teal));
+      }
+
+      .preview-stack {
+        display: grid;
+        gap: 20px;
+      }
+
+      .sample-card {
+        padding: 24px;
+        border: 1px solid rgba(36, 98, 143, 0.1);
+        border-radius: 26px;
+        background: rgba(255, 255, 255, 0.86);
+      }
+
+      .sample-card span {
+        display: block;
+        color: var(--muted);
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .sample-card strong {
+        display: block;
+        margin-top: 12px;
+        color: #1c2d42;
+        font-size: 28px;
+        font-weight: 520;
+      }
+
+      .sample-code {
+        font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
+        font-size: 21px;
+        white-space: nowrap;
+      }
+
+      .token-strip {
+        position: absolute;
+        right: 18px;
+        top: 40px;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 14px;
+      }
+
+      .token {
+        padding: 12px 18px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--blue);
+        border: 1px solid rgba(36, 98, 143, 0.12);
+        font-size: 22px;
+        font-weight: 650;
+      }
+
+      .token:nth-child(2) { color: var(--teal); }
+      .token:nth-child(3) { color: #c7322f; }
+
+      .callout-card {
+        right: 28px;
+        bottom: 96px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 24px;
+        width: 828px;
+        padding: 34px 38px;
+        border-radius: 36px;
+      }
+
+      .profile-icon {
+        display: grid;
+        place-items: center;
+        width: 92px;
+        height: 92px;
+        border-radius: 26px;
+        color: var(--teal);
+        border: 6px solid var(--teal);
+        background: rgba(255, 255, 255, 0.78);
+        font-size: 36px;
+        font-weight: 650;
+      }
+
+      .callout-text strong,
+      .callout-text span {
+        display: block;
+      }
+
+      .callout-text strong {
+        font-size: 38px;
+        line-height: 1.2;
+        font-weight: 650;
+      }
+
+      .callout-text span {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 26px;
+        line-height: 1.36;
+        font-weight: 520;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="artboard" aria-label="MarkdownToPDF export profile promotional screenshot">
+      <div class="cool-shape" aria-hidden="true"></div>
+      <div class="warm-shape" aria-hidden="true"></div>
+
+      <section class="content">
+        <div class="copy">
+          <div>
+            <div class="brand">
+              <img src="../pictures/app-icon.png" alt="" />
+              <span>MarkdownToPDF</span>
+            </div>
+
+            <div class="headline">
+              <p class="eyebrow">Export Profiles</p>
+              <h1>Tune every PDF before conversion</h1>
+              <p class="lead">Save repeatable settings for page size, theme, fonts, margins, table shape, naming, and post-conversion actions.</p>
+            </div>
+
+            <div class="profile-panel" aria-hidden="true">
+              <div class="panel-top">
+                <span>Active profile</span>
+                <strong>Default</strong>
+              </div>
+              <div class="profile-grid">
+                <div class="profile-chip">
+                  <span>Page</span>
+                  <strong>A4 / Letter / Legal</strong>
+                </div>
+                <div class="profile-chip">
+                  <span>Theme</span>
+                  <strong>System / Light / Dark</strong>
+                </div>
+                <div class="profile-chip">
+                  <span>Typography</span>
+                  <strong>Body + code fonts</strong>
+                </div>
+                <div class="profile-chip">
+                  <span>Output</span>
+                  <strong>Name, folder, action</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-note">Profiles keep Finder conversions consistent across every document</div>
+        </div>
+
+        <div class="visual" aria-hidden="true">
+          <div class="token-strip">
+            <span class="token">Profiles</span>
+            <span class="token">Themes</span>
+            <span class="token">Output</span>
+          </div>
+
+          <div class="screenshot-card settings-top">
+            <img src="../pictures/settings-1.png" alt="" />
+          </div>
+
+          <div class="render-preview settings-render">
+            <div class="preview-sheet">
+              <div>
+                <div class="preview-title">
+                  <strong>Render defaults</strong>
+                  <span>Active profile style settings</span>
+                </div>
+                <div class="control-grid">
+                  <div class="control-box">
+                    <span>Page size</span>
+                    <strong>A4</strong>
+                  </div>
+                  <div class="control-box">
+                    <span>Theme</span>
+                    <strong>System</strong>
+                  </div>
+                  <div class="control-box">
+                    <span>Body font</span>
+                    <strong>Avenir Next</strong>
+                  </div>
+                  <div class="control-box">
+                    <span>Code font</span>
+                    <strong>Menlo</strong>
+                  </div>
+                </div>
+                <div class="slider-row">
+                  <div class="slider-label">
+                    <span>Font size 12.0</span>
+                    <span>Line height 1.60</span>
+                  </div>
+                  <div class="slider-track"><span></span></div>
+                </div>
+                <div class="slider-row">
+                  <div class="slider-label">
+                    <span>Margins 24 / 16 pt</span>
+                    <span>PDF footer</span>
+                  </div>
+                  <div class="slider-track"><span style="width: 68%"></span></div>
+                </div>
+              </div>
+              <div class="preview-stack">
+                <div class="sample-card">
+                  <span>Preview</span>
+                  <strong>Sample Text Aa 123</strong>
+                </div>
+                <div class="sample-card">
+                  <span>Code sample</span>
+                  <strong class="sample-code">let title = "Preview"</strong>
+                </div>
+                <div class="sample-card">
+                  <span>After success</span>
+                  <strong>Open PDF</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout-card">
+            <div class="profile-icon">Aa</div>
+            <div class="callout-text">
+              <strong>Reusable export templates</strong>
+              <span>Choose a profile once, then apply the same layout to Finder and in-app conversions.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

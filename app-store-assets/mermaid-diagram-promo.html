@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarkdownToPDF Mermaid Diagram Promo</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #132235;
+        --muted: #5d7084;
+        --blue: #24628f;
+        --teal: #168374;
+        --purple: #6a63c7;
+        --rose: #cf5a57;
+        --surface: rgba(255, 255, 255, 0.78);
+        --shadow: 0 42px 110px rgba(28, 54, 82, 0.18);
+      }
+
+      * { box-sizing: border-box; }
+
+      html,
+      body {
+        margin: 0;
+        width: 2880px;
+        height: 1800px;
+        overflow: hidden;
+        font-family: "Avenir Next", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f5f9fc;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+      }
+
+      .artboard {
+        position: relative;
+        width: 2880px;
+        height: 1800px;
+        overflow: hidden;
+        color: var(--ink);
+        background:
+          linear-gradient(120deg, rgba(255, 246, 232, 0.92) 0%, rgba(255, 246, 232, 0.72) 36%, transparent 36.2%),
+          linear-gradient(180deg, #f9fdff 0%, #eaf5fb 56%, #deedf7 100%);
+      }
+
+      .artboard::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(36, 98, 143, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(36, 98, 143, 0.06) 1px, transparent 1px);
+        background-size: 92px 92px;
+        mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.56), transparent 76%);
+      }
+
+      .cool-shape,
+      .warm-shape {
+        position: absolute;
+        border-radius: 90px;
+      }
+
+      .cool-shape {
+        right: -190px;
+        top: -126px;
+        width: 1280px;
+        height: 520px;
+        transform: rotate(-13deg);
+        background: linear-gradient(135deg, rgba(36, 98, 143, 0.22), rgba(22, 131, 116, 0.1));
+      }
+
+      .warm-shape {
+        left: -250px;
+        bottom: -132px;
+        width: 1180px;
+        height: 420px;
+        transform: rotate(10deg);
+        background: linear-gradient(135deg, rgba(219, 151, 97, 0.28), rgba(82, 162, 205, 0.1));
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 880px 1fr;
+        gap: 88px;
+        height: 100%;
+        padding: 150px 150px 118px;
+      }
+
+      .copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 0;
+        padding: 8px 0 28px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .brand img {
+        width: 100px;
+        height: 100px;
+        border-radius: 24px;
+        box-shadow: 0 24px 50px rgba(25, 82, 122, 0.2);
+      }
+
+      .brand span {
+        font-size: 46px;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      .headline {
+        margin-top: 112px;
+      }
+
+      .eyebrow {
+        display: inline-grid;
+        grid-auto-flow: column;
+        align-items: center;
+        gap: 20px;
+        margin: 0 0 32px;
+        color: var(--blue);
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 74px;
+        height: 6px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--blue), var(--teal));
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 850px;
+        font-size: 102px;
+        line-height: 1.05;
+        letter-spacing: 0;
+        font-weight: 600;
+      }
+
+      .lead {
+        margin: 40px 0 0;
+        max-width: 790px;
+        color: var(--muted);
+        font-size: 40px;
+        line-height: 1.48;
+        font-weight: 450;
+      }
+
+      .diagram-panel {
+        width: 790px;
+        margin-top: 70px;
+        padding: 34px 38px;
+        border: 1px solid rgba(255, 255, 255, 0.78);
+        border-radius: 34px;
+        background: rgba(255, 255, 255, 0.74);
+        box-shadow: 0 28px 68px rgba(30, 62, 92, 0.12);
+        backdrop-filter: blur(22px);
+      }
+
+      .panel-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 28px;
+      }
+
+      .panel-top span {
+        color: var(--muted);
+        font-size: 26px;
+        font-weight: 560;
+      }
+
+      .panel-top strong {
+        color: var(--teal);
+        font-size: 42px;
+        font-weight: 650;
+      }
+
+      .format-list {
+        display: grid;
+        gap: 16px;
+      }
+
+      .format-row {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 18px;
+        min-height: 62px;
+        padding: 0 4px;
+        color: #30465e;
+        font-size: 24px;
+        font-weight: 560;
+      }
+
+      .format-dot {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: var(--teal);
+        box-shadow: 0 0 0 10px rgba(22, 131, 116, 0.12);
+      }
+
+      .format-badge {
+        padding: 10px 16px;
+        border-radius: 999px;
+        color: var(--blue);
+        background: rgba(36, 98, 143, 0.1);
+        font-size: 20px;
+        font-weight: 650;
+      }
+
+      .footer-note {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 30px;
+        font-weight: 560;
+      }
+
+      .footer-note::before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #39c96c;
+        box-shadow: 0 0 0 10px rgba(57, 201, 108, 0.16);
+      }
+
+      .visual {
+        position: relative;
+        min-width: 0;
+      }
+
+      .diagram-card,
+      .markdown-card,
+      .callout-card {
+        position: absolute;
+        border: 1px solid rgba(255, 255, 255, 0.78);
+        background: var(--surface);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(24px);
+      }
+
+      .token-strip {
+        position: absolute;
+        right: 18px;
+        top: 40px;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 14px;
+      }
+
+      .token {
+        padding: 12px 18px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--blue);
+        border: 1px solid rgba(36, 98, 143, 0.12);
+        font-size: 22px;
+        font-weight: 650;
+      }
+
+      .token:nth-child(2) { color: var(--teal); }
+      .token:nth-child(3) { color: var(--rose); }
+
+      .diagram-card {
+        right: -8px;
+        top: 118px;
+        width: 1320px;
+        padding: 34px;
+        border-radius: 54px;
+        transform: rotate(2.2deg);
+      }
+
+      .diagram-paper {
+        position: relative;
+        height: 700px;
+        padding: 44px 48px;
+        border: 1px solid rgba(38, 73, 104, 0.1);
+        border-radius: 36px;
+        background: rgba(255, 255, 255, 0.92);
+      }
+
+      .diagram-title strong,
+      .diagram-title span {
+        display: block;
+      }
+
+      .diagram-title strong {
+        font-size: 38px;
+        font-weight: 650;
+      }
+
+      .diagram-title span {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 24px;
+        font-weight: 520;
+      }
+
+      .diagram-canvas {
+        position: relative;
+        height: 480px;
+        margin-top: 34px;
+        border-radius: 30px;
+        background:
+          linear-gradient(rgba(36, 98, 143, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(36, 98, 143, 0.05) 1px, transparent 1px),
+          #f7fafc;
+        background-size: 48px 48px;
+        overflow: hidden;
+      }
+
+      .node {
+        position: absolute;
+        display: grid;
+        place-items: center;
+        min-width: 220px;
+        min-height: 82px;
+        padding: 18px 22px;
+        border: 3px solid rgba(36, 98, 143, 0.18);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.92);
+        color: #1b2c41;
+        font-size: 24px;
+        font-weight: 650;
+        text-align: center;
+      }
+
+      .node.source { left: 62px; top: 192px; color: var(--blue); }
+      .node.queue { left: 370px; top: 88px; color: var(--teal); }
+      .node.render { left: 690px; top: 192px; color: var(--purple); }
+      .node.pdf { right: 72px; top: 88px; color: var(--rose); }
+      .node.history { right: 96px; bottom: 72px; color: var(--blue); }
+
+      .connector {
+        position: absolute;
+        height: 4px;
+        transform-origin: 0 50%;
+        border-radius: 999px;
+        background: rgba(36, 98, 143, 0.34);
+      }
+
+      .connector::after {
+        content: "";
+        position: absolute;
+        right: -2px;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+        border-left: 15px solid rgba(36, 98, 143, 0.5);
+        transform: translateY(-50%);
+      }
+
+      .c1 { left: 282px; top: 222px; width: 178px; transform: rotate(-30deg); }
+      .c2 { left: 590px; top: 142px; width: 170px; transform: rotate(31deg); }
+      .c3 { left: 904px; top: 222px; width: 198px; transform: rotate(-32deg); }
+      .c4 { left: 908px; top: 266px; width: 220px; transform: rotate(28deg); }
+
+      .markdown-card {
+        left: 0;
+        top: 810px;
+        width: 1110px;
+        padding: 30px;
+        border-radius: 50px;
+        transform: rotate(-3deg);
+      }
+
+      .code-window {
+        overflow: hidden;
+        border: 1px solid #d0dae6;
+        border-radius: 34px;
+        background: #f4f7fb;
+      }
+
+      .code-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 76px;
+        padding: 0 30px;
+        border-bottom: 1px solid #d0dae6;
+        background: #e9eef6;
+      }
+
+      .lights {
+        display: flex;
+        gap: 14px;
+      }
+
+      .lights span {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+      }
+
+      .lights span:nth-child(1) { background: #ff6363; }
+      .lights span:nth-child(2) { background: #f8ba1c; }
+      .lights span:nth-child(3) { background: #42d77d; }
+
+      .code-header strong {
+        color: #526177;
+        font-size: 22px;
+        letter-spacing: 3px;
+      }
+
+      pre {
+        margin: 0;
+        padding: 34px 42px 42px;
+        color: #263548;
+        font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
+        font-size: 28px;
+        line-height: 1.5;
+        white-space: pre-wrap;
+      }
+
+      .kw { color: #bd2322; font-weight: 700; }
+      .id { color: #1464d2; }
+      .label { color: #087b6d; }
+
+      .callout-card {
+        right: 28px;
+        bottom: 96px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 24px;
+        width: 828px;
+        padding: 34px 38px;
+        border-radius: 36px;
+      }
+
+      .diagram-icon {
+        display: grid;
+        place-items: center;
+        width: 92px;
+        height: 92px;
+        border-radius: 26px;
+        color: var(--teal);
+        border: 6px solid var(--teal);
+        background: rgba(255, 255, 255, 0.78);
+        font-size: 40px;
+        font-weight: 650;
+      }
+
+      .callout-text strong,
+      .callout-text span {
+        display: block;
+      }
+
+      .callout-text strong {
+        font-size: 38px;
+        line-height: 1.2;
+        font-weight: 650;
+      }
+
+      .callout-text span {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 26px;
+        line-height: 1.36;
+        font-weight: 520;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="artboard" aria-label="MarkdownToPDF Mermaid diagram promotional screenshot">
+      <div class="cool-shape" aria-hidden="true"></div>
+      <div class="warm-shape" aria-hidden="true"></div>
+
+      <section class="content">
+        <div class="copy">
+          <div>
+            <div class="brand">
+              <img src="../pictures/app-icon.png" alt="" />
+              <span>MarkdownToPDF</span>
+            </div>
+
+            <div class="headline">
+              <p class="eyebrow">Mermaid Diagram Export</p>
+              <h1>Turn Markdown diagrams into PDF visuals</h1>
+              <p class="lead">Render flowcharts from Mermaid fenced blocks before export, so documents keep diagrams instead of raw code.</p>
+            </div>
+
+            <div class="diagram-panel" aria-hidden="true">
+              <div class="panel-top">
+                <span>Diagram pipeline</span>
+                <strong>offline</strong>
+              </div>
+              <div class="format-list">
+                <div class="format-row">
+                  <span class="format-dot"></span>
+                  <span>Fenced Mermaid blocks</span>
+                  <span class="format-badge">parse</span>
+                </div>
+                <div class="format-row">
+                  <span class="format-dot"></span>
+                  <span>Rendered SVG diagrams</span>
+                  <span class="format-badge">draw</span>
+                </div>
+                <div class="format-row">
+                  <span class="format-dot"></span>
+                  <span>Clean PDF output</span>
+                  <span class="format-badge">export</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-note">Mermaid and MathJax assets are bundled for local rendering</div>
+        </div>
+
+        <div class="visual" aria-hidden="true">
+          <div class="token-strip">
+            <span class="token">Mermaid</span>
+            <span class="token">Local</span>
+            <span class="token">PDF</span>
+          </div>
+
+          <div class="diagram-card">
+            <div class="diagram-paper">
+              <div class="diagram-title">
+                <strong>Conversion Flow</strong>
+                <span>Rendered diagram inside the exported PDF</span>
+              </div>
+              <div class="diagram-canvas">
+                <div class="connector c1"></div>
+                <div class="connector c2"></div>
+                <div class="connector c3"></div>
+                <div class="connector c4"></div>
+                <div class="node source">Markdown files</div>
+                <div class="node queue">Pending queue</div>
+                <div class="node render">Local renderer</div>
+                <div class="node pdf">PDF output</div>
+                <div class="node history">History record</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="markdown-card">
+            <div class="code-window">
+              <div class="code-header">
+                <div class="lights"><span></span><span></span><span></span></div>
+                <strong>MERMAID</strong>
+              </div>
+              <pre><span class="kw">```mermaid</span>
+<span class="id">flowchart TD</span>
+  A[<span class="label">Finder Context Menu</span>] --> B[<span class="label">Pending Queue</span>]
+  B --> C[<span class="label">MarkdownToPDF App</span>]
+  C --> D[<span class="label">PDF Output</span>]
+<span class="kw">```</span></pre>
+            </div>
+          </div>
+
+          <div class="callout-card">
+            <div class="diagram-icon">[]</div>
+            <div class="callout-text">
+              <strong>Diagrams stay visual</strong>
+              <span>Flowcharts render before PDF generation, preserving readable technical documents.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
