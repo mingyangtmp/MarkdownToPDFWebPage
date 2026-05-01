@@ -85,6 +85,9 @@ const translations = {
     feature6Title: "Local-only by design",
     feature6Body:
       "The app is sandboxed, uses user-selected file access, and stores queue state, profiles, settings, and history on device.",
+    feature7Title: "Rounded table corners",
+    feature7Body:
+      "Apply table corner radius options so exported tables can keep a softer, card-like shape without losing borders or alignment.",
     screensEyebrow: "Screens",
     screensTitle: "A clean desktop surface for queue, history, and settings.",
     screensLead:
@@ -125,6 +128,10 @@ const translations = {
     renderTableBody:
       "Exported tables preserve borders, column alignment, and readable spacing so tabular content still feels structured after conversion.",
     renderTableAlt: "Table rendering sample exported by MarkdownToPDF",
+    renderRoundedTableTitle: "Rounded table styling",
+    renderRoundedTableBody:
+      "Table corner radius controls turn standard grid tables into softer exports while preserving header contrast, borders, and column alignment.",
+    renderRoundedTableAlt: "Rounded table rendering sample exported by MarkdownToPDF",
     renderFlowchartTitle: "Flowchart rendering",
     renderFlowchartBody:
       "Mermaid flowcharts preserve nodes, arrows, labels, and spacing so exported PDFs keep the same readable structure as the source diagram.",
@@ -145,7 +152,7 @@ const translations = {
     supportGoodTitle: "Available today",
     supportGood1: "Headings, paragraphs, horizontal rules, and block quotes",
     supportGood2: "Ordered lists, unordered lists, task lists, inline code, fenced code blocks, and syntax highlighting",
-    supportGood3: "Tables, alignment, links, images, relative asset paths, Mermaid, and offline math rendering",
+    supportGood3: "Tables, alignment, rounded corners, links, images, relative asset paths, Mermaid, and offline math rendering",
     supportGood4: "Themes, page sizes, margins, table-of-contents navigation, PDF outline bookmarks, naming rules, and post-export actions",
     privacyEyebrow: "Privacy Policy",
     privacyTitle: "MarkdownToPDF is designed to work on your Mac, not in the cloud.",
@@ -270,6 +277,9 @@ const translations = {
     feature6Title: "从设计上坚持本地处理",
     feature6Body:
       "应用运行在沙盒中，依赖用户授权的文件访问权限，并把队列状态、模板、设置与历史记录存储在本机。",
+    feature7Title: "圆角表格样式",
+    feature7Body:
+      "可为导出的表格设置圆角，让表格在保留边框与列对齐的同时拥有更柔和的卡片式外观。",
     screensEyebrow: "界面截图",
     screensTitle: "为队列、历史和设置而设计的一套干净桌面界面。",
     screensLead:
@@ -310,6 +320,10 @@ const translations = {
     renderTableBody:
       "导出的表格会保留边框、列对齐与清晰间距，让表格内容在转换后依然保持良好结构。",
     renderTableAlt: "MarkdownToPDF 导出的表格渲染示例",
+    renderRoundedTableTitle: "圆角表格渲染",
+    renderRoundedTableBody:
+      "表格圆角控制可以把标准网格表格导出成更柔和的样式，同时保留表头对比、边框与列对齐。",
+    renderRoundedTableAlt: "MarkdownToPDF 导出的圆角表格示例",
     renderFlowchartTitle: "流程图渲染",
     renderFlowchartBody:
       "Mermaid 流程图会保留节点、连线、标签与间距，让导出的 PDF 仍然保持源图表的清晰结构。",
@@ -330,7 +344,7 @@ const translations = {
     supportGoodTitle: "当前已可用能力",
     supportGood1: "标题、段落、分隔线与引用块",
     supportGood2: "有序列表、无序列表、任务列表、行内代码、围栏代码块与语法高亮",
-    supportGood3: "表格、对齐、链接、图片、相对资源路径、Mermaid 与离线数学公式渲染",
+    supportGood3: "表格、对齐、圆角表格、链接、图片、相对资源路径、Mermaid 与离线数学公式渲染",
     supportGood4: "主题、纸张尺寸、边距、目录导航、PDF 书签、命名规则与导出后动作",
     privacyEyebrow: "隐私政策",
     privacyTitle: "MarkdownToPDF 的设计目标，是在你的 Mac 上完成处理，而不是把文档送到云端。",
@@ -455,6 +469,9 @@ const translations = {
     feature6Title: "從設計上堅持本機處理",
     feature6Body:
       "應用運行在沙盒中，依賴使用者授權的檔案存取權限，並把佇列狀態、設定檔、設定與歷史記錄存放在本機。",
+    feature7Title: "圓角表格樣式",
+    feature7Body:
+      "可為匯出的表格設定圓角，讓表格保留框線與欄位對齊，同時呈現更柔和的卡片式外觀。",
     screensEyebrow: "介面截圖",
     screensTitle: "一套為佇列、歷史與設定而設計的乾淨桌面介面。",
     screensLead:
@@ -495,6 +512,10 @@ const translations = {
     renderTableBody:
       "匯出的表格會保留框線、欄位對齊與清楚間距，讓表格內容在轉換後依然維持良好結構。",
     renderTableAlt: "MarkdownToPDF 匯出的表格渲染示例",
+    renderRoundedTableTitle: "圓角表格渲染",
+    renderRoundedTableBody:
+      "表格圓角控制可將標準網格表格匯出成更柔和的樣式，同時保留表頭對比、框線與欄位對齊。",
+    renderRoundedTableAlt: "MarkdownToPDF 匯出的圓角表格示例",
     renderFlowchartTitle: "流程圖渲染",
     renderFlowchartBody:
       "Mermaid 流程圖會保留節點、連線、標籤與間距，讓匯出的 PDF 仍然維持來源圖表的清楚結構。",
@@ -515,7 +536,7 @@ const translations = {
     supportGoodTitle: "目前可用能力",
     supportGood1: "標題、段落、分隔線與引用區塊",
     supportGood2: "有序清單、無序清單、任務清單、行內程式碼、圍欄程式碼區塊與語法高亮",
-    supportGood3: "表格、對齊、連結、圖片、相對資源路徑、Mermaid 與離線數學公式渲染",
+    supportGood3: "表格、對齊、圓角表格、連結、圖片、相對資源路徑、Mermaid 與離線數學公式渲染",
     supportGood4: "主題、紙張尺寸、邊距、目錄導覽、PDF 書籤、命名規則與匯出後動作",
     privacyEyebrow: "隱私政策",
     privacyTitle: "MarkdownToPDF 的設計目標，是在你的 Mac 上完成處理，而不是把文件送到雲端。",
@@ -640,6 +661,9 @@ const translations = {
     feature6Title: "ローカル前提の設計",
     feature6Body:
       "アプリはサンドボックス上で動作し、ユーザーが選んだファイル権限を使い、キュー状態、プロファイル、設定、履歴を端末上に保存します。",
+    feature7Title: "角丸テーブルスタイル",
+    feature7Body:
+      "書き出す表に角丸を適用し、罫線と列揃えを保ちながら、よりやわらかなカード風の見た目にできます。",
     screensEyebrow: "画面",
     screensTitle: "キュー、履歴、設定のために整えられたデスクトップ UI。",
     screensLead:
@@ -680,6 +704,10 @@ const translations = {
     renderTableBody:
       "書き出した表は罫線、列の整列、読みやすい余白を保つため、変換後も表形式の情報が整理されたままです。",
     renderTableAlt: "MarkdownToPDF で書き出した表のサンプル",
+    renderRoundedTableTitle: "角丸テーブルのレンダリング",
+    renderRoundedTableBody:
+      "テーブルの角丸設定により、標準的なグリッド表を、ヘッダーのコントラスト、罫線、列揃えを保ったまま柔らかい見た目で書き出せます。",
+    renderRoundedTableAlt: "MarkdownToPDF で書き出した角丸テーブルのサンプル",
     renderFlowchartTitle: "フローチャートのレンダリング",
     renderFlowchartBody:
       "Mermaid フローチャートはノード、矢印、ラベル、余白を保つため、書き出した PDF でも元の図の読みやすい構造を維持できます。",
@@ -700,7 +728,7 @@ const translations = {
     supportGoodTitle: "現在利用可能",
     supportGood1: "見出し、段落、水平線、引用ブロック",
     supportGood2: "順序付きリスト、箇条書き、タスクリスト、インラインコード、フェンスコード、構文ハイライト",
-    supportGood3: "表、整列、リンク、画像、相対アセットパス、Mermaid、オフライン数式レンダリング",
+    supportGood3: "表、整列、角丸テーブル、リンク、画像、相対アセットパス、Mermaid、オフライン数式レンダリング",
     supportGood4: "テーマ、用紙サイズ、余白、目次ナビゲーション、PDF ブックマーク、命名ルール、変換後アクション",
     privacyEyebrow: "プライバシーポリシー",
     privacyTitle: "MarkdownToPDF は、クラウドではなくあなたの Mac 上で動作するよう設計されています。",
@@ -825,6 +853,9 @@ const translations = {
     feature6Title: "로컬 우선 설계",
     feature6Body:
       "앱은 샌드박스에서 동작하며, 사용자가 선택한 파일 접근 권한을 사용하고 큐 상태, 프로필, 설정, 기록을 기기에 저장합니다.",
+    feature7Title: "둥근 모서리 표 스타일",
+    feature7Body:
+      "내보낸 표에 모서리 반경을 적용해 테두리와 열 정렬은 유지하면서 더 부드러운 카드형 외형을 만들 수 있습니다.",
     screensEyebrow: "화면",
     screensTitle: "큐, 기록, 설정을 위해 정리된 데스크톱 인터페이스.",
     screensLead:
@@ -865,6 +896,10 @@ const translations = {
     renderTableBody:
       "내보낸 표는 테두리, 열 정렬, 읽기 쉬운 간격을 유지해 표 형식의 정보가 변환 후에도 구조적으로 보입니다.",
     renderTableAlt: "MarkdownToPDF가 내보낸 표 렌더링 예시",
+    renderRoundedTableTitle: "둥근 모서리 표 렌더링",
+    renderRoundedTableBody:
+      "표 모서리 반경 설정은 표준 그리드 표를 헤더 대비, 테두리, 열 정렬을 유지한 채 더 부드럽게 내보냅니다.",
+    renderRoundedTableAlt: "MarkdownToPDF가 내보낸 둥근 모서리 표 예시",
     renderFlowchartTitle: "플로우차트 렌더링",
     renderFlowchartBody:
       "Mermaid 플로우차트는 노드, 화살표, 레이블, 간격을 유지하므로 내보낸 PDF에서도 원본 다이어그램의 읽기 쉬운 구조가 그대로 남습니다.",
@@ -885,7 +920,7 @@ const translations = {
     supportGoodTitle: "현재 사용 가능",
     supportGood1: "제목, 문단, 가로줄, 인용 블록",
     supportGood2: "순서 목록, 글머리표 목록, 작업 목록, 인라인 코드, fenced code block, 문법 강조",
-    supportGood3: "표, 정렬, 링크, 이미지, 상대 리소스 경로, Mermaid, 오프라인 수식 렌더링",
+    supportGood3: "표, 정렬, 둥근 모서리 표, 링크, 이미지, 상대 리소스 경로, Mermaid, 오프라인 수식 렌더링",
     supportGood4: "테마, 용지 크기, 여백, 목차 탐색, PDF 북마크, 이름 규칙, 변환 후 동작",
     privacyEyebrow: "개인정보 처리방침",
     privacyTitle: "MarkdownToPDF는 클라우드가 아니라 사용자의 Mac에서 동작하도록 설계되었습니다.",
@@ -1010,6 +1045,9 @@ const translations = {
     feature6Title: "Von Grund auf lokal",
     feature6Body:
       "Die App läuft sandboxed, nutzt vom Benutzer gewählte Dateizugriffe und speichert Queue-Status, Profile, Einstellungen und Verlauf lokal auf dem Gerät.",
+    feature7Title: "Abgerundete Tabellen",
+    feature7Body:
+      "Tabellen können mit Eckenradius exportiert werden, damit sie weicher wirken und trotzdem Rahmen sowie Spaltenausrichtung behalten.",
     screensEyebrow: "Ansichten",
     screensTitle: "Eine aufgeräumte Desktop-Oberfläche für Queue, Verlauf und Einstellungen.",
     screensLead:
@@ -1050,6 +1088,10 @@ const translations = {
     renderTableBody:
       "Exportierte Tabellen behalten Rahmen, Spaltenausrichtung und gut lesbare Abstände, sodass tabellarische Inhalte auch nach der Konvertierung strukturiert bleiben.",
     renderTableAlt: "Beispiel für Tabellen-Rendering aus MarkdownToPDF",
+    renderRoundedTableTitle: "Abgerundetes Tabellen-Styling",
+    renderRoundedTableBody:
+      "Eckenradius-Einstellungen machen aus klassischen Tabellen weichere Exporte, ohne Kopfzeilenkontrast, Rahmen oder Spaltenausrichtung zu verlieren.",
+    renderRoundedTableAlt: "Beispiel für abgerundetes Tabellen-Rendering aus MarkdownToPDF",
     renderFlowchartTitle: "Flowchart-Rendering",
     renderFlowchartBody:
       "Mermaid-Flowcharts behalten Knoten, Pfeile, Beschriftungen und Abstände bei, sodass exportierte PDFs die gleiche gut lesbare Struktur wie das Ausgangsdiagramm bewahren.",
@@ -1070,7 +1112,7 @@ const translations = {
     supportGoodTitle: "Heute verfügbar",
     supportGood1: "Überschriften, Absätze, horizontale Linien und Zitatblöcke",
     supportGood2: "Geordnete und ungeordnete Listen, Task-Listen, Inline-Code, fenced code und Syntax-Highlighting",
-    supportGood3: "Tabellen, Ausrichtung, Links, Bilder, relative Asset-Pfade, Mermaid und Offline-Formelrendering",
+    supportGood3: "Tabellen, Ausrichtung, abgerundete Ecken, Links, Bilder, relative Asset-Pfade, Mermaid und Offline-Formelrendering",
     supportGood4: "Themes, Papiergrößen, Ränder, Inhaltsverzeichnis-Navigation, PDF-Lesezeichen, Benennungsregeln und Aktionen nach dem Export",
     privacyEyebrow: "Datenschutzrichtlinie",
     privacyTitle: "MarkdownToPDF ist dafür gedacht, auf deinem Mac zu arbeiten, nicht in der Cloud.",
@@ -1195,6 +1237,9 @@ const translations = {
     feature6Title: "Conçu pour rester local",
     feature6Body:
       "L'application est sandboxée, utilise des accès fichiers choisis par l'utilisateur et stocke file, profils, réglages et historique sur l'appareil.",
+    feature7Title: "Tableaux aux coins arrondis",
+    feature7Body:
+      "Appliquez un rayon d'angle aux tableaux exportés pour obtenir un rendu plus doux, tout en gardant les bordures et l'alignement des colonnes.",
     screensEyebrow: "Écrans",
     screensTitle: "Une interface de bureau claire pour la file, l'historique et les réglages.",
     screensLead:
@@ -1235,6 +1280,10 @@ const translations = {
     renderTableBody:
       "Les tableaux exportés conservent bordures, alignement des colonnes et espacements lisibles, pour que le contenu reste structuré après conversion.",
     renderTableAlt: "Exemple de rendu de tableau exporté par MarkdownToPDF",
+    renderRoundedTableTitle: "Style de tableau arrondi",
+    renderRoundedTableBody:
+      "Le contrôle du rayon d'angle transforme les tableaux en exports plus doux sans perdre le contraste d'en-tête, les bordures ni l'alignement.",
+    renderRoundedTableAlt: "Exemple de tableau arrondi exporté par MarkdownToPDF",
     renderFlowchartTitle: "Rendu des organigrammes",
     renderFlowchartBody:
       "Les organigrammes Mermaid conservent nœuds, flèches, libellés et espacements, pour que le PDF exporté garde la même structure lisible que le diagramme source.",
@@ -1255,7 +1304,7 @@ const translations = {
     supportGoodTitle: "Disponible aujourd'hui",
     supportGood1: "Titres, paragraphes, règles horizontales et blocs de citation",
     supportGood2: "Listes ordonnées, listes non ordonnées, listes de tâches, code en ligne, blocs de code et coloration syntaxique",
-    supportGood3: "Tableaux, alignement, liens, images, chemins relatifs, Mermaid et rendu mathématique hors ligne",
+    supportGood3: "Tableaux, alignement, coins arrondis, liens, images, chemins relatifs, Mermaid et rendu mathématique hors ligne",
     supportGood4: "Thèmes, formats de page, marges, navigation par table des matières, signets PDF, règles de nommage et actions après export",
     privacyEyebrow: "Politique de confidentialité",
     privacyTitle: "MarkdownToPDF est conçu pour fonctionner sur votre Mac, pas dans le cloud.",
@@ -1380,6 +1429,9 @@ const translations = {
     feature6Title: "Progettata per restare locale",
     feature6Body:
       "L'app è sandboxata, usa accessi ai file scelti dall'utente e salva localmente stato della coda, profili, impostazioni e cronologia.",
+    feature7Title: "Tabelle con angoli arrotondati",
+    feature7Body:
+      "Applica un raggio agli angoli delle tabelle esportate, mantenendo bordi e allineamento delle colonne con un aspetto più morbido.",
     screensEyebrow: "Schermate",
     screensTitle: "Una superficie desktop pulita per coda, cronologia e impostazioni.",
     screensLead:
@@ -1420,6 +1472,10 @@ const translations = {
     renderTableBody:
       "Le tabelle esportate conservano bordi, allineamento delle colonne e spaziature leggibili, così i contenuti tabellari restano strutturati dopo la conversione.",
     renderTableAlt: "Esempio di rendering tabella esportato da MarkdownToPDF",
+    renderRoundedTableTitle: "Stile tabella arrotondato",
+    renderRoundedTableBody:
+      "I controlli del raggio degli angoli trasformano le tabelle standard in export più morbidi senza perdere contrasto dell'intestazione, bordi o allineamento.",
+    renderRoundedTableAlt: "Esempio di tabella arrotondata esportata da MarkdownToPDF",
     renderFlowchartTitle: "Rendering dei flowchart",
     renderFlowchartBody:
       "I flowchart Mermaid mantengono nodi, frecce, etichette e spaziature, così i PDF esportati conservano la stessa struttura leggibile del diagramma sorgente.",
@@ -1440,7 +1496,7 @@ const translations = {
     supportGoodTitle: "Disponibile oggi",
     supportGood1: "Titoli, paragrafi, linee orizzontali e blocchi di citazione",
     supportGood2: "Liste ordinate, liste non ordinate, task list, codice inline, blocchi di codice e evidenziazione della sintassi",
-    supportGood3: "Tabelle, allineamento, link, immagini, percorsi relativi, Mermaid e rendering matematico offline",
+    supportGood3: "Tabelle, allineamento, angoli arrotondati, link, immagini, percorsi relativi, Mermaid e rendering matematico offline",
     supportGood4: "Temi, formati pagina, margini, navigazione del sommario, segnalibri PDF, regole di naming e azioni post-export",
     privacyEyebrow: "Informativa sulla privacy",
     privacyTitle: "MarkdownToPDF è progettata per lavorare sul tuo Mac, non nel cloud.",

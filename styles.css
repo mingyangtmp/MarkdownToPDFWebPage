@@ -663,6 +663,13 @@ a:focus-visible {
   border-radius: calc(var(--radius-xl) - 0.35rem);
 }
 
+.render-figure-rounded-table img {
+  background: #fff;
+  aspect-ratio: 2.4 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
 .render-figure figcaption {
   padding: 0 0.35rem 0.15rem;
 }
