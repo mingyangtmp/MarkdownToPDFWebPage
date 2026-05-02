@@ -11,6 +11,7 @@
         --muted: #5d7084;
         --blue: #24628f;
         --teal: #168374;
+        --green: #258f69;
         --orange: #db9761;
         --surface: rgba(255, 255, 255, 0.78);
         --shadow: 0 42px 110px rgba(28, 54, 82, 0.18);
@@ -142,8 +143,8 @@
 
       h1 {
         margin: 0;
-        max-width: 850px;
-        font-size: 103px;
+        max-width: 860px;
+        font-size: 98px;
         line-height: 1.05;
         letter-spacing: 0;
         font-weight: 600;
@@ -151,9 +152,9 @@
 
       .lead {
         margin: 40px 0 0;
-        max-width: 790px;
+        max-width: 810px;
         color: var(--muted);
-        font-size: 40px;
+        font-size: 39px;
         line-height: 1.48;
         font-weight: 450;
       }
@@ -219,7 +220,7 @@
       .profile-chip strong {
         margin-top: 4px;
         color: #263548;
-        font-size: 24px;
+        font-size: 23px;
         font-weight: 610;
       }
 
@@ -227,13 +228,16 @@
         display: flex;
         align-items: center;
         gap: 18px;
+        max-width: 820px;
         color: var(--muted);
-        font-size: 30px;
+        font-size: 29px;
+        line-height: 1.35;
         font-weight: 560;
       }
 
       .footer-note::before {
         content: "";
+        flex: 0 0 auto;
         width: 18px;
         height: 18px;
         border-radius: 50%;
@@ -246,8 +250,8 @@
         min-width: 0;
       }
 
-      .screenshot-card,
-      .render-preview,
+      .editor-card,
+      .summary-card,
       .callout-card {
         position: absolute;
         border: 1px solid rgba(255, 255, 255, 0.78);
@@ -256,43 +260,378 @@
         backdrop-filter: blur(24px);
       }
 
-      .screenshot-card {
-        padding: 24px;
-        border-radius: 54px;
+      .token-strip {
+        position: absolute;
+        right: 18px;
+        top: 40px;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 14px;
       }
 
-      .screenshot-card img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 36px;
+      .token {
+        padding: 12px 18px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--blue);
+        border: 1px solid rgba(36, 98, 143, 0.12);
+        font-size: 22px;
+        font-weight: 650;
       }
 
-      .settings-top {
+      .token:nth-child(2) { color: var(--teal); }
+      .token:nth-child(3) { color: #c7322f; }
+
+      .editor-card {
         right: -10px;
-        top: 116px;
-        width: 1280px;
+        top: 104px;
+        width: 1288px;
+        padding: 30px;
+        border-radius: 54px;
         transform: rotate(2.2deg);
       }
 
-      .settings-render {
-        left: 0;
-        top: 720px;
-        width: 1320px;
-        transform: rotate(-3deg);
+      .app-window {
+        overflow: hidden;
+        border: 1px solid rgba(38, 73, 104, 0.1);
+        border-radius: 36px;
+        background: rgba(255, 255, 255, 0.92);
       }
 
-      .render-preview {
+      .window-bar {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        min-height: 86px;
+        padding: 0 34px;
+        border-bottom: 1px solid #d7e1ea;
+        background: #edf3f8;
+      }
+
+      .lights {
+        display: flex;
+        gap: 14px;
+      }
+
+      .lights span {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+      }
+
+      .lights span:nth-child(1) { background: #ff6363; }
+      .lights span:nth-child(2) { background: #f8ba1c; }
+      .lights span:nth-child(3) { background: #42d77d; }
+
+      .window-title {
+        color: #526177;
+        font-size: 23px;
+        font-weight: 750;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+
+      .toolbar-pill {
+        margin-left: auto;
+        padding: 11px 18px;
+        border-radius: 999px;
+        color: var(--blue);
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid rgba(36, 98, 143, 0.12);
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .toolbar-pill.active {
+        margin-left: 0;
+        color: var(--green);
+        background: rgba(37, 143, 105, 0.12);
+      }
+
+      .editor-body {
+        display: grid;
+        gap: 18px;
+        max-height: 810px;
+        padding: 28px 34px 36px;
+        background:
+          linear-gradient(rgba(36, 98, 143, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(36, 98, 143, 0.028) 1px, transparent 1px),
+          rgba(247, 250, 252, 0.92);
+        background-size: 42px 42px;
+      }
+
+      .hero-section {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 20px;
+        padding: 24px;
+        border: 1px solid rgba(36, 98, 143, 0.1);
+        border-radius: 26px;
+        background: rgba(255, 255, 255, 0.86);
+      }
+
+      .section-icon {
+        display: grid;
+        place-items: center;
+        width: 64px;
+        height: 64px;
+        border-radius: 18px;
+        color: var(--teal);
+        background: rgba(22, 131, 116, 0.12);
+        border: 1px solid rgba(22, 131, 116, 0.18);
+        font-size: 25px;
+        font-weight: 800;
+      }
+
+      .hero-title strong,
+      .hero-title span {
+        display: block;
+      }
+
+      .hero-title strong {
+        color: #1c2d42;
+        font-size: 34px;
+        line-height: 1.18;
+        font-weight: 700;
+      }
+
+      .hero-title span {
+        margin-top: 7px;
+        color: var(--muted);
+        font-size: 22px;
+        font-weight: 520;
+      }
+
+      .back-button,
+      .active-badge {
+        display: inline-grid;
+        place-items: center;
+        min-height: 42px;
+        padding: 0 16px;
+        border-radius: 14px;
+        font-size: 18px;
+        font-weight: 720;
+      }
+
+      .back-button {
+        color: var(--blue);
+        background: rgba(36, 98, 143, 0.09);
+      }
+
+      .active-badge {
+        color: var(--green);
+        background: rgba(37, 143, 105, 0.13);
+      }
+
+      .section-card {
+        padding: 20px 22px;
+        border: 1px solid rgba(36, 98, 143, 0.1);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.86);
+      }
+
+      .section-heading {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 14px;
+      }
+
+      .tiny-icon {
+        display: grid;
+        place-items: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 12px;
+        color: var(--blue);
+        background: rgba(36, 98, 143, 0.1);
+        font-size: 16px;
+        font-weight: 800;
+      }
+
+      .section-heading strong,
+      .section-heading span {
+        display: block;
+      }
+
+      .section-heading strong {
+        color: #1c2d42;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .section-heading span {
+        margin-top: 2px;
+        color: var(--muted);
+        font-size: 17px;
+        font-weight: 520;
+      }
+
+      .row-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .setting-row,
+      .control-box {
+        min-height: 78px;
+        padding: 14px 16px;
+        border: 1px solid rgba(36, 98, 143, 0.1);
+        border-radius: 18px;
+        background: rgba(247, 250, 252, 0.92);
+      }
+
+      .setting-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .setting-row span,
+      .setting-row strong,
+      .control-box span,
+      .control-box strong {
+        display: block;
+      }
+
+      .setting-row span,
+      .control-box span {
+        color: var(--muted);
+        font-size: 15px;
+        font-weight: 750;
+        text-transform: uppercase;
+        letter-spacing: 0;
+      }
+
+      .setting-row strong,
+      .control-box strong {
+        margin-top: 5px;
+        color: #263548;
+        font-size: 22px;
+        font-weight: 680;
+      }
+
+      .picker,
+      .toggle {
+        display: inline-grid;
+        place-items: center;
+        min-width: 96px;
+        min-height: 38px;
+        padding: 0 14px;
+        border-radius: 13px;
+        color: var(--blue);
+        background: rgba(36, 98, 143, 0.1);
+        font-size: 17px;
+        font-weight: 740;
+        white-space: nowrap;
+      }
+
+      .toggle {
+        min-width: 66px;
+        color: #fff;
+        background: linear-gradient(90deg, var(--blue), var(--teal));
+      }
+
+      .mini-inputs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+      }
+
+      .mini-inputs em {
+        display: grid;
+        place-items: center;
+        min-height: 36px;
+        border-radius: 11px;
+        color: #40546a;
+        background: #fff;
+        border: 1px solid rgba(36, 98, 143, 0.1);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 720;
+      }
+
+      .slider-label {
+        display: flex;
+        justify-content: space-between;
+        color: var(--muted);
+        font-size: 18px;
+        font-weight: 650;
+      }
+
+      .slider-track {
+        position: relative;
+        height: 11px;
+        margin-top: 10px;
+        border-radius: 999px;
+        background: rgba(36, 98, 143, 0.12);
+      }
+
+      .slider-track span {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 58%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--blue), var(--teal));
+      }
+
+      .settings-matrix {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .matrix-card {
+        min-height: 166px;
+        padding: 20px;
+        border: 1px solid rgba(36, 98, 143, 0.1);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.86);
+      }
+
+      .matrix-card strong,
+      .matrix-card span {
+        display: block;
+      }
+
+      .matrix-card strong {
+        color: #1c2d42;
+        font-size: 25px;
+        line-height: 1.15;
+        font-weight: 700;
+      }
+
+      .matrix-card span {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.28;
+        font-weight: 520;
+      }
+
+      .matrix-card .toggle {
+        margin-top: 18px;
+      }
+
+      .summary-card {
+        left: 0;
+        top: 806px;
+        width: 1110px;
         padding: 34px;
         border-radius: 50px;
+        transform: rotate(-3deg);
       }
 
       .preview-sheet {
         display: grid;
-        grid-template-columns: 1fr 360px;
+        grid-template-columns: 1fr 340px;
         gap: 34px;
+        min-height: 596px;
         padding: 42px;
-        min-height: 610px;
         border: 1px solid rgba(38, 73, 104, 0.1);
         border-radius: 36px;
         background: rgba(255, 255, 255, 0.9);
@@ -323,118 +662,43 @@
         margin-top: 34px;
       }
 
-      .control-box {
-        min-height: 112px;
-        padding: 20px 22px;
-        border: 1px solid rgba(36, 98, 143, 0.1);
-        border-radius: 24px;
-        background: rgba(247, 250, 252, 0.9);
-      }
-
-      .control-box span,
-      .control-box strong {
-        display: block;
-      }
-
-      .control-box span {
-        color: var(--muted);
-        font-size: 18px;
-        font-weight: 650;
-        text-transform: uppercase;
-        letter-spacing: 0;
-      }
-
-      .control-box strong {
-        margin-top: 12px;
-        color: #263548;
-        font-size: 25px;
-        font-weight: 620;
-      }
-
-      .slider-row {
-        margin-top: 34px;
-      }
-
-      .slider-label {
-        display: flex;
-        justify-content: space-between;
-        color: var(--muted);
-        font-size: 21px;
-        font-weight: 650;
-      }
-
-      .slider-track {
-        position: relative;
-        height: 14px;
-        margin-top: 14px;
-        border-radius: 999px;
-        background: rgba(36, 98, 143, 0.12);
-      }
-
-      .slider-track span {
-        position: absolute;
-        inset: 0 auto 0 0;
-        width: 54%;
-        border-radius: inherit;
-        background: linear-gradient(90deg, var(--blue), var(--teal));
-      }
-
       .preview-stack {
         display: grid;
-        gap: 20px;
+        gap: 18px;
       }
 
       .sample-card {
-        padding: 24px;
+        padding: 22px;
         border: 1px solid rgba(36, 98, 143, 0.1);
-        border-radius: 26px;
+        border-radius: 24px;
         background: rgba(255, 255, 255, 0.86);
       }
 
-      .sample-card span {
+      .sample-card span,
+      .sample-card strong {
         display: block;
+      }
+
+      .sample-card span {
         color: var(--muted);
-        font-size: 17px;
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 750;
         letter-spacing: 2px;
         text-transform: uppercase;
       }
 
       .sample-card strong {
-        display: block;
-        margin-top: 12px;
+        margin-top: 10px;
         color: #1c2d42;
-        font-size: 28px;
-        font-weight: 520;
+        font-size: 26px;
+        font-weight: 560;
       }
 
       .sample-code {
         font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
-        font-size: 21px;
+        font-size: 20px;
         white-space: nowrap;
       }
-
-      .token-strip {
-        position: absolute;
-        right: 18px;
-        top: 40px;
-        display: grid;
-        grid-auto-flow: column;
-        gap: 14px;
-      }
-
-      .token {
-        padding: 12px 18px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.72);
-        color: var(--blue);
-        border: 1px solid rgba(36, 98, 143, 0.12);
-        font-size: 22px;
-        font-weight: 650;
-      }
-
-      .token:nth-child(2) { color: var(--teal); }
-      .token:nth-child(3) { color: #c7322f; }
 
       .callout-card {
         right: 28px;
@@ -491,13 +755,13 @@
           <div>
             <div class="brand">
               <img src="../pictures/app-icon.png" alt="" />
-              <span>MarkdownToPDF</span>
+              <span>MarkdownToPDF PRO</span>
             </div>
 
             <div class="headline">
-              <p class="eyebrow">Export Profiles</p>
-              <h1>Tune every PDF before conversion</h1>
-              <p class="lead">Save repeatable settings for page size, theme, fonts, margins, table shape, naming, and post-conversion actions.</p>
+              <p class="eyebrow">Edit Render Configuration</p>
+              <h1>Shape every PDF from one editor</h1>
+              <p class="lead">Configure page size, margins, typography, code fonts, table styling, themes, and generated contents before export.</p>
             </div>
 
             <div class="profile-panel" aria-hidden="true">
@@ -508,39 +772,176 @@
               <div class="profile-grid">
                 <div class="profile-chip">
                   <span>Page</span>
-                  <strong>A4 / Letter / Legal</strong>
+                  <strong>A4 / A5 / Letter / Legal</strong>
                 </div>
                 <div class="profile-chip">
                   <span>Theme</span>
-                  <strong>System / Light / Dark</strong>
+                  <strong>System / Light / Sepia / Dark</strong>
                 </div>
                 <div class="profile-chip">
-                  <span>Typography</span>
-                  <strong>Body + code fonts</strong>
+                  <span>Tables</span>
+                  <strong>Rounded corners + bold first row</strong>
                 </div>
                 <div class="profile-chip">
-                  <span>Output</span>
-                  <strong>Name, folder, action</strong>
+                  <span>Contents</span>
+                  <strong>Auto-generated TOC</strong>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="footer-note">Profiles keep Finder conversions consistent across every document</div>
+          <div class="footer-note">Profiles keep Finder and in-app conversions consistent across every document.</div>
         </div>
 
         <div class="visual" aria-hidden="true">
           <div class="token-strip">
-            <span class="token">Profiles</span>
-            <span class="token">Themes</span>
-            <span class="token">Output</span>
+            <span class="token">Page</span>
+            <span class="token">Tables</span>
+            <span class="token">Contents</span>
           </div>
 
-          <div class="screenshot-card settings-top">
-            <img src="../pictures/settings-1.png" alt="" />
+          <div class="editor-card">
+            <div class="app-window">
+              <div class="window-bar">
+                <div class="lights"><span></span><span></span><span></span></div>
+                <strong class="window-title">Render Configurations</strong>
+                <span class="toolbar-pill">Back</span>
+                <span class="toolbar-pill active">ACTIVE</span>
+              </div>
+
+              <div class="editor-body">
+                <div class="hero-section">
+                  <div class="section-icon">Sl</div>
+                  <div class="hero-title">
+                    <strong>Edit Render Configuration</strong>
+                    <span>Render configuration settings used when exporting PDFs.</span>
+                  </div>
+                  <span class="back-button">Back to Render Configurations</span>
+                </div>
+
+                <div class="section-card">
+                  <div class="section-heading">
+                    <div class="tiny-icon">ID</div>
+                    <div>
+                      <strong>Render Configuration Name</strong>
+                      <span>Displayed in the render configuration list and picker.</span>
+                    </div>
+                  </div>
+                  <div class="row-grid">
+                    <div class="setting-row">
+                      <div>
+                        <span>Name</span>
+                        <strong>Default Render Configuration</strong>
+                      </div>
+                      <em class="picker">Text Field</em>
+                    </div>
+                    <div class="setting-row">
+                      <div>
+                        <span>Theme</span>
+                        <strong>System</strong>
+                      </div>
+                      <em class="picker">System</em>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-card">
+                  <div class="section-heading">
+                    <div class="tiny-icon">PG</div>
+                    <div>
+                      <strong>Page Settings</strong>
+                      <span>Configure paper size and printable margins.</span>
+                    </div>
+                  </div>
+                  <div class="row-grid">
+                    <div class="setting-row">
+                      <div>
+                        <span>Page Size</span>
+                        <strong>A4 portrait</strong>
+                      </div>
+                      <em class="picker">A4 / A5</em>
+                    </div>
+                    <div class="setting-row">
+                      <div>
+                        <span>Margins (pt)</span>
+                        <strong>24 / 16 / 24 / 16</strong>
+                      </div>
+                      <div class="mini-inputs"><em>Top</em><em>Right</em><em>Bottom</em><em>Left</em></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-card">
+                  <div class="section-heading">
+                    <div class="tiny-icon">Aa</div>
+                    <div>
+                      <strong>Paragraph Settings</strong>
+                      <span>Configure text typography and spacing.</span>
+                    </div>
+                  </div>
+                  <div class="row-grid">
+                    <div class="setting-row">
+                      <div>
+                        <span>Body Font</span>
+                        <strong>PingFang SC</strong>
+                      </div>
+                      <em class="picker">Preview</em>
+                    </div>
+                    <div>
+                      <div class="slider-label"><span>Font Size: 12.0</span><span>Line Height: 1.60</span></div>
+                      <div class="slider-track"><span></span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="settings-matrix">
+                  <div class="matrix-card">
+                    <strong>Code Settings</strong>
+                    <span>Code Font with language sample preview.</span>
+                    <span class="toggle">Menlo</span>
+                  </div>
+                  <div class="matrix-card">
+                    <strong>Table Settings</strong>
+                    <span>Rounded Rectangle, 10 pt radius, bold first row.</span>
+                    <span class="toggle">On</span>
+                  </div>
+                  <div class="matrix-card">
+                    <strong>Table of Contents</strong>
+                    <span>Generate a navigation list from H2-H3 headings.</span>
+                    <span class="toggle">Auto</span>
+                  </div>
+                </div>
+
+                <div class="section-card">
+                  <div class="section-heading">
+                    <div class="tiny-icon">OP</div>
+                    <div>
+                      <strong>Export Scope</strong>
+                      <span>Keep the active render profile consistent across conversion entry points.</span>
+                    </div>
+                  </div>
+                  <div class="row-grid">
+                    <div class="setting-row">
+                      <div>
+                        <span>Default Render Configuration</span>
+                        <strong>Default</strong>
+                      </div>
+                      <em class="toggle">Active</em>
+                    </div>
+                    <div class="setting-row">
+                      <div>
+                        <span>Used By</span>
+                        <strong>Finder + in-app conversion</strong>
+                      </div>
+                      <em class="toggle">On</em>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="render-preview settings-render">
+          <div class="summary-card">
             <div class="preview-sheet">
               <div>
                 <div class="preview-title">
@@ -550,7 +951,7 @@
                 <div class="control-grid">
                   <div class="control-box">
                     <span>Page size</span>
-                    <strong>A4</strong>
+                    <strong>A4 / A5</strong>
                   </div>
                   <div class="control-box">
                     <span>Theme</span>
@@ -558,7 +959,7 @@
                   </div>
                   <div class="control-box">
                     <span>Body font</span>
-                    <strong>Avenir Next</strong>
+                    <strong>PingFang SC</strong>
                   </div>
                   <div class="control-box">
                     <span>Code font</span>
@@ -575,23 +976,19 @@
                 <div class="slider-row">
                   <div class="slider-label">
                     <span>Margins 24 / 16 pt</span>
-                    <span>PDF footer</span>
+                    <span>Auto-generated TOC</span>
                   </div>
                   <div class="slider-track"><span style="width: 68%"></span></div>
                 </div>
               </div>
               <div class="preview-stack">
                 <div class="sample-card">
-                  <span>Preview</span>
-                  <strong>Sample Text Aa 123</strong>
+                  <span>Page</span>
+                  <strong>A5 portrait ready</strong>
                 </div>
                 <div class="sample-card">
                   <span>Code sample</span>
                   <strong class="sample-code">let title = "Preview"</strong>
-                </div>
-                <div class="sample-card">
-                  <span>After success</span>
-                  <strong>Open PDF</strong>
                 </div>
               </div>
             </div>
@@ -600,8 +997,8 @@
           <div class="callout-card">
             <div class="profile-icon">Aa</div>
             <div class="callout-text">
-              <strong>Reusable export templates</strong>
-              <span>Choose a profile once, then apply the same layout to Finder and in-app conversions.</span>
+              <strong>One editor for every PDF detail</strong>
+              <span>Save reusable render configurations and apply them to Finder and in-app conversions.</span>
             </div>
           </div>
         </div>

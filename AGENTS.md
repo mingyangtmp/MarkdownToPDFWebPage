@@ -33,7 +33,7 @@ For localized promo screenshots, run:
 node app-store-assets/render-localized-promos.mjs
 ```
 
-The script uses the six English HTML artboards as layout sources, injects
+The script uses its configured English HTML artboards as layout sources, injects
 localized copy at render time, and captures PNGs with headless Chrome. By
 default it renders Simplified Chinese, Traditional Chinese, Japanese, Korean,
 German, French, and Italian. Localized outputs are grouped by locale using the
@@ -49,6 +49,8 @@ Useful variants:
 
 Current promo set:
 
+- `auto-toc-promo.html` ->
+  `mac-app-store-auto-toc-promo-2880x1800.png`
 - `batch-history-promo.html` ->
   `mac-app-store-batch-history-promo-2880x1800.png`
 - `code-block-promo.html` ->
@@ -57,6 +59,8 @@ Current promo set:
   `mac-app-store-data-formula-promo-2880x1800.png`
 - `export-profiles-promo.html` ->
   `mac-app-store-export-profiles-promo-2880x1800.png`
+- `header-footer-promo.html` ->
+  `mac-app-store-header-footer-promo-2880x1800.png`
 - `mermaid-diagram-promo.html` ->
   `mac-app-store-mermaid-diagram-promo-2880x1800.png`
 - `table-corner-radius-promo.html` ->
