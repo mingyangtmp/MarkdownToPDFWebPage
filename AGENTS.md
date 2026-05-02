@@ -27,6 +27,26 @@ of editing screenshots.
    is `2880 x 1800`, that every HTML image reference resolves locally, and that
    the generated PNG still matches the HTML source.
 
+For localized promo screenshots, run:
+
+```sh
+node app-store-assets/render-localized-promos.mjs
+```
+
+The script uses the six English HTML artboards as layout sources, injects
+localized copy at render time, and captures PNGs with headless Chrome. By
+default it renders Simplified Chinese, Traditional Chinese, Japanese, Korean,
+German, French, and Italian. Localized outputs are grouped by locale using the
+path pattern
+`app-store-assets/localized/<locale>/mac-app-store-<feature>-promo-2880x1800.png`,
+while the existing English outputs keep the unsuffixed root-level names.
+
+Useful variants:
+
+- `node app-store-assets/render-localized-promos.mjs --lang=ja,ko`
+- `node app-store-assets/render-localized-promos.mjs --promo=code-block`
+- `node app-store-assets/render-localized-promos.mjs --include-en`
+
 Current promo set:
 
 - `batch-history-promo.html` ->
