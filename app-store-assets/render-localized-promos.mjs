@@ -159,7 +159,7 @@ const copy = {
       tokens: ["Mermaid", "本地", "PDF"],
       diagramTitle: ["转换流程", "导出的 PDF 中保留已渲染图表"],
       nodes: ["Markdown 文件", "待处理队列", "本地渲染器", "PDF 输出", "历史记录"],
-      codeLabels: ["Finder 右键菜单", "待处理队列", "MarkdownToPDF 应用", "PDF 输出"],
+      codeLabels: ["Finder 右键菜单", "待处理队列", "MarkdownToPDF PRO 应用", "PDF 输出"],
       calloutTitle: "图表保持可视化",
       calloutBody: "流程图会在生成 PDF 前完成渲染，让技术文档继续清晰可读。",
     },
@@ -266,7 +266,7 @@ const copy = {
       tokens: ["Mermaid", "本機", "PDF"],
       diagramTitle: ["轉換流程", "匯出的 PDF 中保留已渲染圖表"],
       nodes: ["Markdown 檔案", "待處理佇列", "本機渲染器", "PDF 輸出", "歷史記錄"],
-      codeLabels: ["Finder 右鍵選單", "待處理佇列", "MarkdownToPDF App", "PDF 輸出"],
+      codeLabels: ["Finder 右鍵選單", "待處理佇列", "MarkdownToPDF PRO App", "PDF 輸出"],
       calloutTitle: "圖表保持視覺化",
       calloutBody: "流程圖會在產生 PDF 前完成渲染，讓技術文件繼續清楚可讀。",
     },
@@ -373,7 +373,7 @@ const copy = {
       tokens: ["Mermaid", "ローカル", "PDF"],
       diagramTitle: ["変換フロー", "書き出したPDF内の描画済み図"],
       nodes: ["Markdownファイル", "待機キュー", "ローカル描画", "PDF出力", "履歴記録"],
-      codeLabels: ["Finderメニュー", "待機キュー", "MarkdownToPDFアプリ", "PDF出力"],
+      codeLabels: ["Finderメニュー", "待機キュー", "MarkdownToPDF PROアプリ", "PDF出力"],
       calloutTitle: "図はビジュアルのまま",
       calloutBody: "PDF生成前にフローチャートを描画し、技術文書を読みやすく保ちます。",
     },
@@ -480,7 +480,7 @@ const copy = {
       tokens: ["Mermaid", "로컬", "PDF"],
       diagramTitle: ["변환 흐름", "내보낸 PDF 안의 렌더링된 도표"],
       nodes: ["Markdown 파일", "대기열", "로컬 렌더러", "PDF 출력", "기록"],
-      codeLabels: ["Finder 메뉴", "대기열", "MarkdownToPDF 앱", "PDF 출력"],
+      codeLabels: ["Finder 메뉴", "대기열", "MarkdownToPDF PRO 앱", "PDF 출력"],
       calloutTitle: "도표는 시각적으로 유지",
       calloutBody: "PDF 생성 전에 플로우차트를 렌더링해 기술 문서를 읽기 쉽게 유지합니다.",
     },
@@ -587,7 +587,7 @@ const copy = {
       tokens: ["Mermaid", "Lokal", "PDF"],
       diagramTitle: ["Konvertierungsfluss", "Gerendertes Diagramm im exportierten PDF"],
       nodes: ["Markdown-Dateien", "Warteschlange", "Lokaler Renderer", "PDF-Ausgabe", "Verlauf"],
-      codeLabels: ["Finder-Menü", "Warteschlange", "MarkdownToPDF-App", "PDF-Ausgabe"],
+      codeLabels: ["Finder-Menü", "Warteschlange", "MarkdownToPDF PRO-App", "PDF-Ausgabe"],
       calloutTitle: "Diagramme bleiben visuell",
       calloutBody: "Flowcharts werden vor der PDF-Erzeugung gerendert und bleiben lesbar.",
     },
@@ -694,7 +694,7 @@ const copy = {
       tokens: ["Mermaid", "Local", "PDF"],
       diagramTitle: ["Flux de conversion", "Diagramme rendu dans le PDF exporté"],
       nodes: ["Fichiers Markdown", "File d'attente", "Rendu local", "Sortie PDF", "Historique"],
-      codeLabels: ["Menu Finder", "File d'attente", "App MarkdownToPDF", "Sortie PDF"],
+      codeLabels: ["Menu Finder", "File d'attente", "App MarkdownToPDF PRO", "Sortie PDF"],
       calloutTitle: "Les diagrammes restent visuels",
       calloutBody: "Les flowcharts sont rendus avant la génération PDF pour rester lisibles.",
     },
@@ -801,7 +801,7 @@ const copy = {
       tokens: ["Mermaid", "Locale", "PDF"],
       diagramTitle: ["Flusso di conversione", "Diagramma renderizzato nel PDF esportato"],
       nodes: ["File Markdown", "Coda in attesa", "Renderer locale", "Output PDF", "Cronologia"],
-      codeLabels: ["Menu Finder", "Coda in attesa", "App MarkdownToPDF", "Output PDF"],
+      codeLabels: ["Menu Finder", "Coda in attesa", "App MarkdownToPDF PRO", "Output PDF"],
       calloutTitle: "I diagrammi restano visuali",
       calloutBody: "I flowchart vengono renderizzati prima del PDF e restano leggibili.",
     },
@@ -1820,7 +1820,7 @@ function applyLocalization(payload) {
   const { lang, htmlLang, group, text } = payload;
   document.documentElement.lang = htmlLang;
   document.documentElement.classList.add("promo-locale-localized", `promo-locale-${group}`);
-  document.title = `${text.headline} - MarkdownToPDF`;
+  document.title = `${text.headline} - MarkdownToPDF PRO`;
 
   const set = (selector, value, root = document) => {
     if (value === undefined) return;

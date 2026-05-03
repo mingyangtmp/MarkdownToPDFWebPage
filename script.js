@@ -1,8 +1,8 @@
 const translations = {
   en: {
-    pageTitle: "MarkdownToPDF for macOS",
+    pageTitle: "MarkdownToPDF PRO for macOS",
     pageDescription:
-      "MarkdownToPDF is a Finder-powered macOS app for turning Markdown files into polished PDFs with profiles, syntax highlighting, math rendering, history, and privacy-first local processing.",
+      "MarkdownToPDF PRO is a Finder-powered macOS app for turning Markdown files into polished PDFs with profiles, syntax highlighting, math rendering, history, and privacy-first local processing.",
     navPrimaryAria: "Primary navigation",
     langSwitcherLabel: "Language switcher",
     skipLink: "Skip to content",
@@ -12,7 +12,7 @@ const translations = {
     heroEyebrow: "Finder extension + native macOS app",
     heroTitle: "Turn Markdown into polished PDFs without leaving Finder.",
     heroLead:
-      "MarkdownToPDF is built for writers, engineers, and documentation teams who want local, repeatable exports with batch queues, profiles, and clean print-ready output.",
+      "MarkdownToPDF PRO is built for writers, engineers, and documentation teams who want local, repeatable exports with batch queues, profiles, and clean print-ready output.",
     heroDownload: "Download on the Mac App Store",
     heroPrimary: "Explore previews",
     heroSecondary: "Read privacy policy",
@@ -32,7 +32,7 @@ const translations = {
     heroNoteBottomLabel: "Privacy-first local workflow",
     heroNoteBottomBody:
       "The app uses sandboxed file access and local storage instead of cloud rendering or sign-in flows.",
-    heroImageAlt: "MarkdownToPDF queue dashboard",
+    heroImageAlt: "MarkdownToPDF PRO queue dashboard",
     signal1Title: "Right from Finder",
     signal1Body:
       "In folders you explicitly authorize, select one file or many, open the context menu, and send your Markdown straight into the conversion queue.",
@@ -93,23 +93,23 @@ const translations = {
     renderMathTitle: "Offline math rendering",
     renderMathBody:
       "Inline and display formulas are typeset before export with bundled MathJax SVG, so the PDF keeps readable equations instead of raw TeX delimiters.",
-    renderMathAlt: "Math rendering sample exported by MarkdownToPDF",
+    renderMathAlt: "Math rendering sample exported by MarkdownToPDF PRO",
     renderCodeImageTitle: "Code block styling",
     renderCodeImageBody:
       "Exported code blocks keep syntax colors, language labels, and the polished window chrome used by the app's renderer.",
-    renderCodeAlt: "Syntax-highlighted code block exported by MarkdownToPDF",
+    renderCodeAlt: "Syntax-highlighted code block exported by MarkdownToPDF PRO",
     renderTableTitle: "Table layout and alignment",
     renderTableBody:
       "Exported tables preserve borders, column alignment, and readable spacing so tabular content still feels structured after conversion.",
-    renderTableAlt: "Table rendering sample exported by MarkdownToPDF",
+    renderTableAlt: "Table rendering sample exported by MarkdownToPDF PRO",
     renderRoundedTableTitle: "Rounded table styling",
     renderRoundedTableBody:
       "Table corner radius controls turn standard grid tables into softer exports while preserving header contrast, borders, and column alignment.",
-    renderRoundedTableAlt: "Rounded table rendering sample exported by MarkdownToPDF",
+    renderRoundedTableAlt: "Rounded table rendering sample exported by MarkdownToPDF PRO",
     renderFlowchartTitle: "Flowchart rendering",
     renderFlowchartBody:
       "Mermaid flowcharts preserve nodes, arrows, labels, and spacing so exported PDFs keep the same readable structure as the source diagram.",
-    renderFlowchartAlt: "Flowchart rendering sample exported by MarkdownToPDF",
+    renderFlowchartAlt: "Flowchart rendering sample exported by MarkdownToPDF PRO",
     renderCodeTitle: "Syntax highlighting for common languages",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL, and C-like languages get built-in token highlighting. Unknown languages fall back to clean plain code blocks.",
@@ -122,14 +122,14 @@ const translations = {
     supportEyebrow: "Support Matrix",
     supportTitle: "What the app supports in the current release.",
     supportLead:
-      "This page is based on the current source code, release notes, support matrix, and repository documentation for MarkdownToPDF.",
+      "This page is based on the current source code, release notes, support matrix, and repository documentation for MarkdownToPDF PRO.",
     supportGoodTitle: "Available today",
     supportGood1: "Headings, paragraphs, horizontal rules, and block quotes",
     supportGood2: "Ordered lists, unordered lists, task lists, inline code, fenced code blocks, and syntax highlighting",
     supportGood3: "Tables, alignment, rounded corners, links, images, relative asset paths, Mermaid, and offline math rendering",
     supportGood4: "Themes, page sizes, margins, table-of-contents navigation, PDF outline bookmarks, naming rules, and post-export actions",
     privacyEyebrow: "Privacy Policy",
-    privacyTitle: "MarkdownToPDF is designed to work on your Mac, not in the cloud.",
+    privacyTitle: "MarkdownToPDF PRO is designed to work on your Mac, not in the cloud.",
     privacyLead:
       "The policy below reflects the current app architecture, entitlement files, and repository documentation as of April 19, 2026.",
     privacyCard1Title: "What the app accesses",
@@ -145,7 +145,7 @@ const translations = {
     privacyEffectiveValue: "April 19, 2026",
     policy1Title: "1. Information the app processes",
     policy1Body:
-      "MarkdownToPDF processes the source documents you select, the output locations you choose, and locally stored settings such as render profiles, naming defaults, conversion history, and pending queue records.",
+      "MarkdownToPDF PRO processes the source documents you select, the output locations you choose, and locally stored settings such as render profiles, naming defaults, conversion history, and pending queue records.",
     policy2Title: "2. Why that information is used",
     policy2Body:
       "That information is used only to render PDFs, manage queued conversions, reopen or reveal generated files, remember your preferences, and show conversion results or failures inside the app.",
@@ -162,13 +162,13 @@ const translations = {
     policy6Body:
       "If the app architecture changes in a future release, this policy should be updated together with the release notes and website so the documented behavior stays accurate.",
     footerBody:
-      "Built from the current MarkdownToPDF codebase, release notes, support matrix, and localized preview images.",
+      "Built from the current MarkdownToPDF PRO codebase, release notes, support matrix, and localized preview images.",
     footerContactLabel: "Contact:",
   },
   "zh-Hans": {
-    pageTitle: "MarkdownToPDF for macOS",
+    pageTitle: "MarkdownToPDF PRO for macOS",
     pageDescription:
-      "MarkdownToPDF 是一款面向 macOS 的 Finder 扩展应用，可将 Markdown 文件本地转换为精致 PDF，并提供配置模板、语法高亮、数学公式渲染、历史记录、批量队列与隐私优先的处理方式。",
+      "MarkdownToPDF PRO 是一款面向 macOS 的 Finder 扩展应用，可将 Markdown 文件本地转换为精致 PDF，并提供配置模板、语法高亮、数学公式渲染、历史记录、批量队列与隐私优先的处理方式。",
     navPrimaryAria: "主导航",
     langSwitcherLabel: "语言切换",
     skipLink: "跳转到正文",
@@ -178,7 +178,7 @@ const translations = {
     heroEyebrow: "Finder 扩展 + 原生 macOS 应用",
     heroTitle: "不离开 Finder，把 Markdown 直接导出成精致 PDF。",
     heroLead:
-      "MarkdownToPDF 面向写作者、工程师和文档团队，强调本地处理、可重复导出、批量队列、配置模板，以及更适合打印与分享的输出效果。",
+      "MarkdownToPDF PRO 面向写作者、工程师和文档团队，强调本地处理、可重复导出、批量队列、配置模板，以及更适合打印与分享的输出效果。",
     heroDownload: "在 Mac App Store 下载",
     heroPrimary: "查看预览图",
     heroSecondary: "阅读隐私政策",
@@ -198,7 +198,7 @@ const translations = {
     heroNoteBottomLabel: "隐私优先的本地工作流",
     heroNoteBottomBody:
       "应用采用沙盒文件权限与本地存储，而不是云端渲染或登录流程。",
-    heroImageAlt: "MarkdownToPDF 队列仪表盘界面",
+    heroImageAlt: "MarkdownToPDF PRO 队列仪表盘界面",
     signal1Title: "从 Finder 直接开始",
     signal1Body:
       "在你明确授权的目录中，无论是单文件还是多文件，只需打开右键菜单，就能把 Markdown 送进转换队列。",
@@ -259,23 +259,23 @@ const translations = {
     renderMathTitle: "离线数学公式渲染",
     renderMathBody:
       "行内与块级公式会在导出前通过内置 MathJax SVG 完成排版，因此最终 PDF 里显示的是清晰公式，而不是原始 TeX 定界符。",
-    renderMathAlt: "MarkdownToPDF 导出的数学公式示例",
+    renderMathAlt: "MarkdownToPDF PRO 导出的数学公式示例",
     renderCodeImageTitle: "代码块视觉样式",
     renderCodeImageBody:
       "导出的代码块会保留语法颜色、语言标签，以及渲染器提供的窗口式代码框外观。",
-    renderCodeAlt: "MarkdownToPDF 导出的语法高亮代码块示例",
+    renderCodeAlt: "MarkdownToPDF PRO 导出的语法高亮代码块示例",
     renderTableTitle: "表格布局与对齐",
     renderTableBody:
       "导出的表格会保留边框、列对齐与清晰间距，让表格内容在转换后依然保持良好结构。",
-    renderTableAlt: "MarkdownToPDF 导出的表格渲染示例",
+    renderTableAlt: "MarkdownToPDF PRO 导出的表格渲染示例",
     renderRoundedTableTitle: "圆角表格渲染",
     renderRoundedTableBody:
       "表格圆角控制可以把标准网格表格导出成更柔和的样式，同时保留表头对比、边框与列对齐。",
-    renderRoundedTableAlt: "MarkdownToPDF 导出的圆角表格示例",
+    renderRoundedTableAlt: "MarkdownToPDF PRO 导出的圆角表格示例",
     renderFlowchartTitle: "流程图渲染",
     renderFlowchartBody:
       "Mermaid 流程图会保留节点、连线、标签与间距，让导出的 PDF 仍然保持源图表的清晰结构。",
-    renderFlowchartAlt: "MarkdownToPDF 导出的流程图渲染示例",
+    renderFlowchartAlt: "MarkdownToPDF PRO 导出的流程图渲染示例",
     renderCodeTitle: "常见语言内置语法高亮",
     renderCodeBody:
       "Swift、Bash、Python、JavaScript、TypeScript、JSON、YAML、SQL 与 C-Like 语言都支持内置分词高亮；未知语言会回退为普通代码块。",
@@ -288,14 +288,14 @@ const translations = {
     supportEyebrow: "支持矩阵",
     supportTitle: "当前正式版本已经支持什么。",
     supportLead:
-      "此页面内容来自 MarkdownToPDF 仓库中的源码、发布说明、支持矩阵与仓库文档。",
+      "此页面内容来自 MarkdownToPDF PRO 仓库中的源码、发布说明、支持矩阵与仓库文档。",
     supportGoodTitle: "当前已可用能力",
     supportGood1: "标题、段落、分隔线与引用块",
     supportGood2: "有序列表、无序列表、任务列表、行内代码、围栏代码块与语法高亮",
     supportGood3: "表格、对齐、圆角表格、链接、图片、相对资源路径、Mermaid 与离线数学公式渲染",
     supportGood4: "主题、纸张尺寸、边距、目录导航、PDF 书签、命名规则与导出后动作",
     privacyEyebrow: "隐私政策",
-    privacyTitle: "MarkdownToPDF 的设计目标，是在你的 Mac 上完成处理，而不是把文档送到云端。",
+    privacyTitle: "MarkdownToPDF PRO 的设计目标，是在你的 Mac 上完成处理，而不是把文档送到云端。",
     privacyLead:
       "以下内容基于 2026 年 4 月 19 日时的当前应用架构、entitlement 文件与仓库文档。",
     privacyCard1Title: "应用会访问什么",
@@ -311,7 +311,7 @@ const translations = {
     privacyEffectiveValue: "2026 年 4 月 19 日",
     policy1Title: "1. 应用处理的信息",
     policy1Body:
-      "MarkdownToPDF 会处理你选择的源 Markdown 文档、你指定的输出位置，以及本地存储的渲染模板、命名默认值、转换历史和待处理队列记录。",
+      "MarkdownToPDF PRO 会处理你选择的源 Markdown 文档、你指定的输出位置，以及本地存储的渲染模板、命名默认值、转换历史和待处理队列记录。",
     policy2Title: "2. 为什么需要这些信息",
     policy2Body:
       "这些信息仅用于生成 PDF、管理转换队列、重新打开或在 Finder 中显示导出文件、记住你的偏好设置，以及在应用内部展示成功或失败结果。",
@@ -328,13 +328,13 @@ const translations = {
     policy6Body:
       "如果未来版本的应用架构发生变化，这份隐私政策也应与发布说明和官网一起更新，以保证文档描述与实际行为保持一致。",
     footerBody:
-      "本页面基于当前 MarkdownToPDF 代码库、发布说明、支持矩阵与本地化预览图制作。",
+      "本页面基于当前 MarkdownToPDF PRO 代码库、发布说明、支持矩阵与本地化预览图制作。",
     footerContactLabel: "联系邮箱：",
   },
   "zh-Hant": {
-    pageTitle: "MarkdownToPDF for macOS",
+    pageTitle: "MarkdownToPDF PRO for macOS",
     pageDescription:
-      "MarkdownToPDF 是一款面向 macOS 的 Finder 延伸功能 App，可將 Markdown 檔案在本機轉換為精緻 PDF，並提供設定檔、語法高亮、數學公式渲染、歷史記錄、批次佇列與隱私優先的處理方式。",
+      "MarkdownToPDF PRO 是一款面向 macOS 的 Finder 延伸功能 App，可將 Markdown 檔案在本機轉換為精緻 PDF，並提供設定檔、語法高亮、數學公式渲染、歷史記錄、批次佇列與隱私優先的處理方式。",
     navPrimaryAria: "主要導覽",
     langSwitcherLabel: "語言切換",
     skipLink: "跳至主要內容",
@@ -344,7 +344,7 @@ const translations = {
     heroEyebrow: "Finder 延伸功能 + 原生 macOS App",
     heroTitle: "不離開 Finder，直接把 Markdown 匯出成精緻 PDF。",
     heroLead:
-      "MarkdownToPDF 面向寫作者、工程師與文件團隊，強調本機處理、可重複匯出、批次佇列、設定檔，以及更適合列印與分享的輸出品質。",
+      "MarkdownToPDF PRO 面向寫作者、工程師與文件團隊，強調本機處理、可重複匯出、批次佇列、設定檔，以及更適合列印與分享的輸出品質。",
     heroDownload: "在 Mac App Store 下載",
     heroPrimary: "查看預覽圖",
     heroSecondary: "閱讀隱私政策",
@@ -364,7 +364,7 @@ const translations = {
     heroNoteBottomLabel: "隱私優先的本機工作流",
     heroNoteBottomBody:
       "應用採用沙盒檔案權限與本機儲存，而不是雲端渲染或登入流程。",
-    heroImageAlt: "MarkdownToPDF 佇列儀表板介面",
+    heroImageAlt: "MarkdownToPDF PRO 佇列儀表板介面",
     signal1Title: "從 Finder 直接開始",
     signal1Body:
       "在你明確授權的資料夾中，不論是單檔還是多檔，只要開啟右鍵選單，就能把 Markdown 送進轉換佇列。",
@@ -425,23 +425,23 @@ const translations = {
     renderMathTitle: "離線數學公式渲染",
     renderMathBody:
       "行內與區塊公式會在匯出前透過內建 MathJax SVG 完成排版，因此最終 PDF 顯示的是清楚的公式，而不是原始 TeX 定界符。",
-    renderMathAlt: "MarkdownToPDF 匯出的數學公式示例",
+    renderMathAlt: "MarkdownToPDF PRO 匯出的數學公式示例",
     renderCodeImageTitle: "程式碼區塊視覺樣式",
     renderCodeImageBody:
       "匯出的程式碼區塊會保留語法顏色、語言標籤，以及渲染器提供的視窗式程式碼框外觀。",
-    renderCodeAlt: "MarkdownToPDF 匯出的語法高亮程式碼區塊示例",
+    renderCodeAlt: "MarkdownToPDF PRO 匯出的語法高亮程式碼區塊示例",
     renderTableTitle: "表格版面與對齊",
     renderTableBody:
       "匯出的表格會保留框線、欄位對齊與清楚間距，讓表格內容在轉換後依然維持良好結構。",
-    renderTableAlt: "MarkdownToPDF 匯出的表格渲染示例",
+    renderTableAlt: "MarkdownToPDF PRO 匯出的表格渲染示例",
     renderRoundedTableTitle: "圓角表格渲染",
     renderRoundedTableBody:
       "表格圓角控制可將標準網格表格匯出成更柔和的樣式，同時保留表頭對比、框線與欄位對齊。",
-    renderRoundedTableAlt: "MarkdownToPDF 匯出的圓角表格示例",
+    renderRoundedTableAlt: "MarkdownToPDF PRO 匯出的圓角表格示例",
     renderFlowchartTitle: "流程圖渲染",
     renderFlowchartBody:
       "Mermaid 流程圖會保留節點、連線、標籤與間距，讓匯出的 PDF 仍然維持來源圖表的清楚結構。",
-    renderFlowchartAlt: "MarkdownToPDF 匯出的流程圖渲染示例",
+    renderFlowchartAlt: "MarkdownToPDF PRO 匯出的流程圖渲染示例",
     renderCodeTitle: "常見語言內建語法高亮",
     renderCodeBody:
       "Swift、Bash、Python、JavaScript、TypeScript、JSON、YAML、SQL 與 C-Like 語言都支援內建高亮；未知語言會回退為乾淨的純文字程式碼區塊。",
@@ -454,14 +454,14 @@ const translations = {
     supportEyebrow: "支援矩陣",
     supportTitle: "目前正式版本已支援的內容。",
     supportLead:
-      "此頁面內容來自 MarkdownToPDF 倉庫中的原始碼、釋出說明、支援矩陣與相關文件。",
+      "此頁面內容來自 MarkdownToPDF PRO 倉庫中的原始碼、釋出說明、支援矩陣與相關文件。",
     supportGoodTitle: "目前可用能力",
     supportGood1: "標題、段落、分隔線與引用區塊",
     supportGood2: "有序清單、無序清單、任務清單、行內程式碼、圍欄程式碼區塊與語法高亮",
     supportGood3: "表格、對齊、圓角表格、連結、圖片、相對資源路徑、Mermaid 與離線數學公式渲染",
     supportGood4: "主題、紙張尺寸、邊距、目錄導覽、PDF 書籤、命名規則與匯出後動作",
     privacyEyebrow: "隱私政策",
-    privacyTitle: "MarkdownToPDF 的設計目標，是在你的 Mac 上完成處理，而不是把文件送到雲端。",
+    privacyTitle: "MarkdownToPDF PRO 的設計目標，是在你的 Mac 上完成處理，而不是把文件送到雲端。",
     privacyLead:
       "以下內容基於 2026 年 4 月 19 日時的目前應用架構、entitlement 檔案與倉庫文件。",
     privacyCard1Title: "應用會存取什麼",
@@ -477,7 +477,7 @@ const translations = {
     privacyEffectiveValue: "2026 年 4 月 19 日",
     policy1Title: "1. 應用處理的資訊",
     policy1Body:
-      "MarkdownToPDF 會處理你選擇的來源 Markdown 文件、你指定的輸出位置，以及本機儲存的渲染設定檔、命名預設值、轉換歷史與待處理佇列記錄。",
+      "MarkdownToPDF PRO 會處理你選擇的來源 Markdown 文件、你指定的輸出位置，以及本機儲存的渲染設定檔、命名預設值、轉換歷史與待處理佇列記錄。",
     policy2Title: "2. 為什麼需要這些資訊",
     policy2Body:
       "這些資訊僅用於產生 PDF、管理轉換佇列、重新開啟或在 Finder 中顯示匯出檔案、記住你的偏好設定，以及在應用內顯示成功或失敗結果。",
@@ -494,13 +494,13 @@ const translations = {
     policy6Body:
       "如果未來版本的應用架構發生變化，這份隱私政策也應與釋出說明和網站同步更新，以確保文件描述與實際行為一致。",
     footerBody:
-      "本頁面根據目前的 MarkdownToPDF 程式碼庫、釋出說明、支援矩陣與本地化預覽圖製作。",
+      "本頁面根據目前的 MarkdownToPDF PRO 程式碼庫、釋出說明、支援矩陣與本地化預覽圖製作。",
     footerContactLabel: "聯絡信箱：",
   },
   ja: {
-    pageTitle: "MarkdownToPDF for macOS",
+    pageTitle: "MarkdownToPDF PRO for macOS",
     pageDescription:
-      "MarkdownToPDF は、Finder から Markdown ファイルを整った PDF に変換できる macOS アプリです。プロファイル、構文ハイライト、数式レンダリング、履歴、バッチキュー、プライバシー重視のローカル処理に対応しています。",
+      "MarkdownToPDF PRO は、Finder から Markdown ファイルを整った PDF に変換できる macOS アプリです。プロファイル、構文ハイライト、数式レンダリング、履歴、バッチキュー、プライバシー重視のローカル処理に対応しています。",
     navPrimaryAria: "メインナビゲーション",
     langSwitcherLabel: "言語切り替え",
     skipLink: "本文へ移動",
@@ -510,7 +510,7 @@ const translations = {
     heroEyebrow: "Finder 拡張 + ネイティブ macOS アプリ",
     heroTitle: "Finder を離れずに、Markdown を洗練された PDF に変換。",
     heroLead:
-      "MarkdownToPDF は、ローカルで繰り返し使える書き出し、バッチキュー、プロファイル管理、印刷向けのきれいな出力を求めるライター、エンジニア、ドキュメントチーム向けに設計されています。",
+      "MarkdownToPDF PRO は、ローカルで繰り返し使える書き出し、バッチキュー、プロファイル管理、印刷向けのきれいな出力を求めるライター、エンジニア、ドキュメントチーム向けに設計されています。",
     heroDownload: "Mac App Store でダウンロード",
     heroPrimary: "プレビューを見る",
     heroSecondary: "プライバシーポリシーを読む",
@@ -530,7 +530,7 @@ const translations = {
     heroNoteBottomLabel: "プライバシー重視のローカル処理",
     heroNoteBottomBody:
       "アプリはクラウドレンダリングやサインインではなく、サンドボックスのファイル権限とローカル保存を使います。",
-    heroImageAlt: "MarkdownToPDF のキューダッシュボード",
+    heroImageAlt: "MarkdownToPDF PRO のキューダッシュボード",
     signal1Title: "Finder からすぐ開始",
     signal1Body:
       "明示的に許可したフォルダで、1 ファイルでも複数ファイルでも右クリックメニューから Markdown を変換キューへ送れます。",
@@ -591,23 +591,23 @@ const translations = {
     renderMathTitle: "オフライン数式レンダリング",
     renderMathBody:
       "インライン数式とディスプレイ数式は、同梱の MathJax SVG で書き出し前に組版されるため、PDF には生の TeX 区切り文字ではなく読みやすい式が残ります。",
-    renderMathAlt: "MarkdownToPDF で書き出した数式のサンプル",
+    renderMathAlt: "MarkdownToPDF PRO で書き出した数式のサンプル",
     renderCodeImageTitle: "コードブロックの見た目",
     renderCodeImageBody:
       "書き出されたコードブロックは、構文色、言語ラベル、レンダラー由来の整ったウィンドウ風スタイルを維持します。",
-    renderCodeAlt: "MarkdownToPDF で書き出した構文ハイライト付きコードブロック",
+    renderCodeAlt: "MarkdownToPDF PRO で書き出した構文ハイライト付きコードブロック",
     renderTableTitle: "表のレイアウトと整列",
     renderTableBody:
       "書き出した表は罫線、列の整列、読みやすい余白を保つため、変換後も表形式の情報が整理されたままです。",
-    renderTableAlt: "MarkdownToPDF で書き出した表のサンプル",
+    renderTableAlt: "MarkdownToPDF PRO で書き出した表のサンプル",
     renderRoundedTableTitle: "角丸テーブルのレンダリング",
     renderRoundedTableBody:
       "テーブルの角丸設定により、標準的なグリッド表を、ヘッダーのコントラスト、罫線、列揃えを保ったまま柔らかい見た目で書き出せます。",
-    renderRoundedTableAlt: "MarkdownToPDF で書き出した角丸テーブルのサンプル",
+    renderRoundedTableAlt: "MarkdownToPDF PRO で書き出した角丸テーブルのサンプル",
     renderFlowchartTitle: "フローチャートのレンダリング",
     renderFlowchartBody:
       "Mermaid フローチャートはノード、矢印、ラベル、余白を保つため、書き出した PDF でも元の図の読みやすい構造を維持できます。",
-    renderFlowchartAlt: "MarkdownToPDF で書き出したフローチャートのサンプル",
+    renderFlowchartAlt: "MarkdownToPDF PRO で書き出したフローチャートのサンプル",
     renderCodeTitle: "主要言語向けの構文ハイライト",
     renderCodeBody:
       "Swift、Bash、Python、JavaScript、TypeScript、JSON、YAML、SQL、C 系言語には標準でトークンハイライトが適用されます。未知の言語はプレーンなコードブロックとして表示されます。",
@@ -620,14 +620,14 @@ const translations = {
     supportEyebrow: "サポート範囲",
     supportTitle: "現在の正式版で利用できる機能。",
     supportLead:
-      "このページは MarkdownToPDF リポジトリの現行ソースコード、リリースノート、サポートマトリクス、関連ドキュメントを元にしています。",
+      "このページは MarkdownToPDF PRO リポジトリの現行ソースコード、リリースノート、サポートマトリクス、関連ドキュメントを元にしています。",
     supportGoodTitle: "現在利用可能",
     supportGood1: "見出し、段落、水平線、引用ブロック",
     supportGood2: "順序付きリスト、箇条書き、タスクリスト、インラインコード、フェンスコード、構文ハイライト",
     supportGood3: "表、整列、角丸テーブル、リンク、画像、相対アセットパス、Mermaid、オフライン数式レンダリング",
     supportGood4: "テーマ、用紙サイズ、余白、目次ナビゲーション、PDF ブックマーク、命名ルール、変換後アクション",
     privacyEyebrow: "プライバシーポリシー",
-    privacyTitle: "MarkdownToPDF は、クラウドではなくあなたの Mac 上で動作するよう設計されています。",
+    privacyTitle: "MarkdownToPDF PRO は、クラウドではなくあなたの Mac 上で動作するよう設計されています。",
     privacyLead:
       "以下の内容は、2026 年 4 月 19 日時点のアプリ構成、entitlement ファイル、リポジトリ文書を反映しています。",
     privacyCard1Title: "アプリがアクセスするもの",
@@ -643,7 +643,7 @@ const translations = {
     privacyEffectiveValue: "2026年4月19日",
     policy1Title: "1. アプリが処理する情報",
     policy1Body:
-      "MarkdownToPDF は、選択した元の Markdown 文書、指定した出力先、そしてローカルに保存されたレンダープロファイル、命名既定値、変換履歴、保留中キュー記録を処理します。",
+      "MarkdownToPDF PRO は、選択した元の Markdown 文書、指定した出力先、そしてローカルに保存されたレンダープロファイル、命名既定値、変換履歴、保留中キュー記録を処理します。",
     policy2Title: "2. その情報を使う理由",
     policy2Body:
       "これらの情報は、PDF の生成、キュー変換の管理、生成ファイルの再表示や Finder での表示、設定の記憶、成功・失敗結果の表示のためにのみ使用されます。",
@@ -660,13 +660,13 @@ const translations = {
     policy6Body:
       "将来のリリースでアプリ構成が変わる場合は、このポリシーもリリースノートや Web サイトと合わせて更新し、記載内容と実際の動作が一致するようにすべきです。",
     footerBody:
-      "このページは、MarkdownToPDF の現行コードベース、リリースノート、サポートマトリクス、ローカライズ済みプレビュー画像をもとに構成されています。",
+      "このページは、MarkdownToPDF PRO の現行コードベース、リリースノート、サポートマトリクス、ローカライズ済みプレビュー画像をもとに構成されています。",
     footerContactLabel: "連絡先:",
   },
   ko: {
-    pageTitle: "MarkdownToPDF for macOS",
+    pageTitle: "MarkdownToPDF PRO for macOS",
     pageDescription:
-      "MarkdownToPDF는 Finder에서 Markdown 파일을 정돈된 PDF로 바꿔 주는 macOS 앱입니다. 프로필, 문법 강조, 수식 렌더링, 기록, 배치 큐, 개인정보 중심의 로컬 처리에 대응합니다.",
+      "MarkdownToPDF PRO는 Finder에서 Markdown 파일을 정돈된 PDF로 바꿔 주는 macOS 앱입니다. 프로필, 문법 강조, 수식 렌더링, 기록, 배치 큐, 개인정보 중심의 로컬 처리에 대응합니다.",
     navPrimaryAria: "기본 탐색",
     langSwitcherLabel: "언어 전환",
     skipLink: "본문으로 건너뛰기",
@@ -676,7 +676,7 @@ const translations = {
     heroEyebrow: "Finder 확장 + 네이티브 macOS 앱",
     heroTitle: "Finder를 벗어나지 않고 Markdown을 완성도 높은 PDF로 변환.",
     heroLead:
-      "MarkdownToPDF는 로컬에서 반복 가능한 내보내기, 배치 큐, 프로필, 깔끔한 출력 품질이 필요한 작성자, 엔지니어, 문서 팀을 위해 만들어졌습니다.",
+      "MarkdownToPDF PRO는 로컬에서 반복 가능한 내보내기, 배치 큐, 프로필, 깔끔한 출력 품질이 필요한 작성자, 엔지니어, 문서 팀을 위해 만들어졌습니다.",
     heroDownload: "Mac App Store에서 다운로드",
     heroPrimary: "미리보기 보기",
     heroSecondary: "개인정보 처리방침 읽기",
@@ -696,7 +696,7 @@ const translations = {
     heroNoteBottomLabel: "개인정보 중심의 로컬 워크플로",
     heroNoteBottomBody:
       "앱은 클라우드 렌더링이나 로그인 흐름 대신 샌드박스 파일 권한과 로컬 저장소를 사용합니다.",
-    heroImageAlt: "MarkdownToPDF 큐 대시보드",
+    heroImageAlt: "MarkdownToPDF PRO 큐 대시보드",
     signal1Title: "Finder에서 바로 시작",
     signal1Body:
       "명시적으로 허용한 폴더에서 파일 하나든 여러 개든 우클릭 메뉴로 Markdown을 변환 큐에 바로 보낼 수 있습니다.",
@@ -757,23 +757,23 @@ const translations = {
     renderMathTitle: "오프라인 수식 렌더링",
     renderMathBody:
       "인라인 수식과 디스플레이 수식은 번들된 MathJax SVG로 내보내기 전에 조판되므로 PDF에는 원시 TeX 구분자가 아니라 읽기 쉬운 수식이 남습니다.",
-    renderMathAlt: "MarkdownToPDF가 내보낸 수식 렌더링 예시",
+    renderMathAlt: "MarkdownToPDF PRO가 내보낸 수식 렌더링 예시",
     renderCodeImageTitle: "코드 블록 스타일",
     renderCodeImageBody:
       "내보낸 코드 블록은 문법 색상, 언어 레이블, 렌더러가 제공하는 정돈된 창 형태의 외형을 유지합니다.",
-    renderCodeAlt: "MarkdownToPDF가 내보낸 문법 강조 코드 블록 예시",
+    renderCodeAlt: "MarkdownToPDF PRO가 내보낸 문법 강조 코드 블록 예시",
     renderTableTitle: "표 레이아웃과 정렬",
     renderTableBody:
       "내보낸 표는 테두리, 열 정렬, 읽기 쉬운 간격을 유지해 표 형식의 정보가 변환 후에도 구조적으로 보입니다.",
-    renderTableAlt: "MarkdownToPDF가 내보낸 표 렌더링 예시",
+    renderTableAlt: "MarkdownToPDF PRO가 내보낸 표 렌더링 예시",
     renderRoundedTableTitle: "둥근 모서리 표 렌더링",
     renderRoundedTableBody:
       "표 모서리 반경 설정은 표준 그리드 표를 헤더 대비, 테두리, 열 정렬을 유지한 채 더 부드럽게 내보냅니다.",
-    renderRoundedTableAlt: "MarkdownToPDF가 내보낸 둥근 모서리 표 예시",
+    renderRoundedTableAlt: "MarkdownToPDF PRO가 내보낸 둥근 모서리 표 예시",
     renderFlowchartTitle: "플로우차트 렌더링",
     renderFlowchartBody:
       "Mermaid 플로우차트는 노드, 화살표, 레이블, 간격을 유지하므로 내보낸 PDF에서도 원본 다이어그램의 읽기 쉬운 구조가 그대로 남습니다.",
-    renderFlowchartAlt: "MarkdownToPDF가 내보낸 플로우차트 렌더링 예시",
+    renderFlowchartAlt: "MarkdownToPDF PRO가 내보낸 플로우차트 렌더링 예시",
     renderCodeTitle: "주요 언어를 위한 문법 강조",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL, C 계열 언어는 기본 토큰 강조를 제공합니다. 알 수 없는 언어는 깔끔한 일반 코드 블록으로 표시됩니다.",
@@ -786,14 +786,14 @@ const translations = {
     supportEyebrow: "지원 범위",
     supportTitle: "현재 정식 버전에서 지원하는 내용.",
     supportLead:
-      "이 페이지는 MarkdownToPDF 저장소의 현재 소스 코드, 릴리스 노트, 지원 매트릭스, 관련 문서를 기반으로 합니다.",
+      "이 페이지는 MarkdownToPDF PRO 저장소의 현재 소스 코드, 릴리스 노트, 지원 매트릭스, 관련 문서를 기반으로 합니다.",
     supportGoodTitle: "현재 사용 가능",
     supportGood1: "제목, 문단, 가로줄, 인용 블록",
     supportGood2: "순서 목록, 글머리표 목록, 작업 목록, 인라인 코드, fenced code block, 문법 강조",
     supportGood3: "표, 정렬, 둥근 모서리 표, 링크, 이미지, 상대 리소스 경로, Mermaid, 오프라인 수식 렌더링",
     supportGood4: "테마, 용지 크기, 여백, 목차 탐색, PDF 북마크, 이름 규칙, 변환 후 동작",
     privacyEyebrow: "개인정보 처리방침",
-    privacyTitle: "MarkdownToPDF는 클라우드가 아니라 사용자의 Mac에서 동작하도록 설계되었습니다.",
+    privacyTitle: "MarkdownToPDF PRO는 클라우드가 아니라 사용자의 Mac에서 동작하도록 설계되었습니다.",
     privacyLead:
       "아래 정책은 2026년 4월 19일 기준 앱 아키텍처, entitlement 파일, 저장소 문서를 반영합니다.",
     privacyCard1Title: "앱이 접근하는 정보",
@@ -809,7 +809,7 @@ const translations = {
     privacyEffectiveValue: "2026년 4월 19일",
     policy1Title: "1. 앱이 처리하는 정보",
     policy1Body:
-      "MarkdownToPDF는 사용자가 선택한 원본 Markdown 문서, 지정한 출력 위치, 그리고 로컬에 저장된 렌더링 프로필, 이름 기본값, 변환 기록, 대기 중인 큐 기록을 처리합니다.",
+      "MarkdownToPDF PRO는 사용자가 선택한 원본 Markdown 문서, 지정한 출력 위치, 그리고 로컬에 저장된 렌더링 프로필, 이름 기본값, 변환 기록, 대기 중인 큐 기록을 처리합니다.",
     policy2Title: "2. 이 정보를 사용하는 이유",
     policy2Body:
       "이 정보는 PDF 렌더링, 큐 변환 관리, 생성 파일 다시 열기 또는 Finder에서 표시하기, 환경설정 기억하기, 앱 안에서 성공 및 실패 결과를 보여 주기 위해서만 사용됩니다.",
@@ -826,13 +826,13 @@ const translations = {
     policy6Body:
       "향후 릴리스에서 앱 구조가 바뀌면 이 정책도 릴리스 노트와 웹사이트와 함께 업데이트되어 문서화된 동작이 실제와 일치하도록 해야 합니다.",
     footerBody:
-      "이 페이지는 현재 MarkdownToPDF 코드베이스, 릴리스 노트, 지원 매트릭스, 현지화된 미리보기 이미지를 바탕으로 제작되었습니다.",
+      "이 페이지는 현재 MarkdownToPDF PRO 코드베이스, 릴리스 노트, 지원 매트릭스, 현지화된 미리보기 이미지를 바탕으로 제작되었습니다.",
     footerContactLabel: "문의:",
   },
   de: {
-    pageTitle: "MarkdownToPDF für macOS",
+    pageTitle: "MarkdownToPDF PRO für macOS",
     pageDescription:
-      "MarkdownToPDF ist eine macOS-App mit Finder-Integration, die Markdown-Dateien lokal in hochwertige PDFs umwandelt, inklusive Profile, Syntax-Highlighting, Formelsatz, Verlauf, Batch-Warteschlange und datenschutzfreundlicher Verarbeitung.",
+      "MarkdownToPDF PRO ist eine macOS-App mit Finder-Integration, die Markdown-Dateien lokal in hochwertige PDFs umwandelt, inklusive Profile, Syntax-Highlighting, Formelsatz, Verlauf, Batch-Warteschlange und datenschutzfreundlicher Verarbeitung.",
     navPrimaryAria: "Hauptnavigation",
     langSwitcherLabel: "Sprachauswahl",
     skipLink: "Zum Inhalt springen",
@@ -842,7 +842,7 @@ const translations = {
     heroEyebrow: "Finder-Erweiterung + native macOS-App",
     heroTitle: "Markdown direkt aus dem Finder in saubere PDFs umwandeln.",
     heroLead:
-      "MarkdownToPDF ist für Autor:innen, Entwickler:innen und Dokumentationsteams gedacht, die lokale, wiederholbare Exporte mit Batch-Warteschlangen, Profilen und druckfertiger Ausgabe möchten.",
+      "MarkdownToPDF PRO ist für Autor:innen, Entwickler:innen und Dokumentationsteams gedacht, die lokale, wiederholbare Exporte mit Batch-Warteschlangen, Profilen und druckfertiger Ausgabe möchten.",
     heroDownload: "Im Mac App Store laden",
     heroPrimary: "Vorschauen ansehen",
     heroSecondary: "Datenschutzrichtlinie lesen",
@@ -862,7 +862,7 @@ const translations = {
     heroNoteBottomLabel: "Datenschutzfreundlicher lokaler Ablauf",
     heroNoteBottomBody:
       "Die App nutzt Sandbox-Dateizugriff und lokale Speicherung statt Cloud-Rendering oder Anmelde-Flows.",
-    heroImageAlt: "MarkdownToPDF Warteschlangen-Dashboard",
+    heroImageAlt: "MarkdownToPDF PRO Warteschlangen-Dashboard",
     signal1Title: "Direkt aus dem Finder",
     signal1Body:
       "In Ordnern, die du ausdrücklich freigibst, kannst du eine oder mehrere Dateien per Kontextmenü direkt in die Konvertierungs-Warteschlange schicken.",
@@ -923,23 +923,23 @@ const translations = {
     renderMathTitle: "Offline-Formelsatz",
     renderMathBody:
       "Inline- und Display-Formeln werden vor dem Export mit gebündeltem MathJax-SVG gesetzt, sodass im PDF lesbare Gleichungen statt roher TeX-Begrenzer erscheinen.",
-    renderMathAlt: "Beispiel für mathematisches Rendering aus MarkdownToPDF",
+    renderMathAlt: "Beispiel für mathematisches Rendering aus MarkdownToPDF PRO",
     renderCodeImageTitle: "Codeblock-Styling",
     renderCodeImageBody:
       "Exportierte Codeblöcke behalten Syntaxfarben, Sprachlabels und den aufgeräumten Fenster-Look des Renderers.",
-    renderCodeAlt: "Beispiel für syntaxhervorgehobenen Codeblock aus MarkdownToPDF",
+    renderCodeAlt: "Beispiel für syntaxhervorgehobenen Codeblock aus MarkdownToPDF PRO",
     renderTableTitle: "Tabellenlayout und Ausrichtung",
     renderTableBody:
       "Exportierte Tabellen behalten Rahmen, Spaltenausrichtung und gut lesbare Abstände, sodass tabellarische Inhalte auch nach der Konvertierung strukturiert bleiben.",
-    renderTableAlt: "Beispiel für Tabellen-Rendering aus MarkdownToPDF",
+    renderTableAlt: "Beispiel für Tabellen-Rendering aus MarkdownToPDF PRO",
     renderRoundedTableTitle: "Abgerundetes Tabellen-Styling",
     renderRoundedTableBody:
       "Eckenradius-Einstellungen machen aus klassischen Tabellen weichere Exporte, ohne Kopfzeilenkontrast, Rahmen oder Spaltenausrichtung zu verlieren.",
-    renderRoundedTableAlt: "Beispiel für abgerundetes Tabellen-Rendering aus MarkdownToPDF",
+    renderRoundedTableAlt: "Beispiel für abgerundetes Tabellen-Rendering aus MarkdownToPDF PRO",
     renderFlowchartTitle: "Flowchart-Rendering",
     renderFlowchartBody:
       "Mermaid-Flowcharts behalten Knoten, Pfeile, Beschriftungen und Abstände bei, sodass exportierte PDFs die gleiche gut lesbare Struktur wie das Ausgangsdiagramm bewahren.",
-    renderFlowchartAlt: "Beispiel für Flowchart-Rendering aus MarkdownToPDF",
+    renderFlowchartAlt: "Beispiel für Flowchart-Rendering aus MarkdownToPDF PRO",
     renderCodeTitle: "Syntax-Highlighting für gängige Sprachen",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL und C-ähnliche Sprachen erhalten integriertes Token-Highlighting. Unbekannte Sprachen fallen auf saubere Plain-Code-Blöcke zurück.",
@@ -952,14 +952,14 @@ const translations = {
     supportEyebrow: "Support-Matrix",
     supportTitle: "Was die App in der aktuellen Version unterstützt.",
     supportLead:
-      "Diese Seite basiert auf dem aktuellen Quellcode, den Release Notes, der Support-Matrix und der Dokumentation im MarkdownToPDF-Repository.",
+      "Diese Seite basiert auf dem aktuellen Quellcode, den Release Notes, der Support-Matrix und der Dokumentation im MarkdownToPDF PRO-Repository.",
     supportGoodTitle: "Heute verfügbar",
     supportGood1: "Überschriften, Absätze, horizontale Linien und Zitatblöcke",
     supportGood2: "Geordnete und ungeordnete Listen, Task-Listen, Inline-Code, fenced code und Syntax-Highlighting",
     supportGood3: "Tabellen, Ausrichtung, abgerundete Ecken, Links, Bilder, relative Asset-Pfade, Mermaid und Offline-Formelrendering",
     supportGood4: "Themes, Papiergrößen, Ränder, Inhaltsverzeichnis-Navigation, PDF-Lesezeichen, Benennungsregeln und Aktionen nach dem Export",
     privacyEyebrow: "Datenschutzrichtlinie",
-    privacyTitle: "MarkdownToPDF ist dafür gedacht, auf deinem Mac zu arbeiten, nicht in der Cloud.",
+    privacyTitle: "MarkdownToPDF PRO ist dafür gedacht, auf deinem Mac zu arbeiten, nicht in der Cloud.",
     privacyLead:
       "Die folgende Richtlinie spiegelt App-Architektur, Entitlement-Dateien und Repository-Dokumentation mit Stand 19. April 2026 wider.",
     privacyCard1Title: "Worauf die App zugreift",
@@ -975,7 +975,7 @@ const translations = {
     privacyEffectiveValue: "19. April 2026",
     policy1Title: "1. Welche Informationen die App verarbeitet",
     policy1Body:
-      "MarkdownToPDF verarbeitet die von dir ausgewählten Quelldokumente, die gewählten Ausgabepfade sowie lokal gespeicherte Einstellungen wie Render-Profile, Benennungsstandards, Konvertierungsverlauf und ausstehende Queue-Einträge.",
+      "MarkdownToPDF PRO verarbeitet die von dir ausgewählten Quelldokumente, die gewählten Ausgabepfade sowie lokal gespeicherte Einstellungen wie Render-Profile, Benennungsstandards, Konvertierungsverlauf und ausstehende Queue-Einträge.",
     policy2Title: "2. Wofür diese Informationen verwendet werden",
     policy2Body:
       "Diese Informationen werden ausschließlich genutzt, um PDFs zu rendern, Konvertierungswarteschlangen zu verwalten, erzeugte Dateien wieder zu öffnen oder im Finder zu zeigen, Einstellungen zu merken und Ergebnisse oder Fehler in der App anzuzeigen.",
@@ -992,13 +992,13 @@ const translations = {
     policy6Body:
       "Wenn sich die App-Architektur in einer zukünftigen Version ändert, sollte diese Richtlinie zusammen mit den Release Notes und der Website aktualisiert werden, damit die dokumentierte Beschreibung korrekt bleibt.",
     footerBody:
-      "Erstellt auf Grundlage der aktuellen MarkdownToPDF-Codebasis, Release Notes, Support-Matrix und lokalisierten Vorschaubilder.",
+      "Erstellt auf Grundlage der aktuellen MarkdownToPDF PRO-Codebasis, Release Notes, Support-Matrix und lokalisierten Vorschaubilder.",
     footerContactLabel: "Kontakt:",
   },
   fr: {
-    pageTitle: "MarkdownToPDF pour macOS",
+    pageTitle: "MarkdownToPDF PRO pour macOS",
     pageDescription:
-      "MarkdownToPDF est une application macOS intégrée au Finder qui transforme localement des fichiers Markdown en PDF soignés, avec profils, coloration syntaxique, rendu mathématique, historique, file d'attente par lots et traitement respectueux de la vie privée.",
+      "MarkdownToPDF PRO est une application macOS intégrée au Finder qui transforme localement des fichiers Markdown en PDF soignés, avec profils, coloration syntaxique, rendu mathématique, historique, file d'attente par lots et traitement respectueux de la vie privée.",
     navPrimaryAria: "Navigation principale",
     langSwitcherLabel: "Sélecteur de langue",
     skipLink: "Aller au contenu",
@@ -1008,7 +1008,7 @@ const translations = {
     heroEyebrow: "Extension Finder + application macOS native",
     heroTitle: "Transformer Markdown en PDF soignés sans quitter Finder.",
     heroLead:
-      "MarkdownToPDF s'adresse aux rédacteurs, ingénieurs et équipes de documentation qui veulent des exports locaux, répétables, avec files d'attente, profils et rendu propre prêt à l'impression.",
+      "MarkdownToPDF PRO s'adresse aux rédacteurs, ingénieurs et équipes de documentation qui veulent des exports locaux, répétables, avec files d'attente, profils et rendu propre prêt à l'impression.",
     heroDownload: "Télécharger sur le Mac App Store",
     heroPrimary: "Voir les aperçus",
     heroSecondary: "Lire la politique de confidentialité",
@@ -1028,7 +1028,7 @@ const translations = {
     heroNoteBottomLabel: "Traitement local d'abord",
     heroNoteBottomBody:
       "L'application utilise des accès fichiers sandboxés et un stockage local plutôt qu'un rendu cloud ou des flux de connexion.",
-    heroImageAlt: "Tableau de bord de file d'attente MarkdownToPDF",
+    heroImageAlt: "Tableau de bord de file d'attente MarkdownToPDF PRO",
     signal1Title: "Directement depuis Finder",
     signal1Body:
       "Dans les dossiers que vous autorisez explicitement, sélectionnez un ou plusieurs fichiers, ouvrez le menu contextuel et envoyez votre Markdown directement dans la file de conversion.",
@@ -1089,23 +1089,23 @@ const translations = {
     renderMathTitle: "Rendu mathématique hors ligne",
     renderMathBody:
       "Les formules en ligne et en bloc sont composées avant l'export avec MathJax SVG embarqué, pour obtenir un PDF lisible au lieu de délimiteurs TeX bruts.",
-    renderMathAlt: "Exemple de rendu mathématique exporté par MarkdownToPDF",
+    renderMathAlt: "Exemple de rendu mathématique exporté par MarkdownToPDF PRO",
     renderCodeImageTitle: "Style des blocs de code",
     renderCodeImageBody:
       "Les blocs de code exportés conservent les couleurs de syntaxe, les étiquettes de langage et l'habillage soigné de la fenêtre de code.",
-    renderCodeAlt: "Exemple de bloc de code coloré exporté par MarkdownToPDF",
+    renderCodeAlt: "Exemple de bloc de code coloré exporté par MarkdownToPDF PRO",
     renderTableTitle: "Mise en page et alignement des tableaux",
     renderTableBody:
       "Les tableaux exportés conservent bordures, alignement des colonnes et espacements lisibles, pour que le contenu reste structuré après conversion.",
-    renderTableAlt: "Exemple de rendu de tableau exporté par MarkdownToPDF",
+    renderTableAlt: "Exemple de rendu de tableau exporté par MarkdownToPDF PRO",
     renderRoundedTableTitle: "Style de tableau arrondi",
     renderRoundedTableBody:
       "Le contrôle du rayon d'angle transforme les tableaux en exports plus doux sans perdre le contraste d'en-tête, les bordures ni l'alignement.",
-    renderRoundedTableAlt: "Exemple de tableau arrondi exporté par MarkdownToPDF",
+    renderRoundedTableAlt: "Exemple de tableau arrondi exporté par MarkdownToPDF PRO",
     renderFlowchartTitle: "Rendu des organigrammes",
     renderFlowchartBody:
       "Les organigrammes Mermaid conservent nœuds, flèches, libellés et espacements, pour que le PDF exporté garde la même structure lisible que le diagramme source.",
-    renderFlowchartAlt: "Exemple de rendu d'organigramme exporté par MarkdownToPDF",
+    renderFlowchartAlt: "Exemple de rendu d'organigramme exporté par MarkdownToPDF PRO",
     renderCodeTitle: "Coloration syntaxique pour les langages courants",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL et les langages de type C bénéficient d'une coloration intégrée. Les langages inconnus retombent sur des blocs de code simples.",
@@ -1118,14 +1118,14 @@ const translations = {
     supportEyebrow: "Matrice de prise en charge",
     supportTitle: "Ce que l'application prend en charge dans la version actuelle.",
     supportLead:
-      "Cette page s'appuie sur le code source actuel, les notes de version, la matrice de prise en charge et la documentation du dépôt MarkdownToPDF.",
+      "Cette page s'appuie sur le code source actuel, les notes de version, la matrice de prise en charge et la documentation du dépôt MarkdownToPDF PRO.",
     supportGoodTitle: "Disponible aujourd'hui",
     supportGood1: "Titres, paragraphes, règles horizontales et blocs de citation",
     supportGood2: "Listes ordonnées, listes non ordonnées, listes de tâches, code en ligne, blocs de code et coloration syntaxique",
     supportGood3: "Tableaux, alignement, coins arrondis, liens, images, chemins relatifs, Mermaid et rendu mathématique hors ligne",
     supportGood4: "Thèmes, formats de page, marges, navigation par table des matières, signets PDF, règles de nommage et actions après export",
     privacyEyebrow: "Politique de confidentialité",
-    privacyTitle: "MarkdownToPDF est conçu pour fonctionner sur votre Mac, pas dans le cloud.",
+    privacyTitle: "MarkdownToPDF PRO est conçu pour fonctionner sur votre Mac, pas dans le cloud.",
     privacyLead:
       "La politique ci-dessous reflète l'architecture actuelle de l'application, les fichiers d'entitlements et la documentation du dépôt au 19 avril 2026.",
     privacyCard1Title: "Ce à quoi l'application accède",
@@ -1141,7 +1141,7 @@ const translations = {
     privacyEffectiveValue: "19 avril 2026",
     policy1Title: "1. Informations traitées par l'application",
     policy1Body:
-      "MarkdownToPDF traite les documents source que vous sélectionnez, les emplacements de sortie que vous choisissez et les réglages stockés localement comme les profils de rendu, règles de nommage, historique de conversion et enregistrements de file en attente.",
+      "MarkdownToPDF PRO traite les documents source que vous sélectionnez, les emplacements de sortie que vous choisissez et les réglages stockés localement comme les profils de rendu, règles de nommage, historique de conversion et enregistrements de file en attente.",
     policy2Title: "2. Pourquoi ces informations sont utilisées",
     policy2Body:
       "Ces informations servent uniquement à générer des PDF, gérer les conversions en file, rouvrir ou révéler les fichiers générés, mémoriser vos préférences et afficher les réussites ou les échecs dans l'application.",
@@ -1158,13 +1158,13 @@ const translations = {
     policy6Body:
       "Si l'architecture de l'application change dans une future version, cette politique devra être mise à jour en même temps que les notes de version et le site afin que la description reste fidèle au comportement réel.",
     footerBody:
-      "Construit à partir du code actuel de MarkdownToPDF, des notes de version, de la matrice de prise en charge et des aperçus localisés.",
+      "Construit à partir du code actuel de MarkdownToPDF PRO, des notes de version, de la matrice de prise en charge et des aperçus localisés.",
     footerContactLabel: "Contact :",
   },
   it: {
-    pageTitle: "MarkdownToPDF per macOS",
+    pageTitle: "MarkdownToPDF PRO per macOS",
     pageDescription:
-      "MarkdownToPDF è un'app macOS integrata con Finder che converte localmente file Markdown in PDF curati, con profili, evidenziazione della sintassi, rendering matematico, cronologia, coda batch e trattamento attento alla privacy.",
+      "MarkdownToPDF PRO è un'app macOS integrata con Finder che converte localmente file Markdown in PDF curati, con profili, evidenziazione della sintassi, rendering matematico, cronologia, coda batch e trattamento attento alla privacy.",
     navPrimaryAria: "Navigazione principale",
     langSwitcherLabel: "Selettore lingua",
     skipLink: "Vai al contenuto",
@@ -1174,7 +1174,7 @@ const translations = {
     heroEyebrow: "Estensione Finder + app macOS nativa",
     heroTitle: "Trasforma Markdown in PDF curati senza uscire da Finder.",
     heroLead:
-      "MarkdownToPDF è pensata per scrittori, ingegneri e team di documentazione che vogliono esportazioni locali e ripetibili, con code batch, profili e output puliti pronti per la stampa.",
+      "MarkdownToPDF PRO è pensata per scrittori, ingegneri e team di documentazione che vogliono esportazioni locali e ripetibili, con code batch, profili e output puliti pronti per la stampa.",
     heroDownload: "Scarica dal Mac App Store",
     heroPrimary: "Esplora le anteprime",
     heroSecondary: "Leggi l'informativa sulla privacy",
@@ -1194,7 +1194,7 @@ const translations = {
     heroNoteBottomLabel: "Flusso locale orientato alla privacy",
     heroNoteBottomBody:
       "L'app usa accesso ai file sandboxato e archiviazione locale invece di rendering cloud o flussi di login.",
-    heroImageAlt: "Dashboard della coda di MarkdownToPDF",
+    heroImageAlt: "Dashboard della coda di MarkdownToPDF PRO",
     signal1Title: "Direttamente da Finder",
     signal1Body:
       "Nelle cartelle che autorizzi esplicitamente, puoi selezionare uno o più file, aprire il menu contestuale e inviare il Markdown direttamente alla coda di conversione.",
@@ -1255,23 +1255,23 @@ const translations = {
     renderMathTitle: "Rendering matematico offline",
     renderMathBody:
       "Le formule inline e display vengono composte prima dell'export con MathJax SVG integrato, così il PDF conserva equazioni leggibili invece dei delimitatori TeX grezzi.",
-    renderMathAlt: "Esempio di rendering matematico esportato da MarkdownToPDF",
+    renderMathAlt: "Esempio di rendering matematico esportato da MarkdownToPDF PRO",
     renderCodeImageTitle: "Stile dei blocchi di codice",
     renderCodeImageBody:
       "I blocchi di codice esportati mantengono colori sintattici, etichette del linguaggio e l'aspetto curato a finestra usato dal renderer.",
-    renderCodeAlt: "Esempio di blocco di codice con evidenziazione esportato da MarkdownToPDF",
+    renderCodeAlt: "Esempio di blocco di codice con evidenziazione esportato da MarkdownToPDF PRO",
     renderTableTitle: "Layout e allineamento delle tabelle",
     renderTableBody:
       "Le tabelle esportate conservano bordi, allineamento delle colonne e spaziature leggibili, così i contenuti tabellari restano strutturati dopo la conversione.",
-    renderTableAlt: "Esempio di rendering tabella esportato da MarkdownToPDF",
+    renderTableAlt: "Esempio di rendering tabella esportato da MarkdownToPDF PRO",
     renderRoundedTableTitle: "Stile tabella arrotondato",
     renderRoundedTableBody:
       "I controlli del raggio degli angoli trasformano le tabelle standard in export più morbidi senza perdere contrasto dell'intestazione, bordi o allineamento.",
-    renderRoundedTableAlt: "Esempio di tabella arrotondata esportata da MarkdownToPDF",
+    renderRoundedTableAlt: "Esempio di tabella arrotondata esportata da MarkdownToPDF PRO",
     renderFlowchartTitle: "Rendering dei flowchart",
     renderFlowchartBody:
       "I flowchart Mermaid mantengono nodi, frecce, etichette e spaziature, così i PDF esportati conservano la stessa struttura leggibile del diagramma sorgente.",
-    renderFlowchartAlt: "Esempio di rendering flowchart esportato da MarkdownToPDF",
+    renderFlowchartAlt: "Esempio di rendering flowchart esportato da MarkdownToPDF PRO",
     renderCodeTitle: "Evidenziazione della sintassi per i linguaggi più comuni",
     renderCodeBody:
       "Swift, Bash, Python, JavaScript, TypeScript, JSON, YAML, SQL e i linguaggi simili al C ricevono evidenziazione integrata. I linguaggi sconosciuti tornano a blocchi di codice puliti e semplici.",
@@ -1284,14 +1284,14 @@ const translations = {
     supportEyebrow: "Matrice di supporto",
     supportTitle: "Cosa supporta l'app nella versione attuale.",
     supportLead:
-      "Questa pagina si basa sul codice sorgente attuale, sulle note di rilascio, sulla matrice di supporto e sulla documentazione del repository MarkdownToPDF.",
+      "Questa pagina si basa sul codice sorgente attuale, sulle note di rilascio, sulla matrice di supporto e sulla documentazione del repository MarkdownToPDF PRO.",
     supportGoodTitle: "Disponibile oggi",
     supportGood1: "Titoli, paragrafi, linee orizzontali e blocchi di citazione",
     supportGood2: "Liste ordinate, liste non ordinate, task list, codice inline, blocchi di codice e evidenziazione della sintassi",
     supportGood3: "Tabelle, allineamento, angoli arrotondati, link, immagini, percorsi relativi, Mermaid e rendering matematico offline",
     supportGood4: "Temi, formati pagina, margini, navigazione del sommario, segnalibri PDF, regole di naming e azioni post-export",
     privacyEyebrow: "Informativa sulla privacy",
-    privacyTitle: "MarkdownToPDF è progettata per lavorare sul tuo Mac, non nel cloud.",
+    privacyTitle: "MarkdownToPDF PRO è progettata per lavorare sul tuo Mac, non nel cloud.",
     privacyLead:
       "L'informativa seguente riflette l'architettura attuale dell'app, i file di entitlement e la documentazione del repository al 19 aprile 2026.",
     privacyCard1Title: "A cosa accede l'app",
@@ -1307,7 +1307,7 @@ const translations = {
     privacyEffectiveValue: "19 aprile 2026",
     policy1Title: "1. Informazioni trattate dall'app",
     policy1Body:
-      "MarkdownToPDF tratta i documenti sorgente selezionati, le posizioni di output scelte e le impostazioni salvate localmente come profili di rendering, regole di naming, cronologia delle conversioni e record della coda in attesa.",
+      "MarkdownToPDF PRO tratta i documenti sorgente selezionati, le posizioni di output scelte e le impostazioni salvate localmente come profili di rendering, regole di naming, cronologia delle conversioni e record della coda in attesa.",
     policy2Title: "2. Perché queste informazioni vengono usate",
     policy2Body:
       "Queste informazioni vengono usate solo per generare PDF, gestire le conversioni in coda, riaprire o mostrare i file generati, ricordare le preferenze e mostrare risultati o errori dentro l'app.",
@@ -1324,7 +1324,7 @@ const translations = {
     policy6Body:
       "Se l'architettura dell'app cambia in una futura versione, anche questa informativa dovrebbe essere aggiornata insieme alle note di rilascio e al sito, così la descrizione pubblicata resta accurata.",
     footerBody:
-      "Realizzato a partire dall'attuale codebase di MarkdownToPDF, dalle note di rilascio, dalla matrice di supporto e dalle anteprime localizzate.",
+      "Realizzato a partire dall'attuale codebase di MarkdownToPDF PRO, dalle note di rilascio, dalla matrice di supporto e dalle anteprime localizzate.",
     footerContactLabel: "Contatto:",
   },
 };
