@@ -385,6 +385,7 @@ a:focus-visible {
 .signal-card,
 .feature-card,
 .timeline-card,
+.promo-card,
 .support-card,
 .privacy-summary-card,
 .privacy-policy-card,
@@ -607,6 +608,49 @@ a:focus-visible {
   grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.8fr);
   gap: 1rem;
   margin-top: 2rem;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.promo-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+}
+
+.promo-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 8 / 5;
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.promo-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.24s ease;
+}
+
+.promo-card:hover .promo-media img {
+  transform: scale(1.012);
+}
+
+.promo-copy {
+  padding: 1.1rem 1.2rem 1.25rem;
+}
+
+.promo-copy p {
+  margin: 0.65rem 0 0;
+  color: var(--text-soft);
+  line-height: 1.68;
 }
 
 .render-showcase {
@@ -896,6 +940,7 @@ a:focus-visible {
   .hero,
   .split-heading,
   .screens-layout,
+  .promo-grid,
   .render-showcase {
     grid-template-columns: 1fr;
   }

@@ -1537,6 +1537,261 @@ const translations = {
   },
 };
 
+const promoTranslationAdditions = {
+  en: {
+    navPromos: "Previews",
+    promoEyebrow: "Mac App Store Previews",
+    promoTitle: "Feature previews that match the current release.",
+    promoLead:
+      "Browse localized preview images for profiles, page setup, header/footer, automatic tables of contents, rounded tables, code blocks, diagrams, formulas, and batch history.",
+    promoBatchHistoryTitle: "Batch conversion and history",
+    promoBatchHistoryBody:
+      "Queue multiple Markdown files from Finder or drag and drop, then track pending jobs, completed PDFs, retries, and output locations.",
+    promoExportProfilesTitle: "Edit render configurations",
+    promoExportProfilesBody:
+      "Shape every PDF from one editor: A4 or A5 pages, margins, typography, code fonts, table styling, themes, and automatic TOC.",
+    promoCodeBlockTitle: "Polished code blocks",
+    promoCodeBlockBody:
+      "Keep syntax highlighting, language labels, and clean window-style code blocks in exported PDFs.",
+    promoDataFormulaTitle: "Data tables and formulas",
+    promoDataFormulaBody:
+      "Preserve aligned tables, readable formulas, and technical notes when Markdown reports become PDFs.",
+    promoMermaidDiagramTitle: "Mermaid diagrams",
+    promoMermaidDiagramBody:
+      "Render flowcharts before export so PDFs keep diagrams as visual content instead of raw code.",
+    promoTableCornerRadiusTitle: "Rounded table styling",
+    promoTableCornerRadiusBody:
+      "Choose square or rounded PDF tables and tune the radius to match the document style.",
+    promoAutoTocTitle: "Automatic PDF table of contents",
+    promoAutoTocBody:
+      "Generate a PDF table of contents from H2-H3 headings during export without rewriting the Markdown source.",
+    promoHeaderFooterTitle: "Header and footer controls",
+    promoHeaderFooterBody:
+      "Add reusable page templates with title, date, file name, page count, alignment, color, size, and opacity controls.",
+  },
+  "zh-Hans": {
+    navPromos: "预览图",
+    promoEyebrow: "Mac App Store 预览图",
+    promoTitle: "与当前版本一致的功能宣传图。",
+    promoLead:
+      "查看本地化预览图，了解渲染配置、页面设置、页眉页脚、自动目录、圆角表格、代码块、图表、公式与批量历史。",
+    promoBatchHistoryTitle: "批量转换与历史记录",
+    promoBatchHistoryBody:
+      "一次排队多个 Markdown 文件，从 Finder 或拖放开始，并追踪待处理任务、完成 PDF、重试和输出位置。",
+    promoExportProfilesTitle: "编辑渲染配置",
+    promoExportProfilesBody:
+      "用一个编辑器塑造每份 PDF：A4 或 A5 页面、边距、排版、代码字体、表格样式、主题和自动目录。",
+    promoCodeBlockTitle: "精致代码块",
+    promoCodeBlockBody:
+      "保留语法高亮、语言标签和窗口式代码样式，让导出的 PDF 依然清晰好读。",
+    promoDataFormulaTitle: "数据表格与公式",
+    promoDataFormulaBody:
+      "Markdown 报告转为 PDF 时，表格保持对齐，公式和技术说明依然清晰。",
+    promoMermaidDiagramTitle: "Mermaid 图表",
+    promoMermaidDiagramBody:
+      "导出前渲染流程图，让 PDF 保留可视化图表，而不是只留下原始代码。",
+    promoTableCornerRadiusTitle: "圆角表格样式",
+    promoTableCornerRadiusBody:
+      "可选择方角或圆角 PDF 表格，并调整半径，让表格匹配文档风格。",
+    promoAutoTocTitle: "自动生成 PDF 目录",
+    promoAutoTocBody:
+      "导出时从 H2-H3 标题生成目录页，并保持 Markdown 源文件不被重写。",
+    promoHeaderFooterTitle: "页眉与页脚控制",
+    promoHeaderFooterBody:
+      "用可复用页面模板添加标题、日期、文件名、页码，并控制对齐、颜色、字号和透明度。",
+  },
+  "zh-Hant": {
+    navPromos: "預覽圖",
+    promoEyebrow: "Mac App Store 預覽圖",
+    promoTitle: "與目前版本一致的功能宣傳圖。",
+    promoLead:
+      "查看本地化預覽圖，了解渲染設定、頁面設定、頁首頁尾、自動目錄、圓角表格、程式碼區塊、圖表、公式與批次歷史。",
+    promoBatchHistoryTitle: "批次轉換與歷史記錄",
+    promoBatchHistoryBody:
+      "一次排入多個 Markdown 檔，從 Finder 或拖放開始，並追蹤待處理工作、完成 PDF、重試與輸出位置。",
+    promoExportProfilesTitle: "編輯渲染設定",
+    promoExportProfilesBody:
+      "用一個編輯器塑造每份 PDF：A4 或 A5 頁面、邊距、排版、程式碼字體、表格樣式、主題與自動目錄。",
+    promoCodeBlockTitle: "精緻程式碼區塊",
+    promoCodeBlockBody:
+      "保留語法高亮、語言標籤與視窗式程式碼樣式，讓匯出的 PDF 依然清楚好讀。",
+    promoDataFormulaTitle: "資料表格與公式",
+    promoDataFormulaBody:
+      "Markdown 報告轉為 PDF 時，表格維持對齊，公式與技術說明依然清晰。",
+    promoMermaidDiagramTitle: "Mermaid 圖表",
+    promoMermaidDiagramBody:
+      "匯出前渲染流程圖，讓 PDF 保留視覺化圖表，而不是只留下原始碼。",
+    promoTableCornerRadiusTitle: "圓角表格樣式",
+    promoTableCornerRadiusBody:
+      "可選擇方角或圓角 PDF 表格，並調整半徑，讓表格符合文件風格。",
+    promoAutoTocTitle: "自動生成 PDF 目錄",
+    promoAutoTocBody:
+      "匯出時從 H2-H3 標題生成目錄頁，並保持 Markdown 原始檔不被重寫。",
+    promoHeaderFooterTitle: "頁首頁尾控制",
+    promoHeaderFooterBody:
+      "用可重用頁面模板加入標題、日期、檔名、頁碼，並控制對齊、顏色、字級與透明度。",
+  },
+  ja: {
+    navPromos: "プレビュー",
+    promoEyebrow: "Mac App Store プレビュー",
+    promoTitle: "現在のリリースに合わせた機能プレビュー。",
+    promoLead:
+      "レンダー設定、ページ設定、ヘッダーとフッター、自動目次、角丸テーブル、コード、図表、数式、バッチ履歴をローカライズ画像で確認できます。",
+    promoBatchHistoryTitle: "バッチ変換と履歴",
+    promoBatchHistoryBody:
+      "Finder またはドラッグ＆ドロップから複数の Markdown をキューに入れ、保留中のジョブ、完了 PDF、再試行、出力先を追跡できます。",
+    promoExportProfilesTitle: "レンダー設定を編集",
+    promoExportProfilesBody:
+      "1つの編集画面で A4/A5、余白、組版、コードフォント、表スタイル、テーマ、自動目次を調整できます。",
+    promoCodeBlockTitle: "整ったコードブロック",
+    promoCodeBlockBody:
+      "構文ハイライト、言語ラベル、ウィンドウ風のコード表示を PDF に保ちます。",
+    promoDataFormulaTitle: "データ表と数式",
+    promoDataFormulaBody:
+      "Markdown レポートを PDF にしても、表の整列、数式、技術メモを読みやすく保ちます。",
+    promoMermaidDiagramTitle: "Mermaid 図表",
+    promoMermaidDiagramBody:
+      "書き出し前にフローチャートをレンダリングし、PDF に視覚的な図表として残します。",
+    promoTableCornerRadiusTitle: "角丸テーブル",
+    promoTableCornerRadiusBody:
+      "四角い表と角丸の表を選び、文書のスタイルに合わせて半径を調整できます。",
+    promoAutoTocTitle: "PDF 目次を自動生成",
+    promoAutoTocBody:
+      "H2-H3 見出しから目次ページを書き出し時に生成し、Markdown 原稿は書き換えません。",
+    promoHeaderFooterTitle: "ヘッダーとフッター",
+    promoHeaderFooterBody:
+      "タイトル、日付、ファイル名、ページ番号を使う再利用可能なページテンプレートを作成し、配置、色、サイズ、透明度を調整できます。",
+  },
+  ko: {
+    navPromos: "미리보기",
+    promoEyebrow: "Mac App Store 미리보기",
+    promoTitle: "현재 릴리스에 맞춘 기능 미리보기.",
+    promoLead:
+      "렌더 구성, 페이지 설정, 머리글과 바닥글, 자동 목차, 둥근 표, 코드 블록, 다이어그램, 수식, 배치 기록을 현지화된 이미지로 확인하세요.",
+    promoBatchHistoryTitle: "배치 변환과 기록",
+    promoBatchHistoryBody:
+      "Finder 또는 드래그 앤 드롭으로 여러 Markdown 파일을 큐에 넣고 대기 작업, 완료 PDF, 재시도, 출력 위치를 추적합니다.",
+    promoExportProfilesTitle: "렌더 구성 편집",
+    promoExportProfilesBody:
+      "하나의 편집기에서 A4/A5 페이지, 여백, 타이포그래피, 코드 글꼴, 표 스타일, 테마, 자동 목차를 조정합니다.",
+    promoCodeBlockTitle: "정돈된 코드 블록",
+    promoCodeBlockBody:
+      "문법 강조, 언어 라벨, 창 형태 코드 스타일을 PDF 내보내기 후에도 유지합니다.",
+    promoDataFormulaTitle: "데이터 표와 수식",
+    promoDataFormulaBody:
+      "Markdown 보고서를 PDF로 바꿔도 표 정렬, 수식, 기술 설명을 읽기 쉽게 유지합니다.",
+    promoMermaidDiagramTitle: "Mermaid 다이어그램",
+    promoMermaidDiagramBody:
+      "내보내기 전에 흐름도를 렌더링해 PDF에 원본 코드가 아닌 시각적 다이어그램으로 남깁니다.",
+    promoTableCornerRadiusTitle: "둥근 표 스타일",
+    promoTableCornerRadiusBody:
+      "각진 표와 둥근 표를 선택하고 문서 스타일에 맞게 반경을 조정할 수 있습니다.",
+    promoAutoTocTitle: "PDF 목차 자동 생성",
+    promoAutoTocBody:
+      "내보낼 때 H2-H3 제목에서 목차 페이지를 생성하며 Markdown 원본은 다시 쓰지 않습니다.",
+    promoHeaderFooterTitle: "머리글과 바닥글",
+    promoHeaderFooterBody:
+      "제목, 날짜, 파일명, 페이지 번호를 담는 재사용 가능한 페이지 템플릿을 만들고 정렬, 색상, 크기, 투명도를 조정합니다.",
+  },
+  de: {
+    navPromos: "Vorschauen",
+    promoEyebrow: "Mac App Store Vorschauen",
+    promoTitle: "Funktionsvorschauen für die aktuelle Version.",
+    promoLead:
+      "Lokalisierte Bilder zeigen Renderprofile, Seiteneinstellungen, Kopf- und Fußzeilen, automatisches Inhaltsverzeichnis, runde Tabellen, Codeblöcke, Diagramme, Formeln und Batch-Verlauf.",
+    promoBatchHistoryTitle: "Batch-Konvertierung und Verlauf",
+    promoBatchHistoryBody:
+      "Mehrere Markdown-Dateien aus Finder oder per Drag-and-drop einreihen und offene Jobs, fertige PDFs, Wiederholungen und Ausgabeorte verfolgen.",
+    promoExportProfilesTitle: "Renderkonfiguration bearbeiten",
+    promoExportProfilesBody:
+      "Ein Editor steuert A4/A5-Seiten, Ränder, Typografie, Codeschrift, Tabellenstil, Theme und automatisches Inhaltsverzeichnis.",
+    promoCodeBlockTitle: "Saubere Codeblöcke",
+    promoCodeBlockBody:
+      "Syntax-Highlighting, Sprachlabels und Fensteroptik bleiben in exportierten PDFs erhalten.",
+    promoDataFormulaTitle: "Datentabellen und Formeln",
+    promoDataFormulaBody:
+      "Markdown-Berichte behalten in PDFs ausgerichtete Tabellen, lesbare Formeln und technische Notizen.",
+    promoMermaidDiagramTitle: "Mermaid-Diagramme",
+    promoMermaidDiagramBody:
+      "Flowcharts werden vor dem Export gerendert, damit PDFs visuelle Diagramme statt Rohcode enthalten.",
+    promoTableCornerRadiusTitle: "Abgerundete Tabellen",
+    promoTableCornerRadiusBody:
+      "Zwischen eckigen und runden PDF-Tabellen wählen und den Radius an den Dokumentstil anpassen.",
+    promoAutoTocTitle: "Automatisches PDF-Inhaltsverzeichnis",
+    promoAutoTocBody:
+      "Beim Export aus H2-H3-Überschriften eine Inhaltsseite erzeugen, ohne die Markdown-Quelle umzuschreiben.",
+    promoHeaderFooterTitle: "Kopf- und Fußzeilen",
+    promoHeaderFooterBody:
+      "Wiederverwendbare Seitenvorlagen mit Titel, Datum, Dateiname, Seitenzahlen sowie Ausrichtung, Farbe, Größe und Deckkraft.",
+  },
+  fr: {
+    navPromos: "Aperçus",
+    promoEyebrow: "Aperçus Mac App Store",
+    promoTitle: "Des aperçus alignés sur la version actuelle.",
+    promoLead:
+      "Des images localisées présentent les profils de rendu, la page, les en-têtes et pieds, la table automatique, les tableaux arrondis, le code, les diagrammes, les formules et l'historique.",
+    promoBatchHistoryTitle: "Conversion par lots et historique",
+    promoBatchHistoryBody:
+      "Mettez plusieurs Markdown en file depuis Finder ou par glisser-déposer, puis suivez travaux, PDF terminés, reprises et emplacements.",
+    promoExportProfilesTitle: "Modifier les configurations de rendu",
+    promoExportProfilesBody:
+      "Un éditeur règle pages A4/A5, marges, typographie, police de code, style de tableau, thème et table automatique.",
+    promoCodeBlockTitle: "Blocs de code soignés",
+    promoCodeBlockBody:
+      "Conservez coloration syntaxique, libellés de langage et style fenêtre dans les PDF exportés.",
+    promoDataFormulaTitle: "Tableaux de données et formules",
+    promoDataFormulaBody:
+      "Les rapports Markdown gardent tableaux alignés, formules lisibles et notes techniques dans les PDF.",
+    promoMermaidDiagramTitle: "Diagrammes Mermaid",
+    promoMermaidDiagramBody:
+      "Les organigrammes sont rendus avant l'export pour rester visuels dans le PDF plutôt que du code brut.",
+    promoTableCornerRadiusTitle: "Tableaux arrondis",
+    promoTableCornerRadiusBody:
+      "Choisissez des tableaux PDF carrés ou arrondis et ajustez le rayon au style du document.",
+    promoAutoTocTitle: "Table des matières PDF automatique",
+    promoAutoTocBody:
+      "Générez une page de table depuis les titres H2-H3 à l'export, sans réécrire la source Markdown.",
+    promoHeaderFooterTitle: "En-têtes et pieds de page",
+    promoHeaderFooterBody:
+      "Créez des modèles de page réutilisables avec titre, date, fichier, pagination, alignement, couleur, taille et opacité.",
+  },
+  it: {
+    navPromos: "Anteprime",
+    promoEyebrow: "Anteprime Mac App Store",
+    promoTitle: "Anteprime funzionali allineate alla versione attuale.",
+    promoLead:
+      "Immagini localizzate mostrano configurazioni di rendering, pagina, intestazioni e piè, indice automatico, tabelle arrotondate, codice, diagrammi, formule e cronologia batch.",
+    promoBatchHistoryTitle: "Conversione batch e cronologia",
+    promoBatchHistoryBody:
+      "Metti in coda più Markdown da Finder o con drag and drop, poi segui lavori, PDF completati, ritentativi e percorsi di output.",
+    promoExportProfilesTitle: "Modifica configurazioni rendering",
+    promoExportProfilesBody:
+      "Un editor controlla pagine A4/A5, margini, tipografia, font codice, stile tabelle, tema e indice automatico.",
+    promoCodeBlockTitle: "Blocchi di codice curati",
+    promoCodeBlockBody:
+      "Mantieni evidenziazione sintattica, etichette del linguaggio e stile finestra nei PDF esportati.",
+    promoDataFormulaTitle: "Tabelle dati e formule",
+    promoDataFormulaBody:
+      "I report Markdown mantengono tabelle allineate, formule leggibili e note tecniche nei PDF.",
+    promoMermaidDiagramTitle: "Diagrammi Mermaid",
+    promoMermaidDiagramBody:
+      "I flowchart vengono renderizzati prima dell'export, così il PDF contiene diagrammi visivi invece del codice grezzo.",
+    promoTableCornerRadiusTitle: "Tabelle arrotondate",
+    promoTableCornerRadiusBody:
+      "Scegli tabelle PDF squadrate o arrotondate e regola il raggio in base allo stile del documento.",
+    promoAutoTocTitle: "Indice PDF automatico",
+    promoAutoTocBody:
+      "Genera una pagina indice dai titoli H2-H3 durante l'export, senza riscrivere il sorgente Markdown.",
+    promoHeaderFooterTitle: "Intestazioni e piè di pagina",
+    promoHeaderFooterBody:
+      "Crea modelli pagina riutilizzabili con titolo, data, nome file, numeri pagina, allineamento, colore, dimensione e opacità.",
+  },
+};
+
+for (const [language, additions] of Object.entries(promoTranslationAdditions)) {
+  Object.assign(translations[language], additions);
+}
+
 const languageMeta = {
   en: { htmlLang: "en" },
   "zh-Hans": { htmlLang: "zh-CN" },
@@ -1575,6 +1830,49 @@ const screens = {
   },
 };
 
+const promoItems = [
+  {
+    feature: "batch-history",
+    titleKey: "promoBatchHistoryTitle",
+    descriptionKey: "promoBatchHistoryBody",
+  },
+  {
+    feature: "export-profiles",
+    titleKey: "promoExportProfilesTitle",
+    descriptionKey: "promoExportProfilesBody",
+  },
+  {
+    feature: "code-block",
+    titleKey: "promoCodeBlockTitle",
+    descriptionKey: "promoCodeBlockBody",
+  },
+  {
+    feature: "data-formula",
+    titleKey: "promoDataFormulaTitle",
+    descriptionKey: "promoDataFormulaBody",
+  },
+  {
+    feature: "mermaid-diagram",
+    titleKey: "promoMermaidDiagramTitle",
+    descriptionKey: "promoMermaidDiagramBody",
+  },
+  {
+    feature: "table-corner-radius",
+    titleKey: "promoTableCornerRadiusTitle",
+    descriptionKey: "promoTableCornerRadiusBody",
+  },
+  {
+    feature: "auto-toc",
+    titleKey: "promoAutoTocTitle",
+    descriptionKey: "promoAutoTocBody",
+  },
+  {
+    feature: "header-footer",
+    titleKey: "promoHeaderFooterTitle",
+    descriptionKey: "promoHeaderFooterBody",
+  },
+];
+
 const metaDescription = document.querySelector('meta[name="description"]');
 const langButtons = document.querySelectorAll(".lang-button");
 const translatableNodes = document.querySelectorAll("[data-i18n]");
@@ -1584,6 +1882,7 @@ const screenButtons = document.querySelectorAll(".screen-thumb");
 const activeScreenImage = document.getElementById("active-screen-image");
 const activeScreenTitle = document.getElementById("active-screen-title");
 const activeScreenDescription = document.getElementById("active-screen-description");
+const promoGallery = document.getElementById("promo-gallery");
 
 const storedLanguage = localStorage.getItem("markdownToPDFWebLanguage");
 const normalizedStoredLanguage = storedLanguage === "zh" ? "zh-Hans" : storedLanguage;
@@ -1634,6 +1933,66 @@ function applyLanguage(language) {
   });
 
   renderScreen(currentScreen);
+  renderPromos(nextLanguage);
+}
+
+function getLocalizedPromoSrc(language, feature) {
+  const filename = `mac-app-store-${feature}-promo-2880x1800.png`;
+
+  if (language === "en") {
+    return `app-store-assets/${filename}`;
+  }
+
+  return `app-store-assets/localized/${language}/${filename}`;
+}
+
+function renderPromos(language) {
+  if (!promoGallery) return;
+
+  const fragment = document.createDocumentFragment();
+
+  promoItems.forEach((promo) => {
+    const title = translateKey(language, promo.titleKey);
+    const description = translateKey(language, promo.descriptionKey);
+    const src = getLocalizedPromoSrc(language, promo.feature);
+    const fallbackSrc = getLocalizedPromoSrc("en", promo.feature);
+
+    const card = document.createElement("article");
+    card.className = "promo-card";
+
+    const media = document.createElement("div");
+    media.className = "promo-media";
+
+    const image = document.createElement("img");
+    image.src = src;
+    image.alt = `${title}. ${description}`;
+    image.loading = "lazy";
+    image.decoding = "async";
+    image.width = 2880;
+    image.height = 1800;
+    image.addEventListener("error", () => {
+      if (image.dataset.fallbackApplied === "true") return;
+
+      image.dataset.fallbackApplied = "true";
+      image.src = fallbackSrc;
+    });
+
+    const copy = document.createElement("div");
+    copy.className = "promo-copy";
+
+    const heading = document.createElement("h3");
+    heading.textContent = title;
+
+    const body = document.createElement("p");
+    body.textContent = description;
+
+    media.append(image);
+    copy.append(heading, body);
+    card.append(media, copy);
+    fragment.append(card);
+  });
+
+  promoGallery.replaceChildren(fragment);
 }
 
 function renderScreen(screenKey) {
