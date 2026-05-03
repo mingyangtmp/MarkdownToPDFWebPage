@@ -5,18 +5,16 @@ const translations = {
       "MarkdownToPDF is a Finder-powered macOS app for turning Markdown files into polished PDFs with profiles, syntax highlighting, math rendering, history, and privacy-first local processing.",
     navPrimaryAria: "Primary navigation",
     langSwitcherLabel: "Language switcher",
-    screenSelectorAria: "Application screens",
     skipLink: "Skip to content",
     navFeatures: "Features",
     navWorkflow: "Workflow",
-    navScreens: "Screens",
     navPrivacy: "Privacy",
     heroEyebrow: "Finder extension + native macOS app",
     heroTitle: "Turn Markdown into polished PDFs without leaving Finder.",
     heroLead:
       "MarkdownToPDF is built for writers, engineers, and documentation teams who want local, repeatable exports with batch queues, profiles, and clean print-ready output.",
     heroDownload: "Download on the Mac App Store",
-    heroPrimary: "Explore the interface",
+    heroPrimary: "Explore previews",
     heroSecondary: "Read privacy policy",
     heroBadge1: "Right-click .md and .markdown files in authorized Finder folders",
     heroBadge2: "Queue batch jobs and retry failures",
@@ -88,30 +86,6 @@ const translations = {
     feature7Title: "Rounded table corners",
     feature7Body:
       "Apply table corner radius options so exported tables can keep a softer, card-like shape without losing borders or alignment.",
-    screensEyebrow: "Screens",
-    screensTitle: "A clean desktop surface for queue, history, and settings.",
-    screensLead:
-      "These images come from the current MarkdownToPDF desktop build and show the major workspaces described in the code and release notes.",
-    screenDashboardLabel: "Queue Dashboard",
-    screenHistoryLabel: "Conversion History",
-    screenOutputLabel: "Output Defaults",
-    screenRenderLabel: "Render Defaults",
-    screenDashboardTitle: "Queue Dashboard",
-    screenDashboardBody:
-      "Monitor pending requests, import Markdown files by drag and drop, and start conversions with a single click.",
-    screenDashboardAlt: "Queue Dashboard screen",
-    screenHistoryTitle: "Conversion History",
-    screenHistoryBody:
-      "Review successful exports, reopen generated PDFs, reveal files in Finder, and keep a clear record of past runs.",
-    screenHistoryAlt: "Conversion History screen",
-    screenOutputTitle: "Output Defaults",
-    screenOutputBody:
-      "Choose naming strategies, overwrite behavior, default save locations, and the Finder folders where the extension should appear.",
-    screenOutputAlt: "Output Defaults settings screen",
-    screenRenderTitle: "Render Defaults",
-    screenRenderBody:
-      "Adjust page size, theme, fonts, font size, line height, spacing, margins, and post-conversion behavior from one settings surface.",
-    screenRenderAlt: "Render Defaults settings screen",
     renderEyebrow: "Rendered Output",
     renderTitle: "Math, diagrams, and syntax-aware code blocks survive the trip to PDF.",
     renderLead:
@@ -188,7 +162,7 @@ const translations = {
     policy6Body:
       "If the app architecture changes in a future release, this policy should be updated together with the release notes and website so the documented behavior stays accurate.",
     footerBody:
-      "Built from the current MarkdownToPDF codebase, release notes, support matrix, and interface screenshots.",
+      "Built from the current MarkdownToPDF codebase, release notes, support matrix, and localized preview images.",
     footerContactLabel: "Contact:",
   },
   "zh-Hans": {
@@ -197,18 +171,16 @@ const translations = {
       "MarkdownToPDF 是一款面向 macOS 的 Finder 扩展应用，可将 Markdown 文件本地转换为精致 PDF，并提供配置模板、语法高亮、数学公式渲染、历史记录、批量队列与隐私优先的处理方式。",
     navPrimaryAria: "主导航",
     langSwitcherLabel: "语言切换",
-    screenSelectorAria: "应用界面切换",
     skipLink: "跳转到正文",
     navFeatures: "功能",
     navWorkflow: "流程",
-    navScreens: "界面",
     navPrivacy: "隐私",
     heroEyebrow: "Finder 扩展 + 原生 macOS 应用",
     heroTitle: "不离开 Finder，把 Markdown 直接导出成精致 PDF。",
     heroLead:
       "MarkdownToPDF 面向写作者、工程师和文档团队，强调本地处理、可重复导出、批量队列、配置模板，以及更适合打印与分享的输出效果。",
     heroDownload: "在 Mac App Store 下载",
-    heroPrimary: "查看应用界面",
+    heroPrimary: "查看预览图",
     heroSecondary: "阅读隐私政策",
     heroBadge1: "在你主动授权的 Finder 目录中，可右键 `.md` 与 `.markdown` 文件开始转换",
     heroBadge2: "支持批量排队、失败重试与结果追踪",
@@ -280,30 +252,6 @@ const translations = {
     feature7Title: "圆角表格样式",
     feature7Body:
       "可为导出的表格设置圆角，让表格在保留边框与列对齐的同时拥有更柔和的卡片式外观。",
-    screensEyebrow: "界面截图",
-    screensTitle: "为队列、历史和设置而设计的一套干净桌面界面。",
-    screensLead:
-      "这些截图来自当前的 MarkdownToPDF 桌面版本，对应代码和发布说明里描述的主要工作区。",
-    screenDashboardLabel: "队列仪表盘",
-    screenHistoryLabel: "转换历史",
-    screenOutputLabel: "输出默认值",
-    screenRenderLabel: "渲染默认值",
-    screenDashboardTitle: "队列仪表盘",
-    screenDashboardBody:
-      "查看待处理请求，支持拖拽导入 Markdown 文件，并可一键启动转换。",
-    screenDashboardAlt: "队列仪表盘界面截图",
-    screenHistoryTitle: "转换历史",
-    screenHistoryBody:
-      "查看成功导出记录，重新打开 PDF，在 Finder 中定位文件，并保留清晰的历史结果。",
-    screenHistoryAlt: "转换历史界面截图",
-    screenOutputTitle: "输出默认值",
-    screenOutputBody:
-      "设置命名策略、覆盖行为、默认保存位置，以及 Finder 扩展在哪些目录中显示。",
-    screenOutputAlt: "输出默认值设置界面截图",
-    screenRenderTitle: "渲染默认值",
-    screenRenderBody:
-      "在同一个设置界面中调整纸张尺寸、主题、字体、字号、行高、间距、边距与转换后动作。",
-    screenRenderAlt: "渲染默认值设置界面截图",
     renderEyebrow: "渲染能力",
     renderTitle: "数学公式、图表和带语义的代码块，都能稳定进入最终 PDF。",
     renderLead:
@@ -380,7 +328,7 @@ const translations = {
     policy6Body:
       "如果未来版本的应用架构发生变化，这份隐私政策也应与发布说明和官网一起更新，以保证文档描述与实际行为保持一致。",
     footerBody:
-      "本页面基于当前 MarkdownToPDF 代码库、发布说明、支持矩阵与界面截图制作。",
+      "本页面基于当前 MarkdownToPDF 代码库、发布说明、支持矩阵与本地化预览图制作。",
     footerContactLabel: "联系邮箱：",
   },
   "zh-Hant": {
@@ -389,18 +337,16 @@ const translations = {
       "MarkdownToPDF 是一款面向 macOS 的 Finder 延伸功能 App，可將 Markdown 檔案在本機轉換為精緻 PDF，並提供設定檔、語法高亮、數學公式渲染、歷史記錄、批次佇列與隱私優先的處理方式。",
     navPrimaryAria: "主要導覽",
     langSwitcherLabel: "語言切換",
-    screenSelectorAria: "應用介面切換",
     skipLink: "跳至主要內容",
     navFeatures: "功能",
     navWorkflow: "流程",
-    navScreens: "介面",
     navPrivacy: "隱私",
     heroEyebrow: "Finder 延伸功能 + 原生 macOS App",
     heroTitle: "不離開 Finder，直接把 Markdown 匯出成精緻 PDF。",
     heroLead:
       "MarkdownToPDF 面向寫作者、工程師與文件團隊，強調本機處理、可重複匯出、批次佇列、設定檔，以及更適合列印與分享的輸出品質。",
     heroDownload: "在 Mac App Store 下載",
-    heroPrimary: "查看應用介面",
+    heroPrimary: "查看預覽圖",
     heroSecondary: "閱讀隱私政策",
     heroBadge1: "在你主動授權的 Finder 資料夾中，可右鍵 `.md` 與 `.markdown` 檔案開始轉換",
     heroBadge2: "支援批次排隊、失敗重試與結果追蹤",
@@ -472,30 +418,6 @@ const translations = {
     feature7Title: "圓角表格樣式",
     feature7Body:
       "可為匯出的表格設定圓角，讓表格保留框線與欄位對齊，同時呈現更柔和的卡片式外觀。",
-    screensEyebrow: "介面截圖",
-    screensTitle: "一套為佇列、歷史與設定而設計的乾淨桌面介面。",
-    screensLead:
-      "這些截圖來自目前的 MarkdownToPDF 桌面版本，對應程式碼與釋出說明中描述的主要工作區。",
-    screenDashboardLabel: "佇列儀表板",
-    screenHistoryLabel: "轉換歷史",
-    screenOutputLabel: "輸出預設值",
-    screenRenderLabel: "渲染預設值",
-    screenDashboardTitle: "佇列儀表板",
-    screenDashboardBody:
-      "查看待處理請求，支援拖放匯入 Markdown 檔案，並可一鍵開始轉換。",
-    screenDashboardAlt: "佇列儀表板介面截圖",
-    screenHistoryTitle: "轉換歷史",
-    screenHistoryBody:
-      "查看成功匯出記錄、重新開啟 PDF、在 Finder 中定位檔案，並保留清楚的歷史結果。",
-    screenHistoryAlt: "轉換歷史介面截圖",
-    screenOutputTitle: "輸出預設值",
-    screenOutputBody:
-      "設定命名策略、覆寫行為、預設儲存位置，以及 Finder 延伸功能在哪些資料夾中顯示。",
-    screenOutputAlt: "輸出預設值設定介面截圖",
-    screenRenderTitle: "渲染預設值",
-    screenRenderBody:
-      "在同一個設定介面中調整紙張尺寸、主題、字體、字級、行高、間距、邊距與轉換後動作。",
-    screenRenderAlt: "渲染預設值設定介面截圖",
     renderEyebrow: "渲染能力",
     renderTitle: "數學公式、圖表與帶語意的程式碼區塊，都能穩定進入最終 PDF。",
     renderLead:
@@ -572,7 +494,7 @@ const translations = {
     policy6Body:
       "如果未來版本的應用架構發生變化，這份隱私政策也應與釋出說明和網站同步更新，以確保文件描述與實際行為一致。",
     footerBody:
-      "本頁面根據目前的 MarkdownToPDF 程式碼庫、釋出說明、支援矩陣與介面截圖製作。",
+      "本頁面根據目前的 MarkdownToPDF 程式碼庫、釋出說明、支援矩陣與本地化預覽圖製作。",
     footerContactLabel: "聯絡信箱：",
   },
   ja: {
@@ -581,18 +503,16 @@ const translations = {
       "MarkdownToPDF は、Finder から Markdown ファイルを整った PDF に変換できる macOS アプリです。プロファイル、構文ハイライト、数式レンダリング、履歴、バッチキュー、プライバシー重視のローカル処理に対応しています。",
     navPrimaryAria: "メインナビゲーション",
     langSwitcherLabel: "言語切り替え",
-    screenSelectorAria: "アプリ画面の切り替え",
     skipLink: "本文へ移動",
     navFeatures: "機能",
     navWorkflow: "流れ",
-    navScreens: "画面",
     navPrivacy: "プライバシー",
     heroEyebrow: "Finder 拡張 + ネイティブ macOS アプリ",
     heroTitle: "Finder を離れずに、Markdown を洗練された PDF に変換。",
     heroLead:
       "MarkdownToPDF は、ローカルで繰り返し使える書き出し、バッチキュー、プロファイル管理、印刷向けのきれいな出力を求めるライター、エンジニア、ドキュメントチーム向けに設計されています。",
     heroDownload: "Mac App Store でダウンロード",
-    heroPrimary: "アプリ画面を見る",
+    heroPrimary: "プレビューを見る",
     heroSecondary: "プライバシーポリシーを読む",
     heroBadge1: "許可した Finder フォルダ内で `.md` と `.markdown` を右クリックして変換開始",
     heroBadge2: "バッチキュー、失敗時の再試行、結果追跡に対応",
@@ -664,30 +584,6 @@ const translations = {
     feature7Title: "角丸テーブルスタイル",
     feature7Body:
       "書き出す表に角丸を適用し、罫線と列揃えを保ちながら、よりやわらかなカード風の見た目にできます。",
-    screensEyebrow: "画面",
-    screensTitle: "キュー、履歴、設定のために整えられたデスクトップ UI。",
-    screensLead:
-      "これらの画像は現在の MarkdownToPDF デスクトップビルドから取得したもので、コードとリリースノートにある主要ワークスペースを示しています。",
-    screenDashboardLabel: "キューダッシュボード",
-    screenHistoryLabel: "変換履歴",
-    screenOutputLabel: "出力の既定値",
-    screenRenderLabel: "レンダリングの既定値",
-    screenDashboardTitle: "キューダッシュボード",
-    screenDashboardBody:
-      "保留中の要求を確認し、Markdown ファイルをドラッグ＆ドロップで読み込み、ワンクリックで変換を開始できます。",
-    screenDashboardAlt: "キューダッシュボード画面",
-    screenHistoryTitle: "変換履歴",
-    screenHistoryBody:
-      "成功した書き出しを確認し、生成された PDF を開き直し、Finder で表示し、過去の実行結果をわかりやすく残せます。",
-    screenHistoryAlt: "変換履歴画面",
-    screenOutputTitle: "出力の既定値",
-    screenOutputBody:
-      "命名戦略、上書き動作、既定の保存先、Finder 拡張を表示するフォルダを設定できます。",
-    screenOutputAlt: "出力の既定値設定画面",
-    screenRenderTitle: "レンダリングの既定値",
-    screenRenderBody:
-      "用紙サイズ、テーマ、フォント、文字サイズ、行間、間隔、余白、変換後の挙動を 1 つの設定画面で調整できます。",
-    screenRenderAlt: "レンダリングの既定値設定画面",
     renderEyebrow: "レンダリング",
     renderTitle: "数式、図、意味を保ったコードブロックが、そのまま PDF に残る。",
     renderLead:
@@ -764,7 +660,7 @@ const translations = {
     policy6Body:
       "将来のリリースでアプリ構成が変わる場合は、このポリシーもリリースノートや Web サイトと合わせて更新し、記載内容と実際の動作が一致するようにすべきです。",
     footerBody:
-      "このページは、MarkdownToPDF の現行コードベース、リリースノート、サポートマトリクス、UI スクリーンショットをもとに構成されています。",
+      "このページは、MarkdownToPDF の現行コードベース、リリースノート、サポートマトリクス、ローカライズ済みプレビュー画像をもとに構成されています。",
     footerContactLabel: "連絡先:",
   },
   ko: {
@@ -773,18 +669,16 @@ const translations = {
       "MarkdownToPDF는 Finder에서 Markdown 파일을 정돈된 PDF로 바꿔 주는 macOS 앱입니다. 프로필, 문법 강조, 수식 렌더링, 기록, 배치 큐, 개인정보 중심의 로컬 처리에 대응합니다.",
     navPrimaryAria: "기본 탐색",
     langSwitcherLabel: "언어 전환",
-    screenSelectorAria: "앱 화면 선택",
     skipLink: "본문으로 건너뛰기",
     navFeatures: "기능",
     navWorkflow: "흐름",
-    navScreens: "화면",
     navPrivacy: "개인정보",
     heroEyebrow: "Finder 확장 + 네이티브 macOS 앱",
     heroTitle: "Finder를 벗어나지 않고 Markdown을 완성도 높은 PDF로 변환.",
     heroLead:
       "MarkdownToPDF는 로컬에서 반복 가능한 내보내기, 배치 큐, 프로필, 깔끔한 출력 품질이 필요한 작성자, 엔지니어, 문서 팀을 위해 만들어졌습니다.",
     heroDownload: "Mac App Store에서 다운로드",
-    heroPrimary: "앱 화면 보기",
+    heroPrimary: "미리보기 보기",
     heroSecondary: "개인정보 처리방침 읽기",
     heroBadge1: "권한을 허용한 Finder 폴더에서 `.md`와 `.markdown` 파일을 우클릭해 변환 시작",
     heroBadge2: "배치 큐, 실패 재시도, 결과 추적 지원",
@@ -856,30 +750,6 @@ const translations = {
     feature7Title: "둥근 모서리 표 스타일",
     feature7Body:
       "내보낸 표에 모서리 반경을 적용해 테두리와 열 정렬은 유지하면서 더 부드러운 카드형 외형을 만들 수 있습니다.",
-    screensEyebrow: "화면",
-    screensTitle: "큐, 기록, 설정을 위해 정리된 데스크톱 인터페이스.",
-    screensLead:
-      "이 이미지는 현재 MarkdownToPDF 데스크톱 빌드에서 가져온 것으로, 코드와 릴리스 노트에 설명된 주요 작업 공간을 보여 줍니다.",
-    screenDashboardLabel: "큐 대시보드",
-    screenHistoryLabel: "변환 기록",
-    screenOutputLabel: "출력 기본값",
-    screenRenderLabel: "렌더링 기본값",
-    screenDashboardTitle: "큐 대시보드",
-    screenDashboardBody:
-      "대기 중인 요청을 확인하고 Markdown 파일을 드래그 앤 드롭으로 가져오며 클릭 한 번으로 변환을 시작할 수 있습니다.",
-    screenDashboardAlt: "큐 대시보드 화면",
-    screenHistoryTitle: "변환 기록",
-    screenHistoryBody:
-      "성공한 내보내기를 검토하고, 생성된 PDF를 다시 열고, Finder에서 파일을 표시하며, 지난 실행 결과를 선명하게 남길 수 있습니다.",
-    screenHistoryAlt: "변환 기록 화면",
-    screenOutputTitle: "출력 기본값",
-    screenOutputBody:
-      "이름 지정 방식, 덮어쓰기 동작, 기본 저장 위치, Finder 확장이 나타날 폴더를 설정할 수 있습니다.",
-    screenOutputAlt: "출력 기본값 설정 화면",
-    screenRenderTitle: "렌더링 기본값",
-    screenRenderBody:
-      "용지 크기, 테마, 글꼴, 글자 크기, 줄 높이, 간격, 여백, 변환 후 동작을 하나의 설정 화면에서 조정할 수 있습니다.",
-    screenRenderAlt: "렌더링 기본값 설정 화면",
     renderEyebrow: "렌더링",
     renderTitle: "수식, 다이어그램, 의미를 살린 코드 블록이 그대로 PDF까지 이어집니다.",
     renderLead:
@@ -956,7 +826,7 @@ const translations = {
     policy6Body:
       "향후 릴리스에서 앱 구조가 바뀌면 이 정책도 릴리스 노트와 웹사이트와 함께 업데이트되어 문서화된 동작이 실제와 일치하도록 해야 합니다.",
     footerBody:
-      "이 페이지는 현재 MarkdownToPDF 코드베이스, 릴리스 노트, 지원 매트릭스, 인터페이스 스크린샷을 바탕으로 제작되었습니다.",
+      "이 페이지는 현재 MarkdownToPDF 코드베이스, 릴리스 노트, 지원 매트릭스, 현지화된 미리보기 이미지를 바탕으로 제작되었습니다.",
     footerContactLabel: "문의:",
   },
   de: {
@@ -965,18 +835,16 @@ const translations = {
       "MarkdownToPDF ist eine macOS-App mit Finder-Integration, die Markdown-Dateien lokal in hochwertige PDFs umwandelt, inklusive Profile, Syntax-Highlighting, Formelsatz, Verlauf, Batch-Warteschlange und datenschutzfreundlicher Verarbeitung.",
     navPrimaryAria: "Hauptnavigation",
     langSwitcherLabel: "Sprachauswahl",
-    screenSelectorAria: "App-Ansichten",
     skipLink: "Zum Inhalt springen",
     navFeatures: "Funktionen",
     navWorkflow: "Ablauf",
-    navScreens: "Ansichten",
     navPrivacy: "Datenschutz",
     heroEyebrow: "Finder-Erweiterung + native macOS-App",
     heroTitle: "Markdown direkt aus dem Finder in saubere PDFs umwandeln.",
     heroLead:
       "MarkdownToPDF ist für Autor:innen, Entwickler:innen und Dokumentationsteams gedacht, die lokale, wiederholbare Exporte mit Batch-Warteschlangen, Profilen und druckfertiger Ausgabe möchten.",
     heroDownload: "Im Mac App Store laden",
-    heroPrimary: "Oberfläche ansehen",
+    heroPrimary: "Vorschauen ansehen",
     heroSecondary: "Datenschutzrichtlinie lesen",
     heroBadge1: "`.md`- und `.markdown`-Dateien in freigegebenen Finder-Ordnern per Rechtsklick umwandeln",
     heroBadge2: "Batch-Warteschlangen und Wiederholungen bei Fehlern",
@@ -1048,30 +916,6 @@ const translations = {
     feature7Title: "Abgerundete Tabellen",
     feature7Body:
       "Tabellen können mit Eckenradius exportiert werden, damit sie weicher wirken und trotzdem Rahmen sowie Spaltenausrichtung behalten.",
-    screensEyebrow: "Ansichten",
-    screensTitle: "Eine aufgeräumte Desktop-Oberfläche für Queue, Verlauf und Einstellungen.",
-    screensLead:
-      "Diese Bilder stammen aus dem aktuellen MarkdownToPDF-Desktop-Build und zeigen die wichtigsten Bereiche aus Codebasis und Release Notes.",
-    screenDashboardLabel: "Queue-Dashboard",
-    screenHistoryLabel: "Konvertierungsverlauf",
-    screenOutputLabel: "Ausgabe-Standards",
-    screenRenderLabel: "Render-Standards",
-    screenDashboardTitle: "Queue-Dashboard",
-    screenDashboardBody:
-      "Ausstehende Anfragen überwachen, Markdown-Dateien per Drag-and-drop importieren und Konvertierungen mit einem Klick starten.",
-    screenDashboardAlt: "Ansicht des Queue-Dashboards",
-    screenHistoryTitle: "Konvertierungsverlauf",
-    screenHistoryBody:
-      "Erfolgreiche Exporte prüfen, erzeugte PDFs erneut öffnen, Dateien im Finder anzeigen und vergangene Läufe nachvollziehbar festhalten.",
-    screenHistoryAlt: "Ansicht des Konvertierungsverlaufs",
-    screenOutputTitle: "Ausgabe-Standards",
-    screenOutputBody:
-      "Benennungsstrategien, Überschreibverhalten, Standardspeicherorte und die Finder-Ordner festlegen, in denen die Erweiterung erscheinen soll.",
-    screenOutputAlt: "Einstellungsansicht für Ausgabe-Standards",
-    screenRenderTitle: "Render-Standards",
-    screenRenderBody:
-      "Papierformat, Theme, Schriften, Schriftgröße, Zeilenhöhe, Abstände, Ränder und Verhalten nach der Konvertierung in einer zentralen Einstellungsansicht anpassen.",
-    screenRenderAlt: "Einstellungsansicht für Render-Standards",
     renderEyebrow: "Rendering",
     renderTitle: "Formeln, Diagramme und semantische Codeblöcke überstehen den Weg ins PDF.",
     renderLead:
@@ -1148,7 +992,7 @@ const translations = {
     policy6Body:
       "Wenn sich die App-Architektur in einer zukünftigen Version ändert, sollte diese Richtlinie zusammen mit den Release Notes und der Website aktualisiert werden, damit die dokumentierte Beschreibung korrekt bleibt.",
     footerBody:
-      "Erstellt auf Grundlage der aktuellen MarkdownToPDF-Codebasis, Release Notes, Support-Matrix und Interface-Screenshots.",
+      "Erstellt auf Grundlage der aktuellen MarkdownToPDF-Codebasis, Release Notes, Support-Matrix und lokalisierten Vorschaubilder.",
     footerContactLabel: "Kontakt:",
   },
   fr: {
@@ -1157,18 +1001,16 @@ const translations = {
       "MarkdownToPDF est une application macOS intégrée au Finder qui transforme localement des fichiers Markdown en PDF soignés, avec profils, coloration syntaxique, rendu mathématique, historique, file d'attente par lots et traitement respectueux de la vie privée.",
     navPrimaryAria: "Navigation principale",
     langSwitcherLabel: "Sélecteur de langue",
-    screenSelectorAria: "Écrans de l'application",
     skipLink: "Aller au contenu",
     navFeatures: "Fonctionnalités",
     navWorkflow: "Flux",
-    navScreens: "Écrans",
     navPrivacy: "Confidentialité",
     heroEyebrow: "Extension Finder + application macOS native",
     heroTitle: "Transformer Markdown en PDF soignés sans quitter Finder.",
     heroLead:
       "MarkdownToPDF s'adresse aux rédacteurs, ingénieurs et équipes de documentation qui veulent des exports locaux, répétables, avec files d'attente, profils et rendu propre prêt à l'impression.",
     heroDownload: "Télécharger sur le Mac App Store",
-    heroPrimary: "Voir l'interface",
+    heroPrimary: "Voir les aperçus",
     heroSecondary: "Lire la politique de confidentialité",
     heroBadge1: "Clic droit sur les fichiers `.md` et `.markdown` dans les dossiers Finder autorisés",
     heroBadge2: "Files d'attente par lots et reprise après échec",
@@ -1240,30 +1082,6 @@ const translations = {
     feature7Title: "Tableaux aux coins arrondis",
     feature7Body:
       "Appliquez un rayon d'angle aux tableaux exportés pour obtenir un rendu plus doux, tout en gardant les bordures et l'alignement des colonnes.",
-    screensEyebrow: "Écrans",
-    screensTitle: "Une interface de bureau claire pour la file, l'historique et les réglages.",
-    screensLead:
-      "Ces images proviennent du build actuel de MarkdownToPDF et montrent les principaux espaces de travail décrits dans le code et les notes de version.",
-    screenDashboardLabel: "Tableau de bord",
-    screenHistoryLabel: "Historique",
-    screenOutputLabel: "Valeurs de sortie",
-    screenRenderLabel: "Valeurs de rendu",
-    screenDashboardTitle: "Tableau de bord",
-    screenDashboardBody:
-      "Surveiller les demandes en attente, importer des fichiers Markdown par glisser-déposer et lancer les conversions en un clic.",
-    screenDashboardAlt: "Écran du tableau de bord de file",
-    screenHistoryTitle: "Historique",
-    screenHistoryBody:
-      "Revoir les exports réussis, rouvrir les PDF générés, afficher les fichiers dans Finder et garder une trace claire des exécutions passées.",
-    screenHistoryAlt: "Écran d'historique de conversion",
-    screenOutputTitle: "Valeurs de sortie",
-    screenOutputBody:
-      "Définir les stratégies de nommage, le comportement d'écrasement, les emplacements par défaut et les dossiers Finder où l'extension doit apparaître.",
-    screenOutputAlt: "Écran de réglages des valeurs de sortie",
-    screenRenderTitle: "Valeurs de rendu",
-    screenRenderBody:
-      "Ajuster format de page, thème, polices, taille, interligne, espacements, marges et comportement après conversion depuis une seule surface de réglages.",
-    screenRenderAlt: "Écran de réglages des valeurs de rendu",
     renderEyebrow: "Rendu",
     renderTitle: "Les formules, diagrammes et blocs de code conservent leur sens jusqu'au PDF final.",
     renderLead:
@@ -1340,7 +1158,7 @@ const translations = {
     policy6Body:
       "Si l'architecture de l'application change dans une future version, cette politique devra être mise à jour en même temps que les notes de version et le site afin que la description reste fidèle au comportement réel.",
     footerBody:
-      "Construit à partir du code actuel de MarkdownToPDF, des notes de version, de la matrice de prise en charge et des captures d'écran de l'interface.",
+      "Construit à partir du code actuel de MarkdownToPDF, des notes de version, de la matrice de prise en charge et des aperçus localisés.",
     footerContactLabel: "Contact :",
   },
   it: {
@@ -1349,18 +1167,16 @@ const translations = {
       "MarkdownToPDF è un'app macOS integrata con Finder che converte localmente file Markdown in PDF curati, con profili, evidenziazione della sintassi, rendering matematico, cronologia, coda batch e trattamento attento alla privacy.",
     navPrimaryAria: "Navigazione principale",
     langSwitcherLabel: "Selettore lingua",
-    screenSelectorAria: "Schermate dell'app",
     skipLink: "Vai al contenuto",
     navFeatures: "Funzionalità",
     navWorkflow: "Flusso",
-    navScreens: "Schermate",
     navPrivacy: "Privacy",
     heroEyebrow: "Estensione Finder + app macOS nativa",
     heroTitle: "Trasforma Markdown in PDF curati senza uscire da Finder.",
     heroLead:
       "MarkdownToPDF è pensata per scrittori, ingegneri e team di documentazione che vogliono esportazioni locali e ripetibili, con code batch, profili e output puliti pronti per la stampa.",
     heroDownload: "Scarica dal Mac App Store",
-    heroPrimary: "Esplora l'interfaccia",
+    heroPrimary: "Esplora le anteprime",
     heroSecondary: "Leggi l'informativa sulla privacy",
     heroBadge1: "Clic destro su file `.md` e `.markdown` nelle cartelle Finder autorizzate",
     heroBadge2: "Code batch e ritentativi in caso di errore",
@@ -1432,30 +1248,6 @@ const translations = {
     feature7Title: "Tabelle con angoli arrotondati",
     feature7Body:
       "Applica un raggio agli angoli delle tabelle esportate, mantenendo bordi e allineamento delle colonne con un aspetto più morbido.",
-    screensEyebrow: "Schermate",
-    screensTitle: "Una superficie desktop pulita per coda, cronologia e impostazioni.",
-    screensLead:
-      "Queste immagini provengono dall'attuale build desktop di MarkdownToPDF e mostrano gli spazi principali descritti nel codice e nelle note di rilascio.",
-    screenDashboardLabel: "Dashboard della coda",
-    screenHistoryLabel: "Cronologia conversioni",
-    screenOutputLabel: "Valori predefiniti output",
-    screenRenderLabel: "Valori predefiniti rendering",
-    screenDashboardTitle: "Dashboard della coda",
-    screenDashboardBody:
-      "Monitora le richieste in attesa, importa file Markdown con drag and drop e avvia le conversioni con un solo clic.",
-    screenDashboardAlt: "Schermata dashboard della coda",
-    screenHistoryTitle: "Cronologia conversioni",
-    screenHistoryBody:
-      "Rivedi gli export riusciti, riapri i PDF generati, mostra i file nel Finder e mantieni un registro chiaro delle esecuzioni passate.",
-    screenHistoryAlt: "Schermata cronologia conversioni",
-    screenOutputTitle: "Valori predefiniti output",
-    screenOutputBody:
-      "Scegli strategie di naming, comportamento di sovrascrittura, posizioni di salvataggio predefinite e le cartelle Finder in cui deve comparire l'estensione.",
-    screenOutputAlt: "Schermata impostazioni output predefinito",
-    screenRenderTitle: "Valori predefiniti rendering",
-    screenRenderBody:
-      "Regola formato pagina, tema, font, dimensione del testo, altezza riga, spaziature, margini e comportamento post-conversione da un'unica schermata di impostazioni.",
-    screenRenderAlt: "Schermata impostazioni rendering predefinito",
     renderEyebrow: "Rendering",
     renderTitle: "Formule, diagrammi e blocchi di codice mantengono il loro significato fino al PDF finale.",
     renderLead:
@@ -1532,7 +1324,7 @@ const translations = {
     policy6Body:
       "Se l'architettura dell'app cambia in una futura versione, anche questa informativa dovrebbe essere aggiornata insieme alle note di rilascio e al sito, così la descrizione pubblicata resta accurata.",
     footerBody:
-      "Realizzato a partire dall'attuale codebase di MarkdownToPDF, dalle note di rilascio, dalla matrice di supporto e dagli screenshot dell'interfaccia.",
+      "Realizzato a partire dall'attuale codebase di MarkdownToPDF, dalle note di rilascio, dalla matrice di supporto e dalle anteprime localizzate.",
     footerContactLabel: "Contatto:",
   },
 };
@@ -1803,33 +1595,6 @@ const languageMeta = {
   it: { htmlLang: "it" },
 };
 
-const screens = {
-  dashboard: {
-    src: "pictures/dashboard.png",
-    titleKey: "screenDashboardTitle",
-    descriptionKey: "screenDashboardBody",
-    altKey: "screenDashboardAlt",
-  },
-  history: {
-    src: "pictures/history.png",
-    titleKey: "screenHistoryTitle",
-    descriptionKey: "screenHistoryBody",
-    altKey: "screenHistoryAlt",
-  },
-  output: {
-    src: "pictures/settings-1.png",
-    titleKey: "screenOutputTitle",
-    descriptionKey: "screenOutputBody",
-    altKey: "screenOutputAlt",
-  },
-  render: {
-    src: "pictures/settings-2.png",
-    titleKey: "screenRenderTitle",
-    descriptionKey: "screenRenderBody",
-    altKey: "screenRenderAlt",
-  },
-};
-
 const promoItems = [
   {
     feature: "batch-history",
@@ -1878,17 +1643,12 @@ const langButtons = document.querySelectorAll(".lang-button");
 const translatableNodes = document.querySelectorAll("[data-i18n]");
 const altNodes = document.querySelectorAll("[data-i18n-alt]");
 const ariaLabelNodes = document.querySelectorAll("[data-i18n-aria-label]");
-const screenButtons = document.querySelectorAll(".screen-thumb");
-const activeScreenImage = document.getElementById("active-screen-image");
-const activeScreenTitle = document.getElementById("active-screen-title");
-const activeScreenDescription = document.getElementById("active-screen-description");
 const promoGallery = document.getElementById("promo-gallery");
 
 const storedLanguage = localStorage.getItem("markdownToPDFWebLanguage");
 const normalizedStoredLanguage = storedLanguage === "zh" ? "zh-Hans" : storedLanguage;
 
 let currentLanguage = normalizedStoredLanguage in translations ? normalizedStoredLanguage : "en";
-let currentScreen = "dashboard";
 
 function translateKey(language, key) {
   const dictionary = translations[language] || translations.en;
@@ -1932,7 +1692,6 @@ function applyLanguage(language) {
     button.setAttribute("aria-pressed", String(isActive));
   });
 
-  renderScreen(currentScreen);
   renderPromos(nextLanguage);
 }
 
@@ -1995,43 +1754,11 @@ function renderPromos(language) {
   promoGallery.replaceChildren(fragment);
 }
 
-function renderScreen(screenKey) {
-  const screen = screens[screenKey];
-  if (!screen) return;
-
-  currentScreen = screenKey;
-
-  activeScreenImage.style.opacity = "0.2";
-  activeScreenImage.style.transform = "scale(1.015)";
-
-  window.setTimeout(() => {
-    activeScreenImage.src = screen.src;
-    activeScreenImage.alt = translateKey(currentLanguage, screen.altKey);
-    activeScreenTitle.textContent = translateKey(currentLanguage, screen.titleKey);
-    activeScreenDescription.textContent = translateKey(currentLanguage, screen.descriptionKey);
-    activeScreenImage.style.opacity = "1";
-    activeScreenImage.style.transform = "scale(1)";
-  }, 120);
-
-  screenButtons.forEach((button) => {
-    const isActive = button.dataset.screen === screenKey;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-selected", String(isActive));
-  });
-}
-
 langButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const nextLanguage = button.dataset.lang || "en";
     localStorage.setItem("markdownToPDFWebLanguage", nextLanguage);
     applyLanguage(nextLanguage);
-  });
-});
-
-screenButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const nextScreen = button.dataset.screen;
-    renderScreen(nextScreen);
   });
 });
 
