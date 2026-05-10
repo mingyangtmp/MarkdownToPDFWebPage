@@ -21,9 +21,25 @@ const htmlLang = {
   de: "de",
   fr: "fr",
   it: "it",
+  pt: "pt",
+  "es-ES": "es-ES",
+  "es-MX": "es-MX",
 };
 
-const defaultLanguages = ["zh-Hans", "zh-Hant", "ja", "ko", "de", "fr", "it"];
+const localeOutputDirs = {
+  "zh-Hans": "简体中文",
+  "zh-Hant": "繁体中文",
+  ja: "日语",
+  ko: "韩语",
+  de: "德语",
+  fr: "法语",
+  it: "意大利语",
+  pt: "葡萄牙语",
+  "es-ES": "西班牙语（西班牙）",
+  "es-MX": "西班牙语（墨西哥）",
+};
+
+const defaultLanguages = ["zh-Hans", "zh-Hant", "ja", "ko", "de", "fr", "it", "pt", "es-ES", "es-MX"];
 
 const promos = [
   {
@@ -1716,6 +1732,429 @@ for (const [lang, text] of Object.entries(exportProfilesEditorCopy)) {
   Object.assign(copy[lang]["export-profiles"], text);
 }
 
+const additionalLocalizedCopy = {
+  pt: {
+    "auto-toc": {
+      eyebrow: "Indice automatico",
+      headline: "Crie um indice PDF automaticamente",
+      lead: "Gere navegacao a partir de titulos H2-H3, substitua indices existentes no export e preserve o Markdown original.",
+      panelTop: ["Comportamento", "automatico"],
+      tocRows: [
+        ["Ler titulos H2-H3", "estrutura"],
+        ["Substituir indice existente", "limpo"],
+        ["Markdown intacto", "seguro"],
+      ],
+      footer: "O indice gerado entra apenas no PDF exportado.",
+      tokens: ["H2", "H3", "PDF"],
+      markdownTitle: "# Revisao trimestral",
+      markdownComments: [
+        "<!-- markdown-to-pdf:auto-toc:start -->",
+        "<!-- gerado no export -->",
+        "<!-- markdown-to-pdf:auto-toc:end -->",
+      ],
+      markdownH2s: ["## Resumo executivo", "## Atualizacoes do produto", "## Checklist de lancamento"],
+      markdownH3s: ["### Destaques de receita", "### Padroes de renderizacao"],
+      tocPage: ["Indice", "Gerado a partir dos titulos Markdown"],
+      tocEntries: ["Resumo executivo", "Destaques de receita", "Atualizacoes do produto", "Padroes de renderizacao", "Checklist de lancamento"],
+      tocMarker: "## Indice",
+      sourceTitle: "Fonte permanece limpa",
+      sourceBody: "O app atualiza apenas a visualizacao do PDF exportado, sem reescrever o Markdown original.",
+      sourceBadges: ["fonte intacta", "indice atualizado", "so export"],
+      calloutTitle: "Criado durante a conversao",
+      calloutBody: "Os titulos viram um indice refinado com numeros de pagina no PDF final.",
+    },
+    "batch-history": {
+      eyebrow: "Conversao em lote",
+      headline: "Coloque varios Markdown na fila",
+      lead: "Arraste arquivos ou converta pelo Finder e acompanhe cada PDF da fila ao historico.",
+      panelTop: ["Origem da conversao", "3 formas"],
+      sourceRows: [
+        ["Menu contextual do Finder", "clique"],
+        ["Fila por arrastar e soltar", "lote"],
+        ["Importacao manual", "controle"],
+      ],
+      footer: "Abra PDFs no Finder ou revele exportacoes concluidas",
+      tokens: ["Finder", "Fila", "Historico"],
+      statusTitle: "Acompanhe cada conversao",
+      statusBody: "Solicitacoes pendentes, sucessos, repeticoes e locais de saida ficam visiveis.",
+    },
+    "code-block": {
+      eyebrow: "Exportacao de codigo",
+      headline: "Codigo bonito em cada PDF",
+      lead: "Preserve destaque de sintaxe, rotulos de linguagem e blocos em estilo janela no PDF exportado.",
+      badges: ["Swift / Bash / Python / JS", "Render local, sem nuvem", "Conversao em lote e historico", "Feito para docs tecnicas"],
+      footer: "Escolha Markdown no Finder e exporte um PDF refinado",
+      tokens: ["Sintaxe", "Local", "PDF"],
+      exportTitle: "Exportacao concluida",
+      exportBody: "Blocos de codigo preservados no PDF",
+    },
+    "data-formula": {
+      eyebrow: "Dados e formulas",
+      headline: "Dados e formulas chegam claros ao PDF",
+      lead: "Ao converter Markdown em PDF, tabelas ficam alinhadas, formulas nitidas e notas tecnicas legiveis.",
+      panelTop: ["Qualidade", "pronto para PDF"],
+      miniRows: [
+        ["Tabelas", "alinhadas"],
+        ["Formulas", "nitidas"],
+        ["Notas", "legiveis"],
+      ],
+      footer: "Exporte relatorios completos com tabelas, formulas e explicacoes tecnicas",
+      tokens: ["Dados", "Formulas", "PDF"],
+      paperTitle: "Modelo trimestral",
+      paperSubtitle: "Tabela Markdown renderizada como relatorio PDF claro",
+      formulaPill: "Formula estilo LaTeX",
+      tableHeaders: ["Metrica", "T1", "T2", "Formula"],
+      tableRows: ["Receita", "Crescimento", "Margem"],
+      equationLabels: ["Formula exibida", "Pontuacao ponderada", "Modelo preditivo"],
+      insightTitle: "Exportacao que entende formulas",
+      insightBody: "Tabelas ficam alinhadas e formulas permanecem nitidas no PDF final.",
+    },
+    "export-profiles": {
+      eyebrow: "Editar configuracao",
+      headline: "Modele cada PDF em um editor",
+      lead: "Configure tamanho de pagina, margens, tipografia, fonte de codigo, tabelas, tema e indice automatico antes do export.",
+      panelTop: ["Perfil ativo", "Padrao"],
+      profileChips: [
+        ["Pagina", "A4 / A5 / Letter / Legal"],
+        ["Tema", "Sistema / Claro / Sepia / Escuro"],
+        ["Tabelas", "Arredondadas + cabecalho"],
+        ["Indice", "Indice automatico"],
+      ],
+      footer: "Perfis mantem Finder e app consistentes em todos os documentos.",
+      tokens: ["Pagina", "Tabelas", "Indice"],
+      previewTitle: ["Padroes de renderizacao", "Estilo do perfil ativo"],
+      controlBoxes: [
+        ["Tamanho", "A4 / A5"],
+        ["Tema", "Sistema"],
+        ["Fonte do texto", "PingFang SC"],
+        ["Fonte do codigo", "Menlo"],
+      ],
+      sliderLabels: ["Tamanho 12.0", "Altura 1.60", "Tamanho 12.0", "Altura 1.60", "Margens 24 / 16 pt", "Indice auto"],
+      sampleCards: [
+        ["Pagina", "A5 retrato pronto"],
+        ["Exemplo de codigo", "let title = \"Preview\""],
+      ],
+      calloutTitle: "Um editor para detalhes do PDF",
+      calloutBody: "Salve configuracoes reutilizaveis para o Finder e para conversoes no app.",
+      editorWindowTitle: "Configuracoes de renderizacao",
+      toolbarPills: ["Voltar", "Ativo"],
+      editorHero: ["Editar configuracao", "Configuracao usada para exportar PDFs.", "Voltar as configuracoes"],
+      editorSectionHeadings: [
+        ["Nome da configuracao", "Aparece na lista e no seletor."],
+        ["Configuracoes de pagina", "Defina papel e margens imprimiveis."],
+        ["Configuracoes de paragrafo", "Ajuste tipografia e espacamento."],
+        ["Escopo de exportacao", "Use o perfil ativo em todas as entradas."],
+      ],
+      editorSettingRows: [
+        ["Nome", "Configuracao padrao", "Campo texto"],
+        ["Tema", "Sistema", "Sistema"],
+        ["Tamanho da pagina", "A4 retrato", "A4 / A5"],
+        ["Margens (pt)", "24 / 16 / 24 / 16"],
+        ["Fonte do texto", "PingFang SC", "Previa"],
+        ["Configuracao padrao", "Padrao", "Ativo"],
+        ["Usado por", "Finder + conversao no app", "Ligado"],
+      ],
+      marginInputs: ["Topo", "Direita", "Base", "Esquerda"],
+      matrixCards: [
+        ["Codigo", "Fonte de codigo com previa por linguagem.", "Menlo"],
+        ["Tabelas", "Raio 10 pt e primeira linha em negrito.", "Ligado"],
+        ["Indice", "Navegacao criada de titulos H2-H3.", "Auto"],
+      ],
+    },
+    "header-footer": {
+      eyebrow: "Cabecalho e rodape",
+      headline: "Detalhes em todas as paginas PDF",
+      lead: "Adicione titulo, data, nome do arquivo, numero e total de paginas com alinhamento, cor, tamanho e opacidade.",
+      panelTop: ["Campos do modelo", "5 tokens"],
+      placeholderChips: [
+        ["Documento", "{title}"],
+        ["Fonte", "{fileName}"],
+        ["Data", "{date}"],
+        ["Paginas", "{page}/{pageCount}"],
+      ],
+      footer: "Cabecalho e rodape sao desenhados em cada pagina PDF exportada.",
+      tokens: ["Titulo", "Data", "Paginas"],
+      settingsTitle: "Cabecalho/Rodape",
+      headerFooterSections: [
+        {
+          title: "Incluir cabecalho",
+          contentLabel: "Conteudo do cabecalho",
+          alignment: "Esquerda",
+          alignments: ["Esquerda", "Centro", "Direita"],
+        },
+        {
+          title: "Incluir rodape",
+          contentLabel: "Conteudo do rodape",
+          alignment: "Direita",
+          alignments: ["Esquerda", "Centro", "Direita"],
+        },
+      ],
+      templateBoxes: ["{title} | {date}", "Pagina {page} de {pageCount}"],
+      styleBoxes: [
+        ["Fonte", "Helvetica Neue"],
+        ["Cor", "#24628F"],
+        ["Opacidade", "100%"],
+      ],
+      previewSidebar: ["Previa cabecalho/rodape", "Confira o estilo compartilhado antes do export."],
+      pdfHeader: "Revisao trimestral | 2026-05-02",
+      pdfFooter: "Pagina 2 de 5",
+      pdfTitle: "Revisao trimestral",
+      calloutTitle: "Modelos de pagina reutilizaveis",
+      calloutBody: "Combine metadados e contadores sem editar o Markdown original.",
+    },
+    "mermaid-diagram": {
+      eyebrow: "Diagramas Mermaid",
+      headline: "Transforme diagramas Markdown em PDF visual",
+      lead: "Renderize fluxogramas de blocos Mermaid antes do export para manter o documento visual.",
+      panelTop: ["Fluxo do diagrama", "offline"],
+      formatRows: [
+        ["Bloco cercado Mermaid", "analisar"],
+        ["Renderizar diagrama SVG", "desenhar"],
+        ["Saida PDF limpa", "exportar"],
+      ],
+      footer: "Recursos Mermaid e MathJax ficam integrados para render local",
+      tokens: ["Mermaid", "Local", "PDF"],
+      diagramTitle: ["Fluxo de conversao", "Diagramas renderizados permanecem no PDF"],
+      nodes: ["Arquivo Markdown", "Fila pendente", "Render local", "Saida PDF", "Historico"],
+      codeLabels: ["Menu Finder", "Fila pendente", "App MarkdownToPDF PRO", "Saida PDF"],
+      calloutTitle: "Diagramas continuam visuais",
+      calloutBody: "Fluxogramas sao renderizados antes do PDF para manter docs tecnicas legiveis.",
+    },
+    "table-corner-radius": {
+      eyebrow: "Estilo de tabelas",
+      headline: "Tabelas PDF retas ou arredondadas",
+      lead: "Exporte tabelas Markdown claras e ajuste o raio dos cantos para combinar com o documento.",
+      panelTop: ["Raio dos cantos", "12 pt"],
+      scale: ["0 pt", "Max"],
+      footer: "Defina o raio da tabela antes de exportar o PDF",
+      switchLabels: ["Retas", "Arredondadas"],
+      cardLabels: ["Retangulo padrao", "Retangulo arredondado"],
+      calloutTitle: "Cantos controlados pelo usuario",
+      calloutBody: "Relatorios tecnicos podem usar cantos retos; apostilas podem usar cantos suaves.",
+    },
+  },
+  "es-ES": {
+    "auto-toc": {
+      eyebrow: "Indice automatico",
+      headline: "Crea un indice PDF automaticamente",
+      lead: "Genera navegacion desde titulos H2-H3, reemplaza indices existentes al exportar y conserva el Markdown original.",
+      panelTop: ["Comportamiento", "automatico"],
+      tocRows: [
+        ["Lee titulos H2-H3", "estructura"],
+        ["Reemplaza indice existente", "limpio"],
+        ["Markdown intacto", "seguro"],
+      ],
+      footer: "El indice generado solo se inserta en el PDF exportado.",
+      tokens: ["H2", "H3", "PDF"],
+      markdownTitle: "# Revision trimestral",
+      markdownComments: [
+        "<!-- markdown-to-pdf:auto-toc:start -->",
+        "<!-- generado al exportar -->",
+        "<!-- markdown-to-pdf:auto-toc:end -->",
+      ],
+      markdownH2s: ["## Resumen ejecutivo", "## Novedades del producto", "## Lista de lanzamiento"],
+      markdownH3s: ["### Ingresos destacados", "### Valores de renderizado"],
+      tocPage: ["Indice", "Generado desde titulos Markdown"],
+      tocEntries: ["Resumen ejecutivo", "Ingresos destacados", "Novedades del producto", "Valores de renderizado", "Lista de lanzamiento"],
+      tocMarker: "## Indice",
+      sourceTitle: "La fuente queda limpia",
+      sourceBody: "La app actualiza solo la vista del PDF exportado, sin reescribir el Markdown original.",
+      sourceBadges: ["fuente intacta", "indice actualizado", "solo export"],
+      calloutTitle: "Creado durante la conversion",
+      calloutBody: "Los titulos se convierten en un indice cuidado con numeros de pagina.",
+    },
+    "batch-history": {
+      eyebrow: "Conversion por lotes",
+      headline: "Pon varios Markdown en cola",
+      lead: "Arrastra archivos o convierte desde Finder y sigue cada PDF desde la cola hasta el historial.",
+      panelTop: ["Origen de conversion", "3 formas"],
+      sourceRows: [
+        ["Menu contextual de Finder", "clic derecho"],
+        ["Cola por arrastrar y soltar", "lote"],
+        ["Importacion manual", "control"],
+      ],
+      footer: "Abre PDFs en Finder o revela exportaciones completadas",
+      tokens: ["Finder", "Cola", "Historial"],
+      statusTitle: "Sigue cada conversion",
+      statusBody: "Solicitudes pendientes, exitos, reintentos y salidas quedan visibles.",
+    },
+    "code-block": {
+      eyebrow: "Exportacion de codigo",
+      headline: "Codigo pulido en cada PDF",
+      lead: "Conserva resaltado de sintaxis, etiquetas de lenguaje y bloques estilo ventana en el PDF exportado.",
+      badges: ["Swift / Bash / Python / JS", "Render local, sin nube", "Conversion por lotes e historial", "Para documentacion tecnica"],
+      footer: "Elige Markdown en Finder y exporta un PDF refinado",
+      tokens: ["Sintaxis", "Local", "PDF"],
+      exportTitle: "Exportacion completada",
+      exportBody: "Bloques de codigo preservados en el PDF",
+    },
+    "data-formula": {
+      eyebrow: "Datos y formulas",
+      headline: "Datos y formulas llegan claros al PDF",
+      lead: "Al convertir Markdown a PDF, las tablas se mantienen alineadas, las formulas nitidas y las notas tecnicas legibles.",
+      panelTop: ["Calidad", "listo para PDF"],
+      miniRows: [
+        ["Tablas", "alineadas"],
+        ["Formulas", "nitidas"],
+        ["Notas", "legibles"],
+      ],
+      footer: "Exporta informes completos con tablas, formulas y explicaciones tecnicas",
+      tokens: ["Datos", "Formulas", "PDF"],
+      paperTitle: "Modelo trimestral",
+      paperSubtitle: "Tabla Markdown renderizada como informe PDF claro",
+      formulaPill: "Formula estilo LaTeX",
+      tableHeaders: ["Metrica", "T1", "T2", "Formula"],
+      tableRows: ["Ingresos", "Crecimiento", "Margen"],
+      equationLabels: ["Formula mostrada", "Puntuacion ponderada", "Modelo predictivo"],
+      insightTitle: "Exportacion que entiende formulas",
+      insightBody: "Las tablas quedan alineadas y las formulas siguen nitidas en el PDF final.",
+    },
+    "export-profiles": {
+      eyebrow: "Editar configuracion",
+      headline: "Da forma a cada PDF desde un editor",
+      lead: "Configura tamano de pagina, margenes, tipografia, fuente de codigo, tablas, tema e indice automatico antes de exportar.",
+      panelTop: ["Perfil activo", "Predeterminado"],
+      profileChips: [
+        ["Pagina", "A4 / A5 / Letter / Legal"],
+        ["Tema", "Sistema / Claro / Sepia / Oscuro"],
+        ["Tablas", "Redondas + encabezado"],
+        ["Indice", "Indice automatico"],
+      ],
+      footer: "Los perfiles mantienen Finder y la app coherentes en cada documento.",
+      tokens: ["Pagina", "Tablas", "Indice"],
+      previewTitle: ["Valores de renderizado", "Estilo del perfil activo"],
+      controlBoxes: [
+        ["Tamano", "A4 / A5"],
+        ["Tema", "Sistema"],
+        ["Fuente de texto", "PingFang SC"],
+        ["Fuente de codigo", "Menlo"],
+      ],
+      sliderLabels: ["Tamano 12.0", "Altura 1.60", "Tamano 12.0", "Altura 1.60", "Margenes 24 / 16 pt", "Indice auto"],
+      sampleCards: [
+        ["Pagina", "A5 vertical listo"],
+        ["Ejemplo de codigo", "let title = \"Preview\""],
+      ],
+      calloutTitle: "Un editor para detalles del PDF",
+      calloutBody: "Guarda configuraciones reutilizables para Finder y conversiones en la app.",
+      editorWindowTitle: "Configuraciones de renderizado",
+      toolbarPills: ["Volver", "Activo"],
+      editorHero: ["Editar configuracion", "Configuracion usada para exportar PDFs.", "Volver a configuraciones"],
+      editorSectionHeadings: [
+        ["Nombre de configuracion", "Aparece en la lista y el selector."],
+        ["Configuracion de pagina", "Define papel y margenes imprimibles."],
+        ["Configuracion de parrafo", "Ajusta tipografia y espaciado."],
+        ["Alcance de exportacion", "Usa el perfil activo en cada entrada."],
+      ],
+      editorSettingRows: [
+        ["Nombre", "Configuracion predeterminada", "Campo texto"],
+        ["Tema", "Sistema", "Sistema"],
+        ["Tamano de pagina", "A4 vertical", "A4 / A5"],
+        ["Margenes (pt)", "24 / 16 / 24 / 16"],
+        ["Fuente de texto", "PingFang SC", "Vista previa"],
+        ["Configuracion predeterminada", "Predeterminada", "Activo"],
+        ["Usado por", "Finder + conversion en app", "Activo"],
+      ],
+      marginInputs: ["Arriba", "Derecha", "Abajo", "Izquierda"],
+      matrixCards: [
+        ["Codigo", "Fuente de codigo con vista por lenguaje.", "Menlo"],
+        ["Tablas", "Radio 10 pt y primera fila en negrita.", "Activo"],
+        ["Indice", "Navegacion creada desde titulos H2-H3.", "Auto"],
+      ],
+    },
+    "header-footer": {
+      eyebrow: "Encabezado y pie",
+      headline: "Detalles en cada pagina PDF",
+      lead: "Agrega titulo, fecha, nombre de archivo, numero y total de paginas con alineacion, color, tamano y opacidad.",
+      panelTop: ["Campos de plantilla", "5 tokens"],
+      placeholderChips: [
+        ["Documento", "{title}"],
+        ["Fuente", "{fileName}"],
+        ["Fecha", "{date}"],
+        ["Paginas", "{page}/{pageCount}"],
+      ],
+      footer: "Encabezado y pie se dibujan en cada pagina PDF exportada.",
+      tokens: ["Titulo", "Fecha", "Paginas"],
+      settingsTitle: "Encabezado/Pie",
+      headerFooterSections: [
+        {
+          title: "Incluir encabezado",
+          contentLabel: "Contenido del encabezado",
+          alignment: "Izquierda",
+          alignments: ["Izquierda", "Centro", "Derecha"],
+        },
+        {
+          title: "Incluir pie",
+          contentLabel: "Contenido del pie",
+          alignment: "Derecha",
+          alignments: ["Izquierda", "Centro", "Derecha"],
+        },
+      ],
+      templateBoxes: ["{title} | {date}", "Pagina {page} de {pageCount}"],
+      styleBoxes: [
+        ["Fuente", "Helvetica Neue"],
+        ["Color", "#24628F"],
+        ["Opacidad", "100%"],
+      ],
+      previewSidebar: ["Vista encabezado/pie", "Revisa el estilo compartido antes de exportar."],
+      pdfHeader: "Revision trimestral | 2026-05-02",
+      pdfFooter: "Pagina 2 de 5",
+      pdfTitle: "Revision trimestral",
+      calloutTitle: "Plantillas de pagina reutilizables",
+      calloutBody: "Combina metadatos y contadores sin editar el Markdown original.",
+    },
+    "mermaid-diagram": {
+      eyebrow: "Diagramas Mermaid",
+      headline: "Convierte diagramas Markdown en PDF visual",
+      lead: "Renderiza diagramas de flujo de bloques Mermaid antes de exportar para mantener el documento visual.",
+      panelTop: ["Flujo del diagrama", "offline"],
+      formatRows: [
+        ["Bloque Mermaid cercado", "analizar"],
+        ["Renderizar diagrama SVG", "dibujar"],
+        ["Salida PDF clara", "exportar"],
+      ],
+      footer: "Recursos Mermaid y MathJax integrados para render local",
+      tokens: ["Mermaid", "Local", "PDF"],
+      diagramTitle: ["Flujo de conversion", "Diagramas renderizados permanecen en el PDF"],
+      nodes: ["Archivo Markdown", "Cola pendiente", "Render local", "Salida PDF", "Historial"],
+      codeLabels: ["Menu Finder", "Cola pendiente", "App MarkdownToPDF PRO", "Salida PDF"],
+      calloutTitle: "Los diagramas siguen visuales",
+      calloutBody: "Los flujos se renderizan antes del PDF para mantener docs tecnicas legibles.",
+    },
+    "table-corner-radius": {
+      eyebrow: "Estilo de tablas",
+      headline: "Tablas PDF rectas o redondeadas",
+      lead: "Exporta tablas Markdown claras y ajusta el radio de las esquinas para combinar con tu documento.",
+      panelTop: ["Radio de esquinas", "12 pt"],
+      scale: ["0 pt", "Max"],
+      footer: "Define el radio de tabla antes de exportar el PDF",
+      switchLabels: ["Rectas", "Redondeadas"],
+      cardLabels: ["Rectangulo estandar", "Rectangulo redondeado"],
+      calloutTitle: "Esquinas controladas por el usuario",
+      calloutBody: "Informes tecnicos pueden usar esquinas rectas; guias pulidas pueden usar bordes suaves.",
+    },
+  },
+};
+
+additionalLocalizedCopy["es-MX"] = JSON.parse(JSON.stringify(additionalLocalizedCopy["es-ES"]));
+Object.assign(additionalLocalizedCopy["es-MX"]["export-profiles"], {
+  headline: "Dale formato a cada PDF desde un editor",
+  footer: "Los perfiles mantienen Finder y la app consistentes para cada documento.",
+  calloutTitle: "Un editor para los detalles del PDF",
+});
+Object.assign(additionalLocalizedCopy["es-MX"]["batch-history"], {
+  headline: "Pon varios archivos Markdown en cola",
+  statusBody: "Solicitudes pendientes, conversiones listas, reintentos y salidas quedan visibles.",
+});
+Object.assign(additionalLocalizedCopy["es-MX"]["header-footer"], {
+  headline: "Detalles en todas las paginas del PDF",
+  calloutBody: "Combina metadatos y contadores sin modificar el Markdown original.",
+});
+Object.assign(additionalLocalizedCopy["es-MX"]["table-corner-radius"], {
+  calloutBody: "Informes tecnicos pueden usar esquinas rectas; guias cuidadas pueden usar bordes suaves.",
+});
+
+Object.assign(copy, additionalLocalizedCopy);
+
 const localeStyle = `
 <style>
   html.promo-locale-localized h1 {
@@ -2102,6 +2541,8 @@ function ensureKnownInputs(languages, promoKeys) {
   for (const lang of languages) {
     if (lang === "en") continue;
     if (!copy[lang]) throw new Error(`Unknown language: ${lang}`);
+    if (!htmlLang[lang]) throw new Error(`Missing htmlLang for language: ${lang}`);
+    if (!localeOutputDirs[lang]) throw new Error(`Missing output directory for language: ${lang}`);
   }
 
   for (const promoKey of promoKeys) {
@@ -2253,7 +2694,7 @@ async function main() {
         const html = localizedHtml(baseHtml, promo, lang);
         const tempHtml = path.join(__dirname, `.localized-${promo.key}-${lang}.html`);
         const outputName = `${promo.outputBase}-2880x1800.png`;
-        const outputDir = lang === "en" ? __dirname : path.join(__dirname, "localized", lang);
+        const outputDir = lang === "en" ? __dirname : path.join(__dirname, "localized", localeOutputDirs[lang]);
         mkdirSync(outputDir, { recursive: true });
         const outputPath = path.join(outputDir, outputName);
 

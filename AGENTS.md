@@ -36,14 +36,16 @@ node app-store-assets/render-localized-promos.mjs
 The script uses its configured English HTML artboards as layout sources, injects
 localized copy at render time, and captures PNGs with headless Chrome. By
 default it renders Simplified Chinese, Traditional Chinese, Japanese, Korean,
-German, French, and Italian. Localized outputs are grouped by locale using the
-path pattern
-`app-store-assets/localized/<locale>/mac-app-store-<feature>-promo-2880x1800.png`,
+German, French, Italian, Portuguese, Spanish (Spain), and Spanish (Mexico).
+Localized outputs are grouped by Chinese language directory names using the path
+pattern
+`app-store-assets/localized/<Chinese language directory>/mac-app-store-<feature>-promo-2880x1800.png`,
 while the existing English outputs keep the unsuffixed root-level names.
 
 Useful variants:
 
 - `node app-store-assets/render-localized-promos.mjs --lang=ja,ko`
+- `node app-store-assets/render-localized-promos.mjs --lang=es-ES,es-MX`
 - `node app-store-assets/render-localized-promos.mjs --promo=code-block`
 - `node app-store-assets/render-localized-promos.mjs --include-en`
 
